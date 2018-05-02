@@ -7,7 +7,7 @@ using QLyCaoOc.Models;
 
 namespace QLyCaoOc.Controllers
 {
-    public class BuildingController : Controller
+    public class ContractController : Controller
     {
         dbQLyCaoOcDataContext data = new dbQLyCaoOcDataContext();
         // GET: Building
@@ -17,7 +17,7 @@ namespace QLyCaoOc.Controllers
         }
         public ActionResult Index()
         {
-            var hopdongmoi =  ListHopDong(50);
+            var hopdongmoi =  ListHopDong(200);
 
             return View(hopdongmoi);
         }
