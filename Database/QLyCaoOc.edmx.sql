@@ -152,6 +152,14 @@ CREATE TABLE [dbo].[THAMSO] (
 );
 GO
 
+-- Creating table 'TAIKHOANs'
+CREATE TABLE [dbo].[TAIKHOAN] (
+    [MaTK] varchar(5)  NOT NULL,
+    [TenDN] varchar(50)  NULL,
+    [MatKhau] varchar(30)  NULL
+);
+GO
+
 -- --------------------------------------------------
 -- Creating all PRIMARY KEY constraints
 -- --------------------------------------------------
