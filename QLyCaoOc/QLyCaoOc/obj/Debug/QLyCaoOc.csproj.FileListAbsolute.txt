@@ -179,8 +179,8 @@ F:\Github-Respos\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\Microsoft.AI.DependencyCollector
 F:\Github-Respos\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\Microsoft.AI.ServerTelemetryChannel.xml
 F:\Github-Respos\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\Microsoft.AI.WindowsServer.xml
 F:\Github-Respos\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\Microsoft.AI.Web.xml
-F:\Github-Respos\QLyCaoOc\QLyCaoOc\QLyCaoOc\obj\Debug\QLyCaoOc.csprojResolveAssemblyReference.cache
 F:\Github-Respos\QLyCaoOc\QLyCaoOc\QLyCaoOc\obj\Debug\QLyCaoOc.csproj.CoreCompileInputs.cache
 F:\Github-Respos\QLyCaoOc\QLyCaoOc\QLyCaoOc\obj\Debug\QLyCaoOc.csproj.CopyComplete
 F:\Github-Respos\QLyCaoOc\QLyCaoOc\QLyCaoOc\obj\Debug\QLyCaoOc.dll
 F:\Github-Respos\QLyCaoOc\QLyCaoOc\QLyCaoOc\obj\Debug\QLyCaoOc.pdb
+F:\Github-Respos\QLyCaoOc\QLyCaoOc\QLyCaoOc\obj\Debug\QLyCaoOc.csprojResolveAssemblyReference.cache

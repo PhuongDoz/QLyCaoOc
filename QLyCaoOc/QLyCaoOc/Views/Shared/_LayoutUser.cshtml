@@ -143,7 +143,7 @@
 
                     <li class="light-blue">
                         <a data-toggle="dropdown" href="#" class="dropdown-toggle">
-                            <img class="nav-user-photo" src="" alt="Jason's Photo" />
+                          
                             <span class="user-info">
                                 <small>Chào ,</small>
                                 Phương
@@ -194,8 +194,9 @@
 
             <div class="sidebar-shortcuts" id="sidebar-shortcuts">
                 <div class="sidebar-shortcuts-large" id="sidebar-shortcuts-large">
-                    <button class="btn btn-success">
-                        <i class="ace-icon fa fa-signal"></i>
+                    <button  class="btn btn-success"  >
+                       
+                            <i class="ace-icon fa fa-signal"></i>
                     </button>
 
                     <button class="btn btn-info">
@@ -228,14 +229,7 @@
 
                 <li class="">
                     <!-- 1 the <li> là 1 mục -->
-                    <a href="#" class="">
-                        <i class="menu-icon fa fa-desktop"></i>
-                        <span class="menu-text">
-                            Tra Cứu
-                        </span>
-
-                        <b class="arrow fa fa-angle-down"></b>
-                    </a>
+                   
 
                     <b class="arrow"></b>
 
@@ -436,22 +430,23 @@
                     <b class="arrow"></b>
 
                     <ul class="submenu">
-                        <li class="">
-                            <a href="jqgrid.html">
-                                <i class="menu-icon fa fa-caret-right"></i>
-                                Quản Lý Phòng
-                            </a>
-
-                            <b class="arrow"></b>
-                        </li>
                         <li class="active">
-                            <a href="tables.html">
+                            <a href="@Url.Action("Index","Contract")">
                                 <i class="menu-icon fa fa-caret-right"></i>
                                 Quản Lý Hợp Đồng
                             </a>
 
                             <b class="arrow"></b>
                         </li>
+                        <li class="">
+                            <a href="">
+                                <i class="menu-icon fa fa-caret-right"></i>
+                                Quản Lý Phòng
+                            </a>
+
+                            <b class="arrow"></b>
+                        </li>
+
 
                         <li class="">
                             <a href="jqgrid.html">
@@ -475,7 +470,7 @@
                 <li class="">
                     <a href="#" class="dropdown-toggle">
                         <i class="menu-icon fa fa-pencil-square-o"></i>
-                        <span class="menu-text"> Forms </span>
+                        <span class="menu-text"> Mẫu </span>
 
                         <b class="arrow fa fa-angle-down"></b>
                     </a>
@@ -493,7 +488,7 @@
                         </li>
 
                         <li class="">
-                            <a href="form-elements-2.html">
+                            <a href="@Url.Action("Themhopdong","Contract")">
                                 <i class="menu-icon fa fa-caret-right"></i>
                                 Làm Hợp Đồng
                             </a>
@@ -614,7 +609,7 @@
 
                             <div class="hr hr-18 dotted hr-double"></div>
                             <div>
-                                <h1 style="text-align:center"> QUẢN LÝ HỢP ĐỒNG</h1><div>
+                             
                                     <div class="row">
                                         <div class="col-xs-12">
 
@@ -622,12 +617,14 @@
                                             <!-- div.table-responsive -->
                                             <!-- div.dataTables_borderWrap -->
                                             <div>
+
                                                 @RenderBody()
                                             </div>
+                                            
                                         </div>
                                     </div>
 
-                                    <div id="modal-table" class="modal fade" tabindex="-1">
+                                    @*<div id="modal-table" class="modal fade" tabindex="-1">
                                         <div class="modal-dialog">
                                             <div class="modal-content">
                                                 <div class="modal-header no-padding">
@@ -677,7 +674,7 @@
                                                 </div>
                                             </div><!-- /.modal-content -->
                                         </div><!-- /.modal-dialog -->
-                                    </div><!-- PAGE CONTENT ENDS -->
+                                    </div><!-- PAGE CONTENT ENDS -->*@
                                 </div><!-- /.col -->
                             </div><!-- /.row -->
                         </div><!-- /.page-content -->

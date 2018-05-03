@@ -1,0 +1,44 @@
+﻿@model QLyCaoOc.Models.HOPDONG
+
+@{
+    ViewBag.Title = "Chitiethopdong";
+    Layout = "~/Views/Shared/_LayoutUser.cshtml";
+}
+
+<h1 style="text-align:center"> CHI TIẾT HỢP ĐỒNG</h1><div>
+
+    <div>
+
+        <hr />
+        <dl class="dl-horizontal">
+            <dt>
+               Mã hợp đồng:
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.MaHD)
+            </dd>
+
+
+            <dt>
+              Ngày lập:
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.NgayLap)
+            </dd>
+
+            <dt>
+              Tiền cọc:
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.TienCoc)
+            </dd>
+
+        </dl>
+    </div>
+    <p>
+        @Html.ActionLink("sửa", "Edit", new { id = Model.MaHD }) |
+        @Html.ActionLink("Quay lại trang quản lý", "Index")
+    </p>
