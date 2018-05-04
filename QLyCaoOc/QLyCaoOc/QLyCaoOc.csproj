@@ -220,20 +220,17 @@
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Models\dbQLyCaoOc.dbml">
-      <Generator>MSLinqToSQLGenerator</Generator>
-      <LastGenOutput>dbQLyCaoOc.designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </Content>
     <Content Include="font-awesome\4.1.0\fonts\fontawesome-webfont.eot" />
     <Content Include="font-awesome\4.1.0\fonts\fontawesome-webfont.ttf" />
     <Content Include="font-awesome\4.1.0\fonts\fontawesome-webfont.woff" />
     <Content Include="font-awesome\4.2.0\fonts\fontawesome-webfont.eot" />
     <Content Include="font-awesome\4.2.0\fonts\fontawesome-webfont.ttf" />
     <Content Include="font-awesome\4.2.0\fonts\fontawesome-webfont.woff" />
-    <None Include="Models\dbQLyCaoOc.dbml.layout">
-      <DependentUpon>dbQLyCaoOc.dbml</DependentUpon>
-    </None>
+    <Content Include="Models\dbQLyCaoOc.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>dbQLyCaoOc.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -348,6 +345,11 @@
   <ItemGroup>
     <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Models\dbQLyCaoOc.dbml.layout">
+      <DependentUpon>dbQLyCaoOc.dbml</DependentUpon>
+    </None>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
