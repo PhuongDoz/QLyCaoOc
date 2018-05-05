@@ -155,50 +155,50 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\CHITIETHOPDONG.cs">
-      <DependentUpon>DBQLyCaoOc.tt</DependentUpon>
+      <DependentUpon>dbQLyCaoOc.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\CONGTY.cs">
-      <DependentUpon>DBQLyCaoOc.tt</DependentUpon>
+      <DependentUpon>dbQLyCaoOc.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\ContractViewModel.cs" />
-    <Compile Include="Models\DBQLyCaoOc.Context.cs">
+    <Compile Include="Models\dbQLyCaoOc.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>DBQLyCaoOc.Context.tt</DependentUpon>
+      <DependentUpon>dbQLyCaoOc.Context.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\DBQLyCaoOc.cs">
+    <Compile Include="Models\dbQLyCaoOc.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>DBQLyCaoOc.tt</DependentUpon>
+      <DependentUpon>dbQLyCaoOc.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\DBQLyCaoOc1.Designer.cs">
+    <Compile Include="Models\dbQLyCaoOc.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>DBQLyCaoOc.edmx</DependentUpon>
+      <DependentUpon>dbQLyCaoOc.edmx</DependentUpon>
     </Compile>
     <Compile Include="Models\HOPDONG.cs">
-      <DependentUpon>DBQLyCaoOc.tt</DependentUpon>
+      <DependentUpon>dbQLyCaoOc.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\NHANVIEN.cs">
-      <DependentUpon>DBQLyCaoOc.tt</DependentUpon>
+      <DependentUpon>dbQLyCaoOc.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\PHIEUGIAHAN.cs">
-      <DependentUpon>DBQLyCaoOc.tt</DependentUpon>
+      <DependentUpon>dbQLyCaoOc.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\PHONG.cs">
-      <DependentUpon>DBQLyCaoOc.tt</DependentUpon>
+      <DependentUpon>dbQLyCaoOc.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\sysdiagram.cs">
-      <DependentUpon>DBQLyCaoOc.tt</DependentUpon>
+      <DependentUpon>dbQLyCaoOc.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\TAIKHOAN.cs">
-      <DependentUpon>DBQLyCaoOc.tt</DependentUpon>
+      <DependentUpon>dbQLyCaoOc.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\TANG.cs">
-      <DependentUpon>DBQLyCaoOc.tt</DependentUpon>
+      <DependentUpon>dbQLyCaoOc.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\THAMSO.cs">
-      <DependentUpon>DBQLyCaoOc.tt</DependentUpon>
+      <DependentUpon>dbQLyCaoOc.tt</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -255,15 +255,15 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
-    <Content Include="Models\DBQLyCaoOc.Context.tt">
+    <Content Include="Models\dbQLyCaoOc.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>DBQLyCaoOc.edmx</DependentUpon>
-      <LastGenOutput>DBQLyCaoOc.Context.cs</LastGenOutput>
+      <DependentUpon>dbQLyCaoOc.edmx</DependentUpon>
+      <LastGenOutput>dbQLyCaoOc.Context.cs</LastGenOutput>
     </Content>
-    <Content Include="Models\DBQLyCaoOc.tt">
+    <Content Include="Models\dbQLyCaoOc.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>DBQLyCaoOc.edmx</DependentUpon>
-      <LastGenOutput>DBQLyCaoOc.cs</LastGenOutput>
+      <DependentUpon>dbQLyCaoOc.edmx</DependentUpon>
+      <LastGenOutput>dbQLyCaoOc.cs</LastGenOutput>
     </Content>
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -277,12 +277,12 @@
     <Content Include="font-awesome\4.2.0\fonts\fontawesome-webfont.eot" />
     <Content Include="font-awesome\4.2.0\fonts\fontawesome-webfont.ttf" />
     <Content Include="font-awesome\4.2.0\fonts\fontawesome-webfont.woff" />
-    <EntityDeploy Include="Models\DBQLyCaoOc.edmx">
+    <EntityDeploy Include="Models\dbQLyCaoOc.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>DBQLyCaoOc1.Designer.cs</LastGenOutput>
+      <LastGenOutput>dbQLyCaoOc.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <Content Include="Models\DBQLyCaoOc.edmx.diagram">
-      <DependentUpon>DBQLyCaoOc.edmx</DependentUpon>
+    <Content Include="Models\dbQLyCaoOc.edmx.diagram">
+      <DependentUpon>dbQLyCaoOc.edmx</DependentUpon>
     </Content>
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />

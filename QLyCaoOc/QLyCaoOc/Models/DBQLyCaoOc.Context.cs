@@ -13,10 +13,10 @@ namespace QLyCaoOc.Models
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class QLCAOOCEntities2 : DbContext
+    public partial class QLCAOOCEntities : DbContext
     {
-        public QLCAOOCEntities2()
-            : base("name=QLCAOOCEntities2")
+        public QLCAOOCEntities()
+            : base("name=QLCAOOCEntities")
         {
         }
     

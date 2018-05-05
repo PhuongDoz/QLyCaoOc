@@ -432,7 +432,7 @@ FROM [dbo].[TAIKHOAN] AS [TAIKHOAN]</DefiningQuery>
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <EntityContainer Name="QLCAOOCEntities2" annotation:LazyLoadingEnabled="true">
+        <EntityContainer Name="QLCAOOCEntities" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="CHITIETHOPDONGs" EntityType="Self.CHITIETHOPDONG" />
           <EntitySet Name="CONGTies" EntityType="Self.CONGTY" />
           <EntitySet Name="HOPDONGs" EntityType="Self.HOPDONG" />
@@ -477,7 +477,7 @@ FROM [dbo].[TAIKHOAN] AS [TAIKHOAN]</DefiningQuery>
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-        <EntityContainerMapping StorageEntityContainer="QLCAOOCModelStoreContainer" CdmEntityContainer="QLCAOOCEntities2">
+        <EntityContainerMapping StorageEntityContainer="QLCAOOCModelStoreContainer" CdmEntityContainer="QLCAOOCEntities">
           <EntitySetMapping Name="CHITIETHOPDONGs">
             <EntityTypeMapping TypeName="QLCAOOCModel.CHITIETHOPDONG">
               <MappingFragment StoreEntitySet="CHITIETHOPDONG">

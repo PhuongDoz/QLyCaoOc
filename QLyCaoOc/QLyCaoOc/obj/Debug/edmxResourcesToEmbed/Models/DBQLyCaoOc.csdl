@@ -194,7 +194,7 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <EntityContainer Name="QLCAOOCEntities2" annotation:LazyLoadingEnabled="true">
+  <EntityContainer Name="QLCAOOCEntities" annotation:LazyLoadingEnabled="true">
     <EntitySet Name="CHITIETHOPDONGs" EntityType="Self.CHITIETHOPDONG" />
     <EntitySet Name="CONGTies" EntityType="Self.CONGTY" />
     <EntitySet Name="HOPDONGs" EntityType="Self.HOPDONG" />
