@@ -154,11 +154,51 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\CHITIETHOPDONG.cs">
+      <DependentUpon>DBQLyCaoOc.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\CONGTY.cs">
+      <DependentUpon>DBQLyCaoOc.tt</DependentUpon>
+    </Compile>
     <Compile Include="Models\ContractViewModel.cs" />
-    <Compile Include="Models\dbQLyCaoOc.designer.cs">
+    <Compile Include="Models\DBQLyCaoOc.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>dbQLyCaoOc.dbml</DependentUpon>
+      <DependentUpon>DBQLyCaoOc.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\DBQLyCaoOc.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DBQLyCaoOc.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\DBQLyCaoOc1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DBQLyCaoOc.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\HOPDONG.cs">
+      <DependentUpon>DBQLyCaoOc.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\NHANVIEN.cs">
+      <DependentUpon>DBQLyCaoOc.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PHIEUGIAHAN.cs">
+      <DependentUpon>DBQLyCaoOc.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PHONG.cs">
+      <DependentUpon>DBQLyCaoOc.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\sysdiagram.cs">
+      <DependentUpon>DBQLyCaoOc.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\TAIKHOAN.cs">
+      <DependentUpon>DBQLyCaoOc.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\TANG.cs">
+      <DependentUpon>DBQLyCaoOc.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\THAMSO.cs">
+      <DependentUpon>DBQLyCaoOc.tt</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -215,10 +255,21 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="Models\DBQLyCaoOc.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>DBQLyCaoOc.edmx</DependentUpon>
+      <LastGenOutput>DBQLyCaoOc.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\DBQLyCaoOc.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>DBQLyCaoOc.edmx</DependentUpon>
+      <LastGenOutput>DBQLyCaoOc.cs</LastGenOutput>
+    </Content>
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
     </Content>
     <Content Include="font-awesome\4.1.0\fonts\fontawesome-webfont.eot" />
     <Content Include="font-awesome\4.1.0\fonts\fontawesome-webfont.ttf" />
@@ -226,10 +277,12 @@
     <Content Include="font-awesome\4.2.0\fonts\fontawesome-webfont.eot" />
     <Content Include="font-awesome\4.2.0\fonts\fontawesome-webfont.ttf" />
     <Content Include="font-awesome\4.2.0\fonts\fontawesome-webfont.woff" />
-    <Content Include="Models\dbQLyCaoOc.dbml">
-      <Generator>MSLinqToSQLGenerator</Generator>
-      <LastGenOutput>dbQLyCaoOc.designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
+    <EntityDeploy Include="Models\DBQLyCaoOc.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>DBQLyCaoOc1.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Models\DBQLyCaoOc.edmx.diagram">
+      <DependentUpon>DBQLyCaoOc.edmx</DependentUpon>
     </Content>
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
@@ -339,17 +392,14 @@
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="packages.config" />
+    <None Include="packages.config">
+      <SubType>Designer</SubType>
+    </None>
     <Content Include="Scripts\jquery-1.10.2.min.map" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Models\dbQLyCaoOc.dbml.layout">
-      <DependentUpon>dbQLyCaoOc.dbml</DependentUpon>
-    </None>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

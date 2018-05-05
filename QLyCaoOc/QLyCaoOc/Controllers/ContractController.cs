@@ -10,7 +10,7 @@ namespace QLyCaoOc.Controllers
 {
     public class ContractController : Controller
     {
-        dbQLyCaoOcDataContext db = new dbQLyCaoOcDataContext();
+        QLCAOOCEntities2 db = new QLCAOOCEntities2();
         // GET: Building
         private List<HOPDONG> ListHopDong(int count)
         {

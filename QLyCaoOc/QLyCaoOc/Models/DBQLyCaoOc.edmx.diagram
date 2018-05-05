@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="24159d4ad60e4d34bf2723f9e60a24bf" Name="Diagram1">
+        <EntityTypeShape EntityType="QLCAOOCModel.CHITIETHOPDONG" Width="1.5" PointX="5.25" PointY="3.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLCAOOCModel.CONGTY" Width="1.5" PointX="6" PointY="11.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLCAOOCModel.HOPDONG" Width="1.5" PointX="3" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLCAOOCModel.NHANVIEN" Width="1.5" PointX="8.25" PointY="3.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLCAOOCModel.PHIEUGIAHAN" Width="1.5" PointX="7.5" PointY="7.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLCAOOCModel.PHONG" Width="1.5" PointX="3" PointY="3.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLCAOOCModel.sysdiagram" Width="1.5" PointX="0.75" PointY="7.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLCAOOCModel.TANG" Width="1.5" PointX="0.75" PointY="3.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLCAOOCModel.THAMSO" Width="1.5" PointX="2.75" PointY="7.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLCAOOCModel.TAIKHOAN" Width="1.5" PointX="4.75" PointY="7.625" IsExpanded="true" />
+        <AssociationConnector Association="QLCAOOCModel.FK_CHITIETHOPDONG_HOPDONG" ManuallyRouted="false" />
+        <AssociationConnector Association="QLCAOOCModel.FK_CHITIETHOPDONG_PHONG" ManuallyRouted="false" />
+        <AssociationConnector Association="QLCAOOCModel.FK_PHIEUGIAHAN_CHITIETHOPDONG" ManuallyRouted="false" />
+        <AssociationConnector Association="QLCAOOCModel.FK_CONGTY_HOPDONG" ManuallyRouted="false" />
+        <AssociationConnector Association="QLCAOOCModel.FK_NHANVIEN_CONGTY" ManuallyRouted="false" />
+        <AssociationConnector Association="QLCAOOCModel.FK_NHANVIEN_PHONG" ManuallyRouted="false" />
+        <AssociationConnector Association="QLCAOOCModel.FK_PHONG_TANG" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
