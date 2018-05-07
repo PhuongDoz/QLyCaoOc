@@ -151,6 +151,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\ContractController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\RoomController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -220,17 +221,17 @@
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Models\dbQLyCaoOc.dbml">
-      <Generator>MSLinqToSQLGenerator</Generator>
-      <LastGenOutput>dbQLyCaoOc.designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </Content>
     <Content Include="font-awesome\4.1.0\fonts\fontawesome-webfont.eot" />
     <Content Include="font-awesome\4.1.0\fonts\fontawesome-webfont.ttf" />
     <Content Include="font-awesome\4.1.0\fonts\fontawesome-webfont.woff" />
     <Content Include="font-awesome\4.2.0\fonts\fontawesome-webfont.eot" />
     <Content Include="font-awesome\4.2.0\fonts\fontawesome-webfont.ttf" />
     <Content Include="font-awesome\4.2.0\fonts\fontawesome-webfont.woff" />
+    <Content Include="Models\dbQLyCaoOc.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>dbQLyCaoOc.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
     <None Include="Models\dbQLyCaoOc.dbml.layout">
       <DependentUpon>dbQLyCaoOc.dbml</DependentUpon>
     </None>
@@ -330,6 +331,7 @@
     <Content Include="Views\Contract\Index.cshtml" />
     <Content Include="Views\Contract\Chitiethopdong.cshtml" />
     <Content Include="Views\Contract\Themhopdong.cshtml" />
+    <Content Include="Views\Room\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
