@@ -1,13 +1,12 @@
 ﻿@model QLyCaoOc.Models.HOPDONG
-@using QLyCaoOc.Models
 
 @{
-    ViewBag.Title = "Chitiethopdong";
+    ViewBag.Title = "Xoahopdong";
     Layout = "~/Views/Shared/_LayoutUser.cshtml";
 }
 
-<h1 style="text-align:center"> CHI TIẾT HỢP ĐỒNG</h1><div>
-   
+<h1 style="text-align:center"> XÁC NHÂN XÓA HỢP ĐỒNG</h1><div>
+
     <div>
 
         <hr />
@@ -83,32 +82,39 @@
 
             <dd>
                 @ViewBag.MaCongTy
-         </dd>
-        <dt>
-            Công ty:
-        </dt>
+            </dd>
+            <dt>
+                Công ty:
+            </dt>
 
-        <dd>
-            @ViewBag.TenCT
-        </dd>
-        <dt>
-            ĐT công ty:
-        </dt>
+            <dd>
+                @ViewBag.TenCT
+            </dd>
+            <dt>
+                ĐT công ty:
+            </dt>
 
-        <dd>
-            @ViewBag.SDT
-        </dd>
-        <dt>
-            Địa chỉ công ty:
-        </dt>
+            <dd>
+                @ViewBag.SDT
+            </dd>
+            <dt>
+                Địa chỉ công ty:
+            </dt>
 
-        <dd>
-            @ViewBag.DiaChiCT
-        </dd>
+            <dd>
+                @ViewBag.DiaChiCT
+            </dd>
 
         </dl>
     </div>
-    <p>
-        @Html.ActionLink("sửa", "Edit", new { id = Model.MaHD }) |
-        @Html.ActionLink("Quay lại trang quản lý", "Index")
-    </p>
+    <div>
+        @using (Html.BeginForm())
+        {
+            @Html.AntiForgeryToken()
+
+            <div class="form-actions no-color">
+                <input type="submit" value="Xóa" class="btn btn-default" /> |
+                @Html.ActionLink("TRỞ VỀ", "Index")
+            </div>
+        }
+    </div>
