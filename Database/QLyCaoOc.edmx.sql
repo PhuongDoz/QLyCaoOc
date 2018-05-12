@@ -110,7 +110,7 @@ CREATE TABLE [dbo].[NHANVIEN] (
     [DiaChiNV] nvarchar(50)  NULL,
     [SDTNV] nvarchar(10)  NULL,
 	[HinhAnh] IMAGE NULL,
-	[ChucVu] nvarchar(30) NULL
+	[ChucVu] nvarchar(30) NULL,
     [MaCongTy] varchar(5)  NOT NULL,
     [MaPHG] varchar(5)  NOT NULL,
 	
@@ -326,78 +326,78 @@ GO
 -- --------------------------------------------------
 
 --Insert table HOPDONG
-insert into HOPDONG (MaHD, NgayLap, TienCoc) values (1, '9/26/2017', '7383267');
-insert into HOPDONG (MaHD, NgayLap, TienCoc) values (2, '1/22/2018', '5128297');
-insert into HOPDONG (MaHD, NgayLap, TienCoc) values (3, '6/10/2017', '9149344');
-insert into HOPDONG (MaHD, NgayLap, TienCoc) values (4, '10/2/2017', '8547269');
-insert into HOPDONG (MaHD, NgayLap, TienCoc) values (5, '7/29/2017', '6457242');
-insert into HOPDONG (MaHD, NgayLap, TienCoc) values (6, '3/11/2018', '9623476');
-insert into HOPDONG (MaHD, NgayLap, TienCoc) values (7, '1/5/2018', '7496757');
-insert into HOPDONG (MaHD, NgayLap, TienCoc) values (8, '2/27/2018', '7639965');
-insert into HOPDONG (MaHD, NgayLap, TienCoc) values (9, '8/30/2017', '7394350');
-insert into HOPDONG (MaHD, NgayLap, TienCoc) values (10, '4/28/2017', '8357795');
-insert into HOPDONG (MaHD, NgayLap, TienCoc) values (11, '3/15/2018', '5437500');
-insert into HOPDONG (MaHD, NgayLap, TienCoc) values (12, '7/15/2017', '6172717');
-insert into HOPDONG (MaHD, NgayLap, TienCoc) values (13, '11/11/2017', '7610223');
-insert into HOPDONG (MaHD, NgayLap, TienCoc) values (14, '12/18/2017', '7844954');
-insert into HOPDONG (MaHD, NgayLap, TienCoc) values (15, '10/2/2017', '8054232');
-insert into HOPDONG (MaHD, NgayLap, TienCoc) values (16, '5/30/2017', '9357662');
-insert into HOPDONG (MaHD, NgayLap, TienCoc) values (17, '12/4/2017', '8921325');
-insert into HOPDONG (MaHD, NgayLap, TienCoc) values (18, '2/6/2018', '6716629');
-insert into HOPDONG (MaHD, NgayLap, TienCoc) values (19, '6/24/2017', '5915555');
-insert into HOPDONG (MaHD, NgayLap, TienCoc) values (20, '2/28/2018', '8166924');
+insert into HOPDONG (MaHD, NgayLap, TienCoc) values (1, '9/26/2017', '7300000');
+insert into HOPDONG (MaHD, NgayLap, TienCoc) values (2, '1/22/2018', '5100000');
+insert into HOPDONG (MaHD, NgayLap, TienCoc) values (3, '6/10/2017', '9100000');
+insert into HOPDONG (MaHD, NgayLap, TienCoc) values (4, '10/2/2017', '8500000');
+insert into HOPDONG (MaHD, NgayLap, TienCoc) values (5, '7/29/2017', '6400000');
+insert into HOPDONG (MaHD, NgayLap, TienCoc) values (6, '3/11/2018', '9600000');
+insert into HOPDONG (MaHD, NgayLap, TienCoc) values (7, '1/5/2018', '7400000');
+insert into HOPDONG (MaHD, NgayLap, TienCoc) values (8, '2/27/2018', '7600000');
+insert into HOPDONG (MaHD, NgayLap, TienCoc) values (9, '8/30/2017', '7300000');
+insert into HOPDONG (MaHD, NgayLap, TienCoc) values (10, '4/28/2017', '8300000');
+insert into HOPDONG (MaHD, NgayLap, TienCoc) values (11, '3/15/2018', '5400000');
+insert into HOPDONG (MaHD, NgayLap, TienCoc) values (12, '7/15/2017', '6100000');
+insert into HOPDONG (MaHD, NgayLap, TienCoc) values (13, '11/11/2017', '7600000');
+insert into HOPDONG (MaHD, NgayLap, TienCoc) values (14, '12/18/2017', '7800000');
+insert into HOPDONG (MaHD, NgayLap, TienCoc) values (15, '10/2/2017', '8000000');
+insert into HOPDONG (MaHD, NgayLap, TienCoc) values (16, '5/30/2017', '9300000');
+insert into HOPDONG (MaHD, NgayLap, TienCoc) values (17, '12/4/2017', '8900000');
+insert into HOPDONG (MaHD, NgayLap, TienCoc) values (18, '2/6/2018', '6700000');
+insert into HOPDONG (MaHD, NgayLap, TienCoc) values (19, '6/24/2017', '5900000');
+insert into HOPDONG (MaHD, NgayLap, TienCoc) values (20, '2/28/2018', '8100000');
 
 --Insert table TANG
-insert into TANG (Tang, DienTich, Gia) values (1, 100, '18287597');
-insert into TANG (Tang, DienTich, Gia) values (2, 100, '15889041');
-insert into TANG (Tang, DienTich, Gia) values (3, 100, '11126262');
-insert into TANG (Tang, DienTich, Gia) values (4, 100, '10334383');
-insert into TANG (Tang, DienTich, Gia) values (5, 100, '19483507');
-insert into TANG (Tang, DienTich, Gia) values (6, 100, '13463476');
-insert into TANG (Tang, DienTich, Gia) values (7, 100, '12299875');
-insert into TANG (Tang, DienTich, Gia) values (8, 100, '19020699');
-insert into TANG (Tang, DienTich, Gia) values (9, 100, '16080426');
-insert into TANG (Tang, DienTich, Gia) values (10, 100, '16852778');
-insert into TANG (Tang, DienTich, Gia) values (11, 100, '10348930');
-insert into TANG (Tang, DienTich, Gia) values (12, 100, '16244305');
-insert into TANG (Tang, DienTich, Gia) values (13, 100, '15939715');
-insert into TANG (Tang, DienTich, Gia) values (14, 100, '13135254');
-insert into TANG (Tang, DienTich, Gia) values (15, 100, '12341184');
-insert into TANG (Tang, DienTich, Gia) values (16, 100, '15286795');
-insert into TANG (Tang, DienTich, Gia) values (17, 100, '13653576');
-insert into TANG (Tang, DienTich, Gia) values (18, 100, '11296808');
-insert into TANG (Tang, DienTich, Gia) values (19, 100, '11136010');
-insert into TANG (Tang, DienTich, Gia) values (20, 100, '15276245');
-insert into TANG (Tang, DienTich, Gia) values (21, 100, '11317252');
-insert into TANG (Tang, DienTich, Gia) values (22, 100, '12723526');
-insert into TANG (Tang, DienTich, Gia) values (23, 100, '18744314');
-insert into TANG (Tang, DienTich, Gia) values (24, 100, '10381174');
-insert into TANG (Tang, DienTich, Gia) values (25, 100, '12074810');
-insert into TANG (Tang, DienTich, Gia) values (1, 200, '28287597');
-insert into TANG (Tang, DienTich, Gia) values (2, 200, '25889041');
-insert into TANG (Tang, DienTich, Gia) values (3, 200, '21126262');
-insert into TANG (Tang, DienTich, Gia) values (4, 200, '20334383');
-insert into TANG (Tang, DienTich, Gia) values (5, 200, '29483507');
-insert into TANG (Tang, DienTich, Gia) values (6, 200, '23463476');
-insert into TANG (Tang, DienTich, Gia) values (7, 200, '22299875');
-insert into TANG (Tang, DienTich, Gia) values (8, 200, '29020699');
-insert into TANG (Tang, DienTich, Gia) values (9, 200, '26080426');
-insert into TANG (Tang, DienTich, Gia) values (10, 200, '26852778');
-insert into TANG (Tang, DienTich, Gia) values (11, 200, '20348930');
-insert into TANG (Tang, DienTich, Gia) values (12, 200, '26244305');
-insert into TANG (Tang, DienTich, Gia) values (13, 200, '25939715');
-insert into TANG (Tang, DienTich, Gia) values (14, 200, '23135254');
-insert into TANG (Tang, DienTich, Gia) values (15, 200, '22341184');
-insert into TANG (Tang, DienTich, Gia) values (16, 200, '25286795');
-insert into TANG (Tang, DienTich, Gia) values (17, 200, '23653576');
-insert into TANG (Tang, DienTich, Gia) values (18, 200, '21296808');
-insert into TANG (Tang, DienTich, Gia) values (19, 200, '21136010');
-insert into TANG (Tang, DienTich, Gia) values (20, 200, '25276245');
-insert into TANG (Tang, DienTich, Gia) values (21, 200, '21317252');
-insert into TANG (Tang, DienTich, Gia) values (22, 200, '22723526');
-insert into TANG (Tang, DienTich, Gia) values (23, 200, '28744314');
-insert into TANG (Tang, DienTich, Gia) values (24, 200, '20381174');
-insert into TANG (Tang, DienTich, Gia) values (25, 200, '22074810');
+insert into TANG (Tang, DienTich, Gia) values (1, 100, '18200000');
+insert into TANG (Tang, DienTich, Gia) values (2, 100, '15800000');
+insert into TANG (Tang, DienTich, Gia) values (3, 100, '11100000');
+insert into TANG (Tang, DienTich, Gia) values (4, 100, '10300000');
+insert into TANG (Tang, DienTich, Gia) values (5, 100, '19400000');
+insert into TANG (Tang, DienTich, Gia) values (6, 100, '13400000');
+insert into TANG (Tang, DienTich, Gia) values (7, 100, '12200000');
+insert into TANG (Tang, DienTich, Gia) values (8, 100, '19000000');
+insert into TANG (Tang, DienTich, Gia) values (9, 100, '16000000');
+insert into TANG (Tang, DienTich, Gia) values (10, 100, '16800000');
+insert into TANG (Tang, DienTich, Gia) values (11, 100, '10300000');
+insert into TANG (Tang, DienTich, Gia) values (12, 100, '16200000');
+insert into TANG (Tang, DienTich, Gia) values (13, 100, '15900000');
+insert into TANG (Tang, DienTich, Gia) values (14, 100, '13100000');
+insert into TANG (Tang, DienTich, Gia) values (15, 100, '12300000');
+insert into TANG (Tang, DienTich, Gia) values (16, 100, '15200000');
+insert into TANG (Tang, DienTich, Gia) values (17, 100, '13600000');
+insert into TANG (Tang, DienTich, Gia) values (18, 100, '11200000');
+insert into TANG (Tang, DienTich, Gia) values (19, 100, '11100000');
+insert into TANG (Tang, DienTich, Gia) values (20, 100, '15200000');
+insert into TANG (Tang, DienTich, Gia) values (21, 100, '11300000');
+insert into TANG (Tang, DienTich, Gia) values (22, 100, '12700000');
+insert into TANG (Tang, DienTich, Gia) values (23, 100, '18700000');
+insert into TANG (Tang, DienTich, Gia) values (24, 100, '10300000');
+insert into TANG (Tang, DienTich, Gia) values (25, 100, '12000000');
+insert into TANG (Tang, DienTich, Gia) values (1, 200, '28200000');
+insert into TANG (Tang, DienTich, Gia) values (2, 200, '25800000');
+insert into TANG (Tang, DienTich, Gia) values (3, 200, '21100000');
+insert into TANG (Tang, DienTich, Gia) values (4, 200, '20300000');
+insert into TANG (Tang, DienTich, Gia) values (5, 200, '29400000');
+insert into TANG (Tang, DienTich, Gia) values (6, 200, '23400000');
+insert into TANG (Tang, DienTich, Gia) values (7, 200, '22200000');
+insert into TANG (Tang, DienTich, Gia) values (8, 200, '29000000');
+insert into TANG (Tang, DienTich, Gia) values (9, 200, '26000000');
+insert into TANG (Tang, DienTich, Gia) values (10, 200, '26800000');
+insert into TANG (Tang, DienTich, Gia) values (11, 200, '20300000');
+insert into TANG (Tang, DienTich, Gia) values (12, 200, '26200000');
+insert into TANG (Tang, DienTich, Gia) values (13, 200, '25900000');
+insert into TANG (Tang, DienTich, Gia) values (14, 200, '23100000');
+insert into TANG (Tang, DienTich, Gia) values (15, 200, '22300000');
+insert into TANG (Tang, DienTich, Gia) values (16, 200, '25200000');
+insert into TANG (Tang, DienTich, Gia) values (17, 200, '23600000');
+insert into TANG (Tang, DienTich, Gia) values (18, 200, '21200000');
+insert into TANG (Tang, DienTich, Gia) values (19, 200, '21100000');
+insert into TANG (Tang, DienTich, Gia) values (20, 200, '25200000');
+insert into TANG (Tang, DienTich, Gia) values (21, 200, '21300000');
+insert into TANG (Tang, DienTich, Gia) values (22, 200, '22700000');
+insert into TANG (Tang, DienTich, Gia) values (23, 200, '28700000');
+insert into TANG (Tang, DienTich, Gia) values (24, 200, '20300000');
+insert into TANG (Tang, DienTich, Gia) values (25, 200, '22000000');
 
 
 -- Insert table PHONG
@@ -527,7 +527,7 @@ insert into CONGTY (MaCongTy, TenCT, DiaChiCT, SDT, MaHD) values (19, 'MICROSOFT
 insert into CONGTY (MaCongTy, TenCT, DiaChiCT, SDT, MaHD) values (20, 'ORACLE', '55 Henrik Dimmer', '331-622-8247', 20);
 
 -- Insert table NHANVIEN
-insert into NHANVIEN (MaNV, TenNV, DiaChiNV, SDTNV,HinhAnh,ChucVu, MaCongTy, MaPHG) values (1, 'Gwyneth Le Sarr', 'Ricky De Mitris', '3801616618','','Giam doc', 1, 1);
+insert into NHANVIEN (MaNV, TenNV, DiaChiNV, SDTNV,HinhAnh,ChucVu, MaCongTy, MaPHG) values (1, 'Gwyneth Le Sarr', 'Ricky De Mitris', '3801616618','1.jpg','Giam doc', 1, 1);
 insert into NHANVIEN (MaNV, TenNV, DiaChiNV, SDTNV,HinhAnh,ChucVu, MaCongTy, MaPHG) values (2, 'Perry Fox', 'Flossie Kirkby', '1359782730','','Nhan vien', 1, 1);
 insert into NHANVIEN (MaNV, TenNV, DiaChiNV, SDTNV,HinhAnh,ChucVu, MaCongTy, MaPHG) values (3, 'Tanya Bocke', 'Anne-marie McLleese', '7756831544','','Nhan vien', 1, 1);
 insert into NHANVIEN (MaNV, TenNV, DiaChiNV, SDTNV,HinhAnh,ChucVu, MaCongTy, MaPHG) values (4, 'Jean Dahmke', 'Benjy Lawrenson', '4519254222','','Nhan vien', 1, 1);
@@ -537,7 +537,7 @@ insert into NHANVIEN (MaNV, TenNV, DiaChiNV, SDTNV,HinhAnh,ChucVu, MaCongTy, MaP
 insert into NHANVIEN (MaNV, TenNV, DiaChiNV, SDTNV,HinhAnh,ChucVu, MaCongTy, MaPHG) values (8, 'Barbi Padly', 'Vail MacMeekan', '9683740989','','Nhan vien', 1, 1);
 insert into NHANVIEN (MaNV, TenNV, DiaChiNV, SDTNV,HinhAnh,ChucVu, MaCongTy, MaPHG) values (9, 'Kearney Druce', 'Richard Jonczyk', '6461323718','','Nhan vien', 1,1);
 insert into NHANVIEN (MaNV, TenNV, DiaChiNV, SDTNV,HinhAnh,ChucVu, MaCongTy, MaPHG) values (10, 'Karil Andrichak', 'Amble Sandom', '7409796594','','Nhan vien', 1, 1);
-insert into NHANVIEN (MaNV, TenNV, DiaChiNV, SDTNV,HinhAnh,ChucVu, MaCongTy, MaPHG) values (11, 'Teddy Leathe', 'Darill Pimer', '6733769169','','Giam doc', 2,2);
+insert into NHANVIEN (MaNV, TenNV, DiaChiNV, SDTNV,HinhAnh,ChucVu, MaCongTy, MaPHG) values (11, 'Teddy Leathe', 'Darill Pimer', '6733769169','2.jpg','Giam doc', 2,2);
 insert into NHANVIEN (MaNV, TenNV, DiaChiNV, SDTNV,HinhAnh,ChucVu, MaCongTy, MaPHG) values (12, 'Eda Slides', 'Kimmie Hullin', '9406739411','','Nhan vien',  2,2);
 insert into NHANVIEN (MaNV, TenNV, DiaChiNV, SDTNV,HinhAnh,ChucVu, MaCongTy, MaPHG) values (13, 'Rafa McGibbon', 'Sibyl Graver', '8111095332','','Nhan vien',  2,2);
 insert into NHANVIEN (MaNV, TenNV, DiaChiNV, SDTNV,HinhAnh,ChucVu, MaCongTy, MaPHG) values (14, 'Noland Faragan', 'Doris Giacobilio', '6208832809','','Nhan vien',  2,2);
@@ -547,7 +547,7 @@ insert into NHANVIEN (MaNV, TenNV, DiaChiNV, SDTNV,HinhAnh,ChucVu, MaCongTy, MaP
 insert into NHANVIEN (MaNV, TenNV, DiaChiNV, SDTNV,HinhAnh,ChucVu, MaCongTy, MaPHG) values (18, 'Shermy Booeln', 'Tarrance Christiensen', '5826718255','','Nhan vien',  2,2);
 insert into NHANVIEN (MaNV, TenNV, DiaChiNV, SDTNV,HinhAnh,ChucVu, MaCongTy, MaPHG) values (19, 'Caprice Ivanyushkin', 'Grete Bramont', '9966641447','','Nhan vien', 2,2);
 insert into NHANVIEN (MaNV, TenNV, DiaChiNV, SDTNV,HinhAnh,ChucVu, MaCongTy, MaPHG) values (20, 'Gareth Gravenor', 'Anatol Utton', '5297708965','','Nhan vien', 2,2);
-insert into NHANVIEN (MaNV, TenNV, DiaChiNV, SDTNV,HinhAnh,ChucVu, MaCongTy, MaPHG) values (21, 'Lanae Raffin', 'Aurthur MacKaig', '5443187772','','Giam doc', 3,3);
+insert into NHANVIEN (MaNV, TenNV, DiaChiNV, SDTNV,HinhAnh,ChucVu, MaCongTy, MaPHG) values (21, 'Lanae Raffin', 'Aurthur MacKaig', '5443187772','3.jpg','Giam doc', 3,3);
 insert into NHANVIEN (MaNV, TenNV, DiaChiNV, SDTNV,HinhAnh,ChucVu, MaCongTy, MaPHG) values (22, 'Nataline Lenney', 'Enrichetta Keelinge', '19691815','','Nhan vien',3,3);
 insert into NHANVIEN (MaNV, TenNV, DiaChiNV, SDTNV,HinhAnh,ChucVu, MaCongTy, MaPHG) values (23, 'Isidor Hartropp', 'Windy Whitty', '6122388020','','Nhan vien', 3,3);
 insert into NHANVIEN (MaNV, TenNV, DiaChiNV, SDTNV,HinhAnh,ChucVu, MaCongTy, MaPHG) values (24, 'Rock Haughey', 'Shay Crinkley', '2975280247','','Nhan vien',3,3);
@@ -557,7 +557,7 @@ insert into NHANVIEN (MaNV, TenNV, DiaChiNV, SDTNV,HinhAnh,ChucVu, MaCongTy, MaP
 insert into NHANVIEN (MaNV, TenNV, DiaChiNV, SDTNV,HinhAnh,ChucVu, MaCongTy, MaPHG) values (28, 'Phillipe BURWIN', 'Spense Churchman', '6413833327','','Nhan vien', 3,3);
 insert into NHANVIEN (MaNV, TenNV, DiaChiNV, SDTNV,HinhAnh,ChucVu, MaCongTy, MaPHG) values (29, 'Millie Grouvel', 'Robina Atcock', '2845305327','','Nhan vien', 3,3);
 insert into NHANVIEN (MaNV, TenNV, DiaChiNV, SDTNV,HinhAnh,ChucVu, MaCongTy, MaPHG) values (30, 'Alleyn Chomley', 'Christophorus Bester', '1044962834','','Nhan vien',3,3);
-insert into NHANVIEN (MaNV, TenNV, DiaChiNV, SDTNV,HinhAnh,ChucVu, MaCongTy, MaPHG) values (31, 'Leonora Pearn', 'Stephanie Halbeard', '2754989156','','Giam doc', 4, 4);
+insert into NHANVIEN (MaNV, TenNV, DiaChiNV, SDTNV,HinhAnh,ChucVu, MaCongTy, MaPHG) values (31, 'Leonora Pearn', 'Stephanie Halbeard', '2754989156','4.jpg','Giam doc', 4, 4);
 insert into NHANVIEN (MaNV, TenNV, DiaChiNV, SDTNV,HinhAnh,ChucVu, MaCongTy, MaPHG) values (32, 'Saloma Brislane', 'Meg Lynock', '9297466806','','Nhan vien', 4, 4);
 insert into NHANVIEN (MaNV, TenNV, DiaChiNV, SDTNV,HinhAnh,ChucVu, MaCongTy, MaPHG) values (33, 'Susana Halfacre', 'Michele Clague', '9392990149','','Nhan vien', 4, 4);
 insert into NHANVIEN (MaNV, TenNV, DiaChiNV, SDTNV,HinhAnh,ChucVu, MaCongTy, MaPHG) values (34, 'Bertina Pettendrich', 'Anson Bly', '3792970709','','Nhan vien', 4, 4);
@@ -567,7 +567,7 @@ insert into NHANVIEN (MaNV, TenNV, DiaChiNV, SDTNV,HinhAnh,ChucVu, MaCongTy, MaP
 insert into NHANVIEN (MaNV, TenNV, DiaChiNV, SDTNV,HinhAnh,ChucVu, MaCongTy, MaPHG) values (38, 'Hart Clewlow', 'Orion Abramowitz', '6595961076','','Nhan vien', 4, 4);
 insert into NHANVIEN (MaNV, TenNV, DiaChiNV, SDTNV,HinhAnh,ChucVu, MaCongTy, MaPHG) values (39, 'Glen Fahrenbacher', 'Marie-jeanne Abramowsky', '9554946148','','Nhan vien', 4, 4);
 insert into NHANVIEN (MaNV, TenNV, DiaChiNV, SDTNV,HinhAnh,ChucVu, MaCongTy, MaPHG) values (40, 'Katinka Maylam', 'Allyce Butner', '1371536490','','Nhan vien', 4, 4);
-insert into NHANVIEN (MaNV, TenNV, DiaChiNV, SDTNV,HinhAnh,ChucVu, MaCongTy, MaPHG) values (41, 'Clemmy Penticost', 'Archaimbaud Hurche', '7469400133','','Giam doc', 5, 5);
+insert into NHANVIEN (MaNV, TenNV, DiaChiNV, SDTNV,HinhAnh,ChucVu, MaCongTy, MaPHG) values (41, 'Clemmy Penticost', 'Archaimbaud Hurche', '7469400133','5.jpg','Giam doc', 5, 5);
 insert into NHANVIEN (MaNV, TenNV, DiaChiNV, SDTNV,HinhAnh,ChucVu, MaCongTy, MaPHG) values (42, 'Gill Hattiff', 'Vanda Stood', '2603122586','','Nhan vien', 5, 5);
 insert into NHANVIEN (MaNV, TenNV, DiaChiNV, SDTNV,HinhAnh,ChucVu, MaCongTy, MaPHG) values (43, 'Cristie Iston', 'Hewie Gilhool', '9884699106','','Nhan vien', 5, 5);
 insert into NHANVIEN (MaNV, TenNV, DiaChiNV, SDTNV,HinhAnh,ChucVu, MaCongTy, MaPHG) values (44, 'Asher Adderley', 'Lucia Gouge', '869262921','','Nhan vien', 5, 5);
@@ -577,7 +577,7 @@ insert into NHANVIEN (MaNV, TenNV, DiaChiNV, SDTNV,HinhAnh,ChucVu, MaCongTy, MaP
 insert into NHANVIEN (MaNV, TenNV, DiaChiNV, SDTNV,HinhAnh,ChucVu, MaCongTy, MaPHG) values (48, 'Kendall Ryal', 'Caleb Zellner', '2906422575','','Nhan vien', 5, 5);
 insert into NHANVIEN (MaNV, TenNV, DiaChiNV, SDTNV,HinhAnh,ChucVu, MaCongTy, MaPHG) values (49, 'Jerrine Neads', 'Hatty Throughton', '8862594419','','Nhan vien', 5, 5);
 insert into NHANVIEN (MaNV, TenNV, DiaChiNV, SDTNV,HinhAnh,ChucVu, MaCongTy, MaPHG) values (50, 'Lev Coskerry', 'Percival Allix', '5144276652','','Nhan vien', 5, 5);
-insert into NHANVIEN (MaNV, TenNV, DiaChiNV, SDTNV,HinhAnh,ChucVu, MaCongTy, MaPHG) values (51, 'Fidelio Toombs', 'Cassondra Kinvig', '5742162862','','Giam doc', 6, 6);
+insert into NHANVIEN (MaNV, TenNV, DiaChiNV, SDTNV,HinhAnh,ChucVu, MaCongTy, MaPHG) values (51, 'Fidelio Toombs', 'Cassondra Kinvig', '5742162862','6.jpg','Giam doc', 6, 6);
 insert into NHANVIEN (MaNV, TenNV, DiaChiNV, SDTNV,HinhAnh,ChucVu, MaCongTy, MaPHG) values (52, 'Gunther Dougher', 'Kleon Yaakov', '8954391258','','Nhan vien', 6, 6);
 insert into NHANVIEN (MaNV, TenNV, DiaChiNV, SDTNV,HinhAnh,ChucVu, MaCongTy, MaPHG) values (53, 'Felipe Slowly', 'Jeanelle Weedenburg', '3461030956', '','Nhan vien',6, 6);
 insert into NHANVIEN (MaNV, TenNV, DiaChiNV, SDTNV,HinhAnh,ChucVu, MaCongTy, MaPHG) values (54, 'Manuel Rain', 'Bronny Sulland', '3923234914','','Nhan vien', 6, 6);
@@ -587,7 +587,7 @@ insert into NHANVIEN (MaNV, TenNV, DiaChiNV, SDTNV,HinhAnh,ChucVu, MaCongTy, MaP
 insert into NHANVIEN (MaNV, TenNV, DiaChiNV, SDTNV,HinhAnh,ChucVu, MaCongTy, MaPHG) values (58, 'Prudence Hardstaff', 'Clemmie Payn', '4599500','','Nhan vien', 6, 6);
 insert into NHANVIEN (MaNV, TenNV, DiaChiNV, SDTNV,HinhAnh,ChucVu, MaCongTy, MaPHG) values (59, 'Otis Brumhead', 'Chaunce Bannell', '4231614664','','Nhan vien', 6, 6);
 insert into NHANVIEN (MaNV, TenNV, DiaChiNV, SDTNV,HinhAnh,ChucVu, MaCongTy, MaPHG) values (60, 'Dusty Wind', 'Lani Woodger', '4283020980','','Nhan vien', 6, 6);
-insert into NHANVIEN (MaNV, TenNV, DiaChiNV, SDTNV,HinhAnh,ChucVu, MaCongTy, MaPHG) values (61, 'Izaak Matushevich', 'Ashlee Berntsson', '7948807658','','Giam doc', 7,7);
+insert into NHANVIEN (MaNV, TenNV, DiaChiNV, SDTNV,HinhAnh,ChucVu, MaCongTy, MaPHG) values (61, 'Izaak Matushevich', 'Ashlee Berntsson', '7948807658','7.jpg','Giam doc', 7,7);
 insert into NHANVIEN (MaNV, TenNV, DiaChiNV, SDTNV,HinhAnh,ChucVu, MaCongTy, MaPHG) values (62, 'Amalea Shayler', 'Bryna Murra', '9493216835','','Nhan vien', 7,7);
 insert into NHANVIEN (MaNV, TenNV, DiaChiNV, SDTNV,HinhAnh,ChucVu, MaCongTy, MaPHG) values (63, 'Kalindi Jenney', 'Mehetabel Bulger', '6333263317','','Nhan vien', 7,7);
 insert into NHANVIEN (MaNV, TenNV, DiaChiNV, SDTNV,HinhAnh,ChucVu, MaCongTy, MaPHG) values (64, 'Ashia Wesker', 'Leonore McCorrie', '3885400238','','Nhan vien', 7,7);
@@ -597,7 +597,7 @@ insert into NHANVIEN (MaNV, TenNV, DiaChiNV, SDTNV,HinhAnh,ChucVu, MaCongTy, MaP
 insert into NHANVIEN (MaNV, TenNV, DiaChiNV, SDTNV,HinhAnh,ChucVu, MaCongTy, MaPHG) values (68, 'Nonnah Lytlle', 'Abigael Etuck', '9957747955','','Nhan vien', 7,7);
 insert into NHANVIEN (MaNV, TenNV, DiaChiNV, SDTNV,HinhAnh,ChucVu, MaCongTy, MaPHG) values (69, 'Aylmar Stinchcombe', 'Clarisse Ghioni', '1043990211','','Nhan vien', 7,7);
 insert into NHANVIEN (MaNV, TenNV, DiaChiNV, SDTNV,HinhAnh,ChucVu, MaCongTy, MaPHG) values (70, 'Hilda Patman', 'Virginia Milmore', '2165802992','','Nhan vien', 7,7);
-insert into NHANVIEN (MaNV, TenNV, DiaChiNV, SDTNV,HinhAnh,ChucVu, MaCongTy, MaPHG) values (71, 'Corinna Henstone', 'Pennie Dockwray', '2761449579','','Giam doc', 8, 8);
+insert into NHANVIEN (MaNV, TenNV, DiaChiNV, SDTNV,HinhAnh,ChucVu, MaCongTy, MaPHG) values (71, 'Corinna Henstone', 'Pennie Dockwray', '2761449579','8.jpg','Giam doc', 8, 8);
 insert into NHANVIEN (MaNV, TenNV, DiaChiNV, SDTNV,HinhAnh,ChucVu, MaCongTy, MaPHG) values (72, 'Turner Orans', 'Sigfried Slee', '3759922294','','Nhan vien', 8, 8);
 insert into NHANVIEN (MaNV, TenNV, DiaChiNV, SDTNV,HinhAnh,ChucVu, MaCongTy, MaPHG) values (73, 'Ansell Nesey', 'Rosemonde Pervoe', '7365917664','','Nhan vien', 8, 8);
 insert into NHANVIEN (MaNV, TenNV, DiaChiNV, SDTNV,HinhAnh,ChucVu, MaCongTy, MaPHG) values (74, 'Mahalia Bricket', 'Eb Junkison', '5767121985','','Nhan vien', 8, 8);
@@ -608,7 +608,7 @@ insert into NHANVIEN (MaNV, TenNV, DiaChiNV, SDTNV,HinhAnh,ChucVu, MaCongTy, MaP
 insert into NHANVIEN (MaNV, TenNV, DiaChiNV, SDTNV,HinhAnh,ChucVu, MaCongTy, MaPHG) values (79, 'Tracee Ormes', 'Danny Edghinn', '5786684033','','Nhan vien', 8, 8);
 insert into NHANVIEN (MaNV, TenNV, DiaChiNV, SDTNV,HinhAnh,ChucVu, MaCongTy, MaPHG) values (80, 'Murdoch Panniers', 'Hashim Bogges', '4468735450','','Nhan vien', 8, 8);
 insert into NHANVIEN (MaNV, TenNV, DiaChiNV, SDTNV,HinhAnh,ChucVu, MaCongTy, MaPHG) values (81, 'Laurianne Sammut', 'Alena Valenti', '6722051944','','Giam doc', 9, 9);
-insert into NHANVIEN (MaNV, TenNV, DiaChiNV, SDTNV,HinhAnh,ChucVu, MaCongTy, MaPHG) values (82, 'Malchy Clancy', 'Elmo Jeste', '6955697353','','Nhan vien', 9, 9);
+insert into NHANVIEN (MaNV, TenNV, DiaChiNV, SDTNV,HinhAnh,ChucVu, MaCongTy, MaPHG) values (82, 'Malchy Clancy', 'Elmo Jeste', '6955697353','9.jpg','Nhan vien', 9, 9);
 insert into NHANVIEN (MaNV, TenNV, DiaChiNV, SDTNV,HinhAnh,ChucVu, MaCongTy, MaPHG) values (83, 'Abbey Karpol', 'Suzanne Gorges', '5874088734','','Nhan vien', 9, 9);
 insert into NHANVIEN (MaNV, TenNV, DiaChiNV, SDTNV,HinhAnh,ChucVu, MaCongTy, MaPHG) values (84, 'Frasier Brickett', 'Dewie Zeal', '3245576596', '','Nhan vien',9, 9);
 insert into NHANVIEN (MaNV, TenNV, DiaChiNV, SDTNV,HinhAnh,ChucVu, MaCongTy, MaPHG) values (85, 'Al Angeli', 'Bevvy Fluck', '5626223247','','Nhan vien', 9, 9);
@@ -617,7 +617,7 @@ insert into NHANVIEN (MaNV, TenNV, DiaChiNV, SDTNV,HinhAnh,ChucVu, MaCongTy, MaP
 insert into NHANVIEN (MaNV, TenNV, DiaChiNV, SDTNV,HinhAnh,ChucVu, MaCongTy, MaPHG) values (88, 'Yovonnda Durram', 'Brent Aitken', '4864865641','','Nhan vien', 9, 9);
 insert into NHANVIEN (MaNV, TenNV, DiaChiNV, SDTNV,HinhAnh,ChucVu, MaCongTy, MaPHG) values (89, 'Zahara Gindghill', 'Adriane Aimson', '3772438645','','Nhan vien', 9, 9);
 insert into NHANVIEN (MaNV, TenNV, DiaChiNV, SDTNV,HinhAnh,ChucVu, MaCongTy, MaPHG) values (90, 'Harmonie Rivett', 'Burtie Beurich', '1496068978', '','Nhan vien',9, 9);
-insert into NHANVIEN (MaNV, TenNV, DiaChiNV, SDTNV,HinhAnh,ChucVu, MaCongTy, MaPHG) values (91, 'Hinze Moughtin', 'Myca Bockin', '7028849941','','Giam doc', 10, 10);
+insert into NHANVIEN (MaNV, TenNV, DiaChiNV, SDTNV,HinhAnh,ChucVu, MaCongTy, MaPHG) values (91, 'Hinze Moughtin', 'Myca Bockin', '7028849941','10.jpg','Giam doc', 10, 10);
 insert into NHANVIEN (MaNV, TenNV, DiaChiNV, SDTNV,HinhAnh,ChucVu, MaCongTy, MaPHG) values (92, 'Liuka Savatier', 'Rorke McClory', '4127080254','','Nhan vien', 10, 10);
 insert into NHANVIEN (MaNV, TenNV, DiaChiNV, SDTNV,HinhAnh,ChucVu, MaCongTy, MaPHG) values (93, 'Rossy Ossipenko', 'Stephie Gueste', '4921761063','','Nhan vien', 10, 10);
 insert into NHANVIEN (MaNV, TenNV, DiaChiNV, SDTNV,HinhAnh,ChucVu, MaCongTy, MaPHG) values (94, 'Rois Shemmans', 'Florella Abramovicz', '9148407733','','Nhan vien', 10, 10);
@@ -627,7 +627,7 @@ insert into NHANVIEN (MaNV, TenNV, DiaChiNV, SDTNV,HinhAnh,ChucVu, MaCongTy, MaP
 insert into NHANVIEN (MaNV, TenNV, DiaChiNV, SDTNV,HinhAnh,ChucVu, MaCongTy, MaPHG) values (98, 'Cherey Alten', 'Jaime Reynold', '8897628995','','Nhan vien', 10, 10);
 insert into NHANVIEN (MaNV, TenNV, DiaChiNV, SDTNV,HinhAnh,ChucVu, MaCongTy, MaPHG) values (99, 'Philippine Winterbotham', 'Myrtle Wilson', '5668958845','','Nhan vien', 10, 10);
 insert into NHANVIEN (MaNV, TenNV, DiaChiNV, SDTNV,HinhAnh,ChucVu, MaCongTy, MaPHG) values (100, 'Farris Vasiltsov', 'Rivkah Brailsford', '1698332070','','Nhan vien', 10, 10);
-insert into NHANVIEN (MaNV, TenNV, DiaChiNV, SDTNV,HinhAnh,ChucVu, MaCongTy, MaPHG) values (101, 'Morgana Ornils', 'Trumann Tinker', '3336854764','','Giam doc', 11,11);
+insert into NHANVIEN (MaNV, TenNV, DiaChiNV, SDTNV,HinhAnh,ChucVu, MaCongTy, MaPHG) values (101, 'Morgana Ornils', 'Trumann Tinker', '3336854764','11.png','Giam doc', 11,11);
 insert into NHANVIEN (MaNV, TenNV, DiaChiNV, SDTNV,HinhAnh,ChucVu, MaCongTy, MaPHG) values (102, 'Iseabal Qualtro', 'Emerson Shanks', '2721953820','','Nhan vien', 11,11);
 insert into NHANVIEN (MaNV, TenNV, DiaChiNV, SDTNV,HinhAnh,ChucVu, MaCongTy, MaPHG) values (103, 'Charisse Everson', 'Rosalinde Strettell', '5442544138','','Nhan vien', 11,11);
 insert into NHANVIEN (MaNV, TenNV, DiaChiNV, SDTNV,HinhAnh,ChucVu, MaCongTy, MaPHG) values (104, 'Elladine Geke', 'Leela Glowacha', '7734887347','','Nhan vien', 11,11);
@@ -638,7 +638,7 @@ insert into NHANVIEN (MaNV, TenNV, DiaChiNV, SDTNV,HinhAnh,ChucVu, MaCongTy, MaP
 insert into NHANVIEN (MaNV, TenNV, DiaChiNV, SDTNV,HinhAnh,ChucVu, MaCongTy, MaPHG) values (109, 'Karrah Craigmile', 'Luther Ilett', '2803075083','','Nhan vien', 11,11);
 insert into NHANVIEN (MaNV, TenNV, DiaChiNV, SDTNV,HinhAnh,ChucVu, MaCongTy, MaPHG) values (110, 'Elroy Cabena', 'Lizabeth Dannett', '3819142466','','Nhan vien', 11,11);
 insert into NHANVIEN (MaNV, TenNV, DiaChiNV, SDTNV,HinhAnh,ChucVu, MaCongTy, MaPHG) values (111, 'Jameson Chudleigh', 'Con Riditch', '8248703344','','Giam doc', 12, 12);
-insert into NHANVIEN (MaNV, TenNV, DiaChiNV, SDTNV,HinhAnh,ChucVu, MaCongTy, MaPHG) values (112, 'Datha Barbara', 'Izak Areles', '6898341848', '','Nhan vien',12, 12);
+insert into NHANVIEN (MaNV, TenNV, DiaChiNV, SDTNV,HinhAnh,ChucVu, MaCongTy, MaPHG) values (112, 'Datha Barbara', 'Izak Areles', '6898341848', '12.jpg','Nhan vien',12, 12);
 insert into NHANVIEN (MaNV, TenNV, DiaChiNV, SDTNV,HinhAnh,ChucVu, MaCongTy, MaPHG) values (113, 'Kinnie Kruszelnicki', 'Arlan Sutherns', '7856322852', '','Nhan vien',12, 12);
 insert into NHANVIEN (MaNV, TenNV, DiaChiNV, SDTNV,HinhAnh,ChucVu, MaCongTy, MaPHG) values (114, 'Mathe Ivel', 'Edithe Sallowaye', '1944026400','','Nhan vien', 12, 12);
 insert into NHANVIEN (MaNV, TenNV, DiaChiNV, SDTNV,HinhAnh,ChucVu, MaCongTy, MaPHG) values (115, 'Sullivan Beining', 'Tynan Girhard', '1822987621','','Nhan vien', 12, 12);
@@ -647,7 +647,7 @@ insert into NHANVIEN (MaNV, TenNV, DiaChiNV, SDTNV,HinhAnh,ChucVu, MaCongTy, MaP
 insert into NHANVIEN (MaNV, TenNV, DiaChiNV, SDTNV,HinhAnh,ChucVu, MaCongTy, MaPHG) values (118, 'Emmott Aldcorn', 'Bobbe Guitt', '46032599','','Nhan vien', 12, 12);
 insert into NHANVIEN (MaNV, TenNV, DiaChiNV, SDTNV,HinhAnh,ChucVu, MaCongTy, MaPHG) values (119, 'Concordia Lamborn', 'Consuelo Littleover', '1816058048', '','Nhan vien',12, 12);
 insert into NHANVIEN (MaNV, TenNV, DiaChiNV, SDTNV,HinhAnh,ChucVu, MaCongTy, MaPHG) values (120, 'Joshuah Doige', 'Philly Sreenan', '8799751813', '','Nhan vien',12, 12);
-insert into NHANVIEN (MaNV, TenNV, DiaChiNV, SDTNV,HinhAnh,ChucVu, MaCongTy, MaPHG) values (121, 'Bret Lorek', 'Matti Cass', '4898533108','','Giam doc', 13, 13);
+insert into NHANVIEN (MaNV, TenNV, DiaChiNV, SDTNV,HinhAnh,ChucVu, MaCongTy, MaPHG) values (121, 'Bret Lorek', 'Matti Cass', '4898533108','13.jpg','Giam doc', 13, 13);
 insert into NHANVIEN (MaNV, TenNV, DiaChiNV, SDTNV,HinhAnh,ChucVu, MaCongTy, MaPHG) values (122, 'Pascal Haukey', 'Leena Stainson', '9553545745','','Nhan vien', 13, 13);
 insert into NHANVIEN (MaNV, TenNV, DiaChiNV, SDTNV,HinhAnh,ChucVu, MaCongTy, MaPHG) values (123, 'Peadar Jonas', 'Dale Dacke', '5624072819','','Nhan vien', 13, 13);
 insert into NHANVIEN (MaNV, TenNV, DiaChiNV, SDTNV,HinhAnh,ChucVu, MaCongTy, MaPHG) values (124, 'Mark Glawsop', 'Homere Austing', '2972192271','','Nhan vien', 13, 13);
@@ -657,7 +657,7 @@ insert into NHANVIEN (MaNV, TenNV, DiaChiNV, SDTNV,HinhAnh,ChucVu, MaCongTy, MaP
 insert into NHANVIEN (MaNV, TenNV, DiaChiNV, SDTNV,HinhAnh,ChucVu, MaCongTy, MaPHG) values (128, 'Claudius Colam', 'Lazar Dash', '3338776219','','Nhan vien', 13, 13);
 insert into NHANVIEN (MaNV, TenNV, DiaChiNV, SDTNV,HinhAnh,ChucVu, MaCongTy, MaPHG) values (129, 'Nicolais Twidle', 'Maddie Cowpland', '6233225899','','Nhan vien', 13, 13);
 insert into NHANVIEN (MaNV, TenNV, DiaChiNV, SDTNV,HinhAnh,ChucVu, MaCongTy, MaPHG) values (130, 'Ferdinand Glynne', 'Gabbi Nicholson', '7002339491','','Nhan vien', 13, 13);
-insert into NHANVIEN (MaNV, TenNV, DiaChiNV, SDTNV,HinhAnh,ChucVu, MaCongTy, MaPHG) values (131, 'Angela Pascoe', 'Jeremiah Tabbernor', '2082101671','','Giam doc', 14, 14);
+insert into NHANVIEN (MaNV, TenNV, DiaChiNV, SDTNV,HinhAnh,ChucVu, MaCongTy, MaPHG) values (131, 'Angela Pascoe', 'Jeremiah Tabbernor', '2082101671','14.jpg','Giam doc', 14, 14);
 insert into NHANVIEN (MaNV, TenNV, DiaChiNV, SDTNV,HinhAnh,ChucVu, MaCongTy, MaPHG) values (132, 'Oberon Thowes', 'Dacey Glazzard', '3387990890','','Nhan vien', 14, 14);
 insert into NHANVIEN (MaNV, TenNV, DiaChiNV, SDTNV,HinhAnh,ChucVu, MaCongTy, MaPHG) values (133, 'Tucker Preto', 'Marta Siddeley', '9529901836','','Nhan vien', 14, 14);
 insert into NHANVIEN (MaNV, TenNV, DiaChiNV, SDTNV,HinhAnh,ChucVu, MaCongTy, MaPHG) values (134, 'Lauri Castanos', 'Marilin Silcock', '220146640','','Nhan vien', 14, 14);
@@ -667,7 +667,7 @@ insert into NHANVIEN (MaNV, TenNV, DiaChiNV, SDTNV,HinhAnh,ChucVu, MaCongTy, MaP
 insert into NHANVIEN (MaNV, TenNV, DiaChiNV, SDTNV,HinhAnh,ChucVu, MaCongTy, MaPHG) values (138, 'Ewen Goodsell', 'Shandee Gilburt', '5696705896','','Nhan vien', 14, 14);
 insert into NHANVIEN (MaNV, TenNV, DiaChiNV, SDTNV,HinhAnh,ChucVu, MaCongTy, MaPHG) values (139, 'Heidie Confait', 'Rouvin Peachman', '8777779262','','Nhan vien', 14, 14);
 insert into NHANVIEN (MaNV, TenNV, DiaChiNV, SDTNV,HinhAnh,ChucVu, MaCongTy, MaPHG) values (140, 'Erma Feldfisher', 'Yoko Sahnow', '783981980','','Nhan vien', 14, 14);
-insert into NHANVIEN (MaNV, TenNV, DiaChiNV, SDTNV,HinhAnh,ChucVu, MaCongTy, MaPHG) values (141, 'Yoshi Trodler', 'Roman Bewly', '3939548524','','Giam doc', 15, 15);
+insert into NHANVIEN (MaNV, TenNV, DiaChiNV, SDTNV,HinhAnh,ChucVu, MaCongTy, MaPHG) values (141, 'Yoshi Trodler', 'Roman Bewly', '3939548524','15.jpg','Giam doc', 15, 15);
 insert into NHANVIEN (MaNV, TenNV, DiaChiNV, SDTNV,HinhAnh,ChucVu, MaCongTy, MaPHG) values (142, 'Alix Gulvin', 'Vanda Gostage', '3213237552','','Nhan vien', 15, 15);
 insert into NHANVIEN (MaNV, TenNV, DiaChiNV, SDTNV,HinhAnh,ChucVu, MaCongTy, MaPHG) values (143, 'Biron Mulkerrins', 'Murvyn Andrioni', '5158987881','','Nhan vien', 15, 15);
 insert into NHANVIEN (MaNV, TenNV, DiaChiNV, SDTNV,HinhAnh,ChucVu, MaCongTy, MaPHG) values (144, 'Selia Huckle', 'Shanda Cownden', '6163696577', '','Nhan vien',15, 15);
@@ -677,7 +677,7 @@ insert into NHANVIEN (MaNV, TenNV, DiaChiNV, SDTNV,HinhAnh,ChucVu, MaCongTy, MaP
 insert into NHANVIEN (MaNV, TenNV, DiaChiNV, SDTNV,HinhAnh,ChucVu, MaCongTy, MaPHG) values (148, 'Ernesto Buntin', 'Alvin Pinniger', '3669361848','','Nhan vien', 15, 15);
 insert into NHANVIEN (MaNV, TenNV, DiaChiNV, SDTNV,HinhAnh,ChucVu, MaCongTy, MaPHG) values (149, 'Krispin Dunning', 'Torry Sickamore', '560602689','','Nhan vien', 15, 15);
 insert into NHANVIEN (MaNV, TenNV, DiaChiNV, SDTNV,HinhAnh,ChucVu, MaCongTy, MaPHG) values (150, 'Kynthia Loveridge', 'Ennis MacBey', '5184555520','','Nhan vien', 15, 15);
-insert into NHANVIEN (MaNV, TenNV, DiaChiNV, SDTNV,HinhAnh,ChucVu, MaCongTy, MaPHG) values (151, 'Caddric Sandells', 'Tarrance Danielot', '3511792341','','Giam doc', 16, 16);
+insert into NHANVIEN (MaNV, TenNV, DiaChiNV, SDTNV,HinhAnh,ChucVu, MaCongTy, MaPHG) values (151, 'Caddric Sandells', 'Tarrance Danielot', '3511792341','16.jpg','Giam doc', 16, 16);
 insert into NHANVIEN (MaNV, TenNV, DiaChiNV, SDTNV,HinhAnh,ChucVu, MaCongTy, MaPHG) values (152, 'Jelene Fennelow', 'Julita Drysdall', '6493544363','','Nhan vien', 16, 16);
 insert into NHANVIEN (MaNV, TenNV, DiaChiNV, SDTNV,HinhAnh,ChucVu, MaCongTy, MaPHG) values (153, 'Delphine Kinnear', 'Leroi Toward', '3388563418','','Nhan vien', 16, 16);
 insert into NHANVIEN (MaNV, TenNV, DiaChiNV, SDTNV,HinhAnh,ChucVu, MaCongTy, MaPHG) values (154, 'Boris Beelby', 'Germaine Paslow', '2731329613','','Nhan vien', 16, 16);
@@ -687,7 +687,7 @@ insert into NHANVIEN (MaNV, TenNV, DiaChiNV, SDTNV,HinhAnh,ChucVu, MaCongTy, MaP
 insert into NHANVIEN (MaNV, TenNV, DiaChiNV, SDTNV,HinhAnh,ChucVu, MaCongTy, MaPHG) values (158, 'Luke Norvill', 'Darcy Aldwich', '7635931061','','Nhan vien', 16, 16);
 insert into NHANVIEN (MaNV, TenNV, DiaChiNV, SDTNV,HinhAnh,ChucVu, MaCongTy, MaPHG) values (159, 'Ora Pattinson', 'Connie Brimble', '5955334716','','Nhan vien', 16, 16);
 insert into NHANVIEN (MaNV, TenNV, DiaChiNV, SDTNV,HinhAnh,ChucVu, MaCongTy, MaPHG) values (160, 'Enoch Reedshaw', 'Gregory Salaman', '9736874397','','Nhan vien', 16, 16);
-insert into NHANVIEN (MaNV, TenNV, DiaChiNV, SDTNV,HinhAnh,ChucVu, MaCongTy, MaPHG) values (161, 'Read Strutz', 'Brander MacColgan', '3917950073','','Giam doc', 17, 17);
+insert into NHANVIEN (MaNV, TenNV, DiaChiNV, SDTNV,HinhAnh,ChucVu, MaCongTy, MaPHG) values (161, 'Read Strutz', 'Brander MacColgan', '3917950073','17.jpg','Giam doc', 17, 17);
 insert into NHANVIEN (MaNV, TenNV, DiaChiNV, SDTNV,HinhAnh,ChucVu, MaCongTy, MaPHG) values (162, 'Anna-diana Ricart', 'Riley Wigfield', '5467193569','','Nhan vien', 17, 17);
 insert into NHANVIEN (MaNV, TenNV, DiaChiNV, SDTNV,HinhAnh,ChucVu, MaCongTy, MaPHG) values (163, 'Gretta Ralph', 'Norry Caulliere', '6443370626','','Nhan vien', 17, 17);
 insert into NHANVIEN (MaNV, TenNV, DiaChiNV, SDTNV,HinhAnh,ChucVu, MaCongTy, MaPHG) values (164, 'Colly Braams', 'Matt Frounks', '7705907696','','Nhan vien', 17, 17);
@@ -697,7 +697,7 @@ insert into NHANVIEN (MaNV, TenNV, DiaChiNV, SDTNV,HinhAnh,ChucVu, MaCongTy, MaP
 insert into NHANVIEN (MaNV, TenNV, DiaChiNV, SDTNV,HinhAnh,ChucVu, MaCongTy, MaPHG) values (168, 'Joyce Kenwin', 'Alix Gaisford', '5965625498','','Nhan vien', 17, 17);
 insert into NHANVIEN (MaNV, TenNV, DiaChiNV, SDTNV,HinhAnh,ChucVu, MaCongTy, MaPHG) values (169, 'Dasie Dinwoodie', 'Emile Sposito', '1352480208','','Nhan vien', 17, 17);
 insert into NHANVIEN (MaNV, TenNV, DiaChiNV, SDTNV,HinhAnh,ChucVu, MaCongTy, MaPHG) values (170, 'Mercy Nilges', 'Patton Petracchi', '4455199501', '','Nhan vien',17, 17);
-insert into NHANVIEN (MaNV, TenNV, DiaChiNV, SDTNV,HinhAnh,ChucVu, MaCongTy, MaPHG) values (171, 'Domini Avrasin', 'Ardith Rushmer', '7019433452', '','Giam doc',18, 18);
+insert into NHANVIEN (MaNV, TenNV, DiaChiNV, SDTNV,HinhAnh,ChucVu, MaCongTy, MaPHG) values (171, 'Domini Avrasin', 'Ardith Rushmer', '7019433452', '18.jpg','Giam doc',18, 18);
 insert into NHANVIEN (MaNV, TenNV, DiaChiNV, SDTNV,HinhAnh,ChucVu, MaCongTy, MaPHG) values (172, 'Ingaborg Biasotti', 'La verne Hannigane', '5329327497', '','Nhan vien',18, 18);
 insert into NHANVIEN (MaNV, TenNV, DiaChiNV, SDTNV,HinhAnh,ChucVu, MaCongTy, MaPHG) values (173, 'Annalise Townsend', 'Hanna McQuarrie', '7072505255','','Nhan vien', 18, 18);
 insert into NHANVIEN (MaNV, TenNV, DiaChiNV, SDTNV,HinhAnh,ChucVu, MaCongTy, MaPHG) values (174, 'Roscoe Frier', 'Gabriele Donativo', '1075987003','','Nhan vien', 18, 18);
@@ -707,7 +707,7 @@ insert into NHANVIEN (MaNV, TenNV, DiaChiNV, SDTNV,HinhAnh,ChucVu, MaCongTy, MaP
 insert into NHANVIEN (MaNV, TenNV, DiaChiNV, SDTNV,HinhAnh,ChucVu, MaCongTy, MaPHG) values (178, 'Madonna Annwyl', 'Mable Dainty', '1579291149','','Nhan vien', 18, 18);
 insert into NHANVIEN (MaNV, TenNV, DiaChiNV, SDTNV,HinhAnh,ChucVu, MaCongTy, MaPHG) values (179, 'Val A''Barrow', 'Gilli de Clerk', '4918571354','','Nhan vien', 18, 18);
 insert into NHANVIEN (MaNV, TenNV, DiaChiNV, SDTNV,HinhAnh,ChucVu, MaCongTy, MaPHG) values (180, 'Valina Tomsa', 'Marianne Demangeon', '907650430','','Nhan vien', 18, 18);
-insert into NHANVIEN (MaNV, TenNV, DiaChiNV, SDTNV,HinhAnh,ChucVu, MaCongTy, MaPHG) values (181, 'Rockie Dewes', 'Margery MacGraith', '850729232','','Giam doc', 19,19);
+insert into NHANVIEN (MaNV, TenNV, DiaChiNV, SDTNV,HinhAnh,ChucVu, MaCongTy, MaPHG) values (181, 'Rockie Dewes', 'Margery MacGraith', '850729232','19.jpg','Giam doc', 19,19);
 insert into NHANVIEN (MaNV, TenNV, DiaChiNV, SDTNV,HinhAnh,ChucVu, MaCongTy, MaPHG) values (182, 'Stephana Effemy', 'Kent Plaunch', '9494131669','','Nhan vien', 19,19);
 insert into NHANVIEN (MaNV, TenNV, DiaChiNV, SDTNV,HinhAnh,ChucVu, MaCongTy, MaPHG) values (183, 'Al Sperwell', 'Bianca Leaton', '6424582216','','Nhan vien', 19,19);
 insert into NHANVIEN (MaNV, TenNV, DiaChiNV, SDTNV,HinhAnh,ChucVu, MaCongTy, MaPHG) values (184, 'Armstrong Wagenen', 'Lissa Exley', '1068680744','','Nhan vien', 19,19);
@@ -717,7 +717,7 @@ insert into NHANVIEN (MaNV, TenNV, DiaChiNV, SDTNV,HinhAnh,ChucVu, MaCongTy, MaP
 insert into NHANVIEN (MaNV, TenNV, DiaChiNV, SDTNV,HinhAnh,ChucVu, MaCongTy, MaPHG) values (188, 'Melany Pettett', 'Saul Steffan', '9418281550','','Nhan vien', 19,19);
 insert into NHANVIEN (MaNV, TenNV, DiaChiNV, SDTNV,HinhAnh,ChucVu, MaCongTy, MaPHG) values (189, 'Stoddard Avrashin', 'Brandea Umbert', '60967914','','Nhan vien', 19,19);
 insert into NHANVIEN (MaNV, TenNV, DiaChiNV, SDTNV,HinhAnh,ChucVu, MaCongTy, MaPHG) values (190, 'Seumas Danick', 'Sunny Sacaze', '2034945770','','Nhan vien', 19,19);
-insert into NHANVIEN (MaNV, TenNV, DiaChiNV, SDTNV,HinhAnh,ChucVu, MaCongTy, MaPHG) values (191, 'Carmon Cartmael', 'Jerri Withams', '1924041222', '','Giam doc', 20,20);
+insert into NHANVIEN (MaNV, TenNV, DiaChiNV, SDTNV,HinhAnh,ChucVu, MaCongTy, MaPHG) values (191, 'Carmon Cartmael', 'Jerri Withams', '1924041222', '20.png','Giam doc', 20,20);
 insert into NHANVIEN (MaNV, TenNV, DiaChiNV, SDTNV,HinhAnh,ChucVu, MaCongTy, MaPHG) values (192, 'Tabby Infante', 'Harlene Boyford', '2155946155','','Nhan vien',  20,20);
 insert into NHANVIEN (MaNV, TenNV, DiaChiNV, SDTNV,HinhAnh,ChucVu, MaCongTy, MaPHG) values (193, 'Ravid Rapin', 'Jethro Massie', '8845645846','','Nhan vien',  20,20);
 insert into NHANVIEN (MaNV, TenNV, DiaChiNV, SDTNV,HinhAnh,ChucVu, MaCongTy, MaPHG) values (194, 'Latrina Powys', 'Bertrand Birks', '2917754598','','Nhan vien',  20,20);
