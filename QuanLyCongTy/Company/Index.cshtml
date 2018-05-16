@@ -1,0 +1,62 @@
+﻿@model IEnumerable<QLyCaoOc.Models.CONGTY>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_LayoutUser.cshtml";
+}
+
+<h1 style="text-align:center">QUẢN LÝ CÔNG TY</h1>
+
+<p>
+    <button type="button" class="btn btn-success" onclick="location.href='@Url.Action("Themcongty","Company")'">Thêm Mới</button>
+</p>
+<table id="dynamic-table" class="table table-striped table-bordered table-hover">
+
+    <thead>
+        <tr>
+            <th>
+                Mã công ty
+            </th>
+            <th>
+                Tên công ty
+            </th>
+            <th>
+                Địa chỉ công ty
+            </th>
+            <th>
+                SĐT
+            </th>
+            <th>
+                Mã hợp đồng
+            </th>
+            <th></th>
+        </tr>
+        </thead>
+
+        @foreach (var cty in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => cty.MaCongTy)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => cty.TenCT)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => cty.DiaChiCT)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => cty.SDT)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => cty.MaHD)
+                </td>
+                <td>
+                    @Html.ActionLink("Sửa", "Suacongty", new { id = cty.MaCongTy }) |
+                    @Html.ActionLink("Chi tiết", "Chitietcongty", new { id = cty.MaCongTy }) |
+                    @Html.ActionLink("Xóa", "Xoacongty", new { id = cty.MaCongTy })
+                </td>
+            </tr>
+        }
+
+</table>
