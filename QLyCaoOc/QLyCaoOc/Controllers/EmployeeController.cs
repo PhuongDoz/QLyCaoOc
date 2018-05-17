@@ -180,7 +180,7 @@ namespace QLyCaoOc.Controllers
         [HttpGet]
         public ActionResult XoaNV(int id)
         {
-            //Lấy ra đối tượng sách cần xóa theo mã
+            //Lấy ra đối tượng nv cần xóa theo mã
             NHANVIEN nv = db.NHANVIENs.SingleOrDefault(n => n.MaNV == id);
             ViewBag.MaNV = nv.MaNV;
             if (nv == null)
@@ -191,10 +191,10 @@ namespace QLyCaoOc.Controllers
             return View(nv);
         }
 
-        [HttpPost, ActionName("Xoasach")]
+        [HttpPost, ActionName("XoaNV")]
         public ActionResult Xacnhanxoa(int id)
         {
-            //Lấy ra đối tượng sách cần xóa theo mã
+            //Lấy ra đối tượng nv cần xóa theo mã
             NHANVIEN nv = db.NHANVIENs.SingleOrDefault(n => n.MaNV == id);
             ViewBag.MaNV = nv.MaNV;
             if (nv == null)
@@ -204,7 +204,7 @@ namespace QLyCaoOc.Controllers
             }
             db.NHANVIENs.Remove(nv);
             db.SaveChanges();
-            return RedirectToAction("nv");
+            return RedirectToAction("Index");
         }
 
     }
