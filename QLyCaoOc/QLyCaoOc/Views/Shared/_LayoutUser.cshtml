@@ -143,10 +143,10 @@
 
                     <li class="light-blue">
                         <a data-toggle="dropdown" href="#" class="dropdown-toggle">
-                          
+
                             <span class="user-info">
                                 <small>Chào ,</small>
-                                Phương
+
                             </span>
 
                             <i class="ace-icon fa fa-caret-down"></i>
@@ -194,9 +194,9 @@
 
             <div class="sidebar-shortcuts" id="sidebar-shortcuts">
                 <div class="sidebar-shortcuts-large" id="sidebar-shortcuts-large">
-                    <button  class="btn btn-success"  >
-                       
-                            <i class="ace-icon fa fa-signal"></i>
+                    <button class="btn btn-success">
+
+                        <i class="ace-icon fa fa-signal"></i>
                     </button>
 
                     <button class="btn btn-info">
@@ -229,7 +229,7 @@
 
                 <li class="">
                     <!-- 1 the <li> là 1 mục -->
-                   
+
 
                     <b class="arrow"></b>
 
@@ -456,8 +456,8 @@
 
                             <b class="arrow"></b>
                         </li>
-                        <li class="">
-                            <a href="jqgrid.html">
+                        <li class="active">
+                            <a href="@Url.Action("Index","Employee")">
                                 <i class="menu-icon fa fa-caret-right"></i>
                                 Quản Lý Nhân Viên Công Ty
                             </a>
@@ -609,22 +609,22 @@
 
                             <div class="hr hr-18 dotted hr-double"></div>
                             <div>
-                             
-                                    <div class="row">
-                                        <div class="col-xs-12">
+
+                                <div class="row">
+                                    <div class="col-xs-12">
 
 
-                                            <!-- div.table-responsive -->
-                                            <!-- div.dataTables_borderWrap -->
-                                            <div>
+                                        <!-- div.table-responsive -->
+                                        <!-- div.dataTables_borderWrap -->
+                                        <div>
 
-                                                @RenderBody()
-                                            </div>
-                                            
+                                            @RenderBody()
                                         </div>
-                                    </div>
 
-                                    @*<div id="modal-table" class="modal fade" tabindex="-1">
+                                    </div>
+                                </div>
+
+                                @*<div id="modal-table" class="modal fade" tabindex="-1">
                                         <div class="modal-dialog">
                                             <div class="modal-content">
                                                 <div class="modal-header no-padding">
@@ -637,7 +637,7 @@
                                                 </div>
 
                                                 <div class="modal-body no-padding">
-                                                   
+
                                                 </div>
 
                                                 <div class="modal-footer no-margin-top">
@@ -675,78 +675,78 @@
                                             </div><!-- /.modal-content -->
                                         </div><!-- /.modal-dialog -->
                                     </div><!-- PAGE CONTENT ENDS -->*@
-                                </div><!-- /.col -->
-                            </div><!-- /.row -->
-                        </div><!-- /.page-content -->
-                    </div>
-                </div><!-- /.main-content -->
+                            </div><!-- /.col -->
+                        </div><!-- /.row -->
+                    </div><!-- /.page-content -->
+                </div>
+            </div><!-- /.main-content -->
 
-                <div class="footer">
-                    <div class="footer-inner">
-                        <div class="footer-content">
-                            <span class="bigger-120">
-                                <span class="blue bolder">Nhom18</span>
-                                Copyright &copy; 2017-2018
-                            </span>
+            <div class="footer">
+                <div class="footer-inner">
+                    <div class="footer-content">
+                        <span class="bigger-120">
+                            <span class="blue bolder">Nhom18</span>
+                            Copyright &copy; 2017-2018
+                        </span>
 
-                            &nbsp; &nbsp;
-                            <span class="action-buttons">
-                                <a href="#">
-                                    <i class="ace-icon fa fa-twitter-square light-blue bigger-150"></i>
-                                </a>
+                        &nbsp; &nbsp;
+                        <span class="action-buttons">
+                            <a href="#">
+                                <i class="ace-icon fa fa-twitter-square light-blue bigger-150"></i>
+                            </a>
 
-                                <a href="#">
-                                    <i class="ace-icon fa fa-facebook-square text-primary bigger-150"></i>
-                                </a>
+                            <a href="#">
+                                <i class="ace-icon fa fa-facebook-square text-primary bigger-150"></i>
+                            </a>
 
-                                <a href="#">
-                                    <i class="ace-icon fa fa-rss-square orange bigger-150"></i>
-                                </a>
-                            </span>
-                        </div>
+                            <a href="#">
+                                <i class="ace-icon fa fa-rss-square orange bigger-150"></i>
+                            </a>
+                        </span>
                     </div>
                 </div>
+            </div>
 
-                <a href="#" id="btn-scroll-up" class="btn-scroll-up btn btn-sm btn-inverse">
-                    <i class="ace-icon fa fa-angle-double-up icon-only bigger-110"></i>
-                </a>
-            </div><!-- /.main-container -->
-            <!-- basic scripts -->
-            <!--[if !IE]> -->
-            <script src="~/Scripts/js/jquery.2.1.1.min.js"></script>
+            <a href="#" id="btn-scroll-up" class="btn-scroll-up btn btn-sm btn-inverse">
+                <i class="ace-icon fa fa-angle-double-up icon-only bigger-110"></i>
+            </a>
+        </div><!-- /.main-container -->
+        <!-- basic scripts -->
+        <!--[if !IE]> -->
+        <script src="~/Scripts/js/jquery.2.1.1.min.js"></script>
 
-            <!-- <![endif]-->
-            <!--[if IE]>
-            <script src="assets/js/jquery.1.11.1.min.js"></script>
-            <![endif]-->
-            <!--[if !IE]> -->
-            <script type="text/javascript">
+        <!-- <![endif]-->
+        <!--[if IE]>
+        <script src="assets/js/jquery.1.11.1.min.js"></script>
+        <![endif]-->
+        <!--[if !IE]> -->
+        <script type="text/javascript">
                 window.jQuery || document.write("<script src='/Scripts/js/jquery.min.js'>" + "<" + "/script>");
-            </script>
+        </script>
 
-            <!-- <![endif]-->
-            <!--[if IE]>
-            <script type="text/javascript">
-             window.jQuery || document.write("<script src='assets/js/jquery1x.min.js'>"+"<"+"/script>");
-            </script>
-            <![endif]-->
-            <script type="text/javascript">
+        <!-- <![endif]-->
+        <!--[if IE]>
+        <script type="text/javascript">
+         window.jQuery || document.write("<script src='assets/js/jquery1x.min.js'>"+"<"+"/script>");
+        </script>
+        <![endif]-->
+        <script type="text/javascript">
                 if ('ontouchstart' in document.documentElement) document.write("<script src='/Scripts/js/jquery.mobile.custom.min.js'>" + "<" + "/script>");
-            </script>
-            <script src="~/Scripts/js/bootstrap.min.js"></script>
+        </script>
+        <script src="~/Scripts/js/bootstrap.min.js"></script>
 
-            <!-- page specific plugin scripts -->
-            <script src="~/Scripts/js/jquery.dataTables.min.js"></script>
-            <script src="~/Scripts/js/jquery.dataTables.bootstrap.min.js"></script>
-            <script src="~/Scripts/js/dataTables.tableTools.min.js"></script>
-            <script src="~/Scripts/js/dataTables.colVis.min.js"></script>
+        <!-- page specific plugin scripts -->
+        <script src="~/Scripts/js/jquery.dataTables.min.js"></script>
+        <script src="~/Scripts/js/jquery.dataTables.bootstrap.min.js"></script>
+        <script src="~/Scripts/js/dataTables.tableTools.min.js"></script>
+        <script src="~/Scripts/js/dataTables.colVis.min.js"></script>
 
-            <!-- ace scripts -->
-            <script src="~/Scripts/js/ace-elements.min.js"></script>
-            <script src="~/Scripts/js/ace.min.js"></script>
+        <!-- ace scripts -->
+        <script src="~/Scripts/js/ace-elements.min.js"></script>
+        <script src="~/Scripts/js/ace.min.js"></script>
 
-            <!-- inline scripts related to this page -->
-            <script type="text/javascript">
+        <!-- inline scripts related to this page -->
+        <script type="text/javascript">
                 jQuery(function ($) {
                     //initiate dataTables plugin
                     var oTable1 =
@@ -964,10 +964,10 @@
                     }
 
                 })
-            </script>
+        </script>
 
 
 
 
 </body>
-    </html>
+</html>

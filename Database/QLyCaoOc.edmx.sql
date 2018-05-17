@@ -109,7 +109,7 @@ CREATE TABLE [dbo].[NHANVIEN] (
     [TenNV] nvarchar(50)  NULL,
     [DiaChiNV] nvarchar(50)  NULL,
     [SDTNV] nvarchar(10)  NULL,
-	[HinhAnh] IMAGE NULL,
+	[HinhAnh] varchar(50) NOT NULL,
 	[ChucVu] nvarchar(30) NULL,
     [MaCongTy] varchar(5)  NOT NULL,
     [MaPHG] varchar(5)  NOT NULL,

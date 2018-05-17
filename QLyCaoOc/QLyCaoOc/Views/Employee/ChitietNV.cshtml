@@ -1,0 +1,75 @@
+﻿@model QLyCaoOc.Models.NHANVIEN
+
+@{
+    ViewBag.Title = "ChitietNV";
+    Layout = "~/Views/Shared/_LayoutUser.cshtml";
+}
+
+<h2>Chi tiết nhân viên</h2>
+
+<div>
+    <h4>Thông tin</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            Tên công ty: 
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CONGTY.TenCT)
+        </dd>
+
+        <dt>
+            Tên phòng: 
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PHONG.TenPHG)
+        </dd>
+
+        <dt>
+            Tên nhân viên:
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TenNV)
+        </dd>
+
+        <dt>
+            Địa chỉ: 
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DiaChiNV)
+        </dd>
+
+        <dt>
+            Số điện thoại:
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SDTNV)
+        </dd>
+
+        <dt>
+            Hình ảnh
+        </dt>
+
+        <dd>
+            <img src="@Url.Content("~/images/"+Model.HinhAnh)" width="120px">
+        </dd>
+
+        <dt>
+            Chức vụ: 
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ChucVu)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "ChitietNV", new { id = Model.MaNV }) |
+    @Html.ActionLink("Trở về", "Index")
+</p>

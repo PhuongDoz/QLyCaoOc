@@ -1,370 +1,60 @@
-C:\Users\dhp15_000\Desktop\QLyCaoOc\QLyCaoOc\bin\ApplicationInsights.config
-C:\Users\dhp15_000\Desktop\QLyCaoOc\QLyCaoOc\bin\QLyCaoOc.dll.config
-C:\Users\dhp15_000\Desktop\QLyCaoOc\QLyCaoOc\bin\QLyCaoOc.dll
-C:\Users\dhp15_000\Desktop\QLyCaoOc\QLyCaoOc\bin\QLyCaoOc.pdb
-C:\Users\dhp15_000\Desktop\QLyCaoOc\QLyCaoOc\bin\roslyn\csc.exe
-C:\Users\dhp15_000\Desktop\QLyCaoOc\QLyCaoOc\bin\roslyn\csc.exe.config
-C:\Users\dhp15_000\Desktop\QLyCaoOc\QLyCaoOc\bin\roslyn\csc.rsp
-C:\Users\dhp15_000\Desktop\QLyCaoOc\QLyCaoOc\bin\roslyn\csi.exe
-C:\Users\dhp15_000\Desktop\QLyCaoOc\QLyCaoOc\bin\roslyn\csi.exe.config
-C:\Users\dhp15_000\Desktop\QLyCaoOc\QLyCaoOc\bin\roslyn\csi.rsp
-C:\Users\dhp15_000\Desktop\QLyCaoOc\QLyCaoOc\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
-C:\Users\dhp15_000\Desktop\QLyCaoOc\QLyCaoOc\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
-C:\Users\dhp15_000\Desktop\QLyCaoOc\QLyCaoOc\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
-C:\Users\dhp15_000\Desktop\QLyCaoOc\QLyCaoOc\bin\roslyn\Microsoft.CodeAnalysis.dll
-C:\Users\dhp15_000\Desktop\QLyCaoOc\QLyCaoOc\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
-C:\Users\dhp15_000\Desktop\QLyCaoOc\QLyCaoOc\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
-C:\Users\dhp15_000\Desktop\QLyCaoOc\QLyCaoOc\bin\roslyn\Microsoft.CSharp.Core.targets
-C:\Users\dhp15_000\Desktop\QLyCaoOc\QLyCaoOc\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
-C:\Users\dhp15_000\Desktop\QLyCaoOc\QLyCaoOc\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
-C:\Users\dhp15_000\Desktop\QLyCaoOc\QLyCaoOc\bin\roslyn\Microsoft.VisualBasic.Core.targets
-C:\Users\dhp15_000\Desktop\QLyCaoOc\QLyCaoOc\bin\roslyn\Microsoft.Win32.Primitives.dll
-C:\Users\dhp15_000\Desktop\QLyCaoOc\QLyCaoOc\bin\roslyn\System.AppContext.dll
-C:\Users\dhp15_000\Desktop\QLyCaoOc\QLyCaoOc\bin\roslyn\System.Collections.Immutable.dll
-C:\Users\dhp15_000\Desktop\QLyCaoOc\QLyCaoOc\bin\roslyn\System.Console.dll
-C:\Users\dhp15_000\Desktop\QLyCaoOc\QLyCaoOc\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
-C:\Users\dhp15_000\Desktop\QLyCaoOc\QLyCaoOc\bin\roslyn\System.Diagnostics.Process.dll
-C:\Users\dhp15_000\Desktop\QLyCaoOc\QLyCaoOc\bin\roslyn\System.Diagnostics.StackTrace.dll
-C:\Users\dhp15_000\Desktop\QLyCaoOc\QLyCaoOc\bin\roslyn\System.IO.Compression.dll
-C:\Users\dhp15_000\Desktop\QLyCaoOc\QLyCaoOc\bin\roslyn\System.IO.FileSystem.dll
-C:\Users\dhp15_000\Desktop\QLyCaoOc\QLyCaoOc\bin\roslyn\System.IO.FileSystem.DriveInfo.dll
-C:\Users\dhp15_000\Desktop\QLyCaoOc\QLyCaoOc\bin\roslyn\System.IO.FileSystem.Primitives.dll
-C:\Users\dhp15_000\Desktop\QLyCaoOc\QLyCaoOc\bin\roslyn\System.IO.Pipes.dll
-C:\Users\dhp15_000\Desktop\QLyCaoOc\QLyCaoOc\bin\roslyn\System.Reflection.Metadata.dll
-C:\Users\dhp15_000\Desktop\QLyCaoOc\QLyCaoOc\bin\roslyn\System.Security.AccessControl.dll
-C:\Users\dhp15_000\Desktop\QLyCaoOc\QLyCaoOc\bin\roslyn\System.Security.Claims.dll
-C:\Users\dhp15_000\Desktop\QLyCaoOc\QLyCaoOc\bin\roslyn\System.Security.Cryptography.Algorithms.dll
-C:\Users\dhp15_000\Desktop\QLyCaoOc\QLyCaoOc\bin\roslyn\System.Security.Cryptography.Encoding.dll
-C:\Users\dhp15_000\Desktop\QLyCaoOc\QLyCaoOc\bin\roslyn\System.Security.Cryptography.Primitives.dll
-C:\Users\dhp15_000\Desktop\QLyCaoOc\QLyCaoOc\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
-C:\Users\dhp15_000\Desktop\QLyCaoOc\QLyCaoOc\bin\roslyn\System.Security.Principal.Windows.dll
-C:\Users\dhp15_000\Desktop\QLyCaoOc\QLyCaoOc\bin\roslyn\System.Text.Encoding.CodePages.dll
-C:\Users\dhp15_000\Desktop\QLyCaoOc\QLyCaoOc\bin\roslyn\System.Threading.Thread.dll
-C:\Users\dhp15_000\Desktop\QLyCaoOc\QLyCaoOc\bin\roslyn\System.ValueTuple.dll
-C:\Users\dhp15_000\Desktop\QLyCaoOc\QLyCaoOc\bin\roslyn\System.Xml.ReaderWriter.dll
-C:\Users\dhp15_000\Desktop\QLyCaoOc\QLyCaoOc\bin\roslyn\System.Xml.XmlDocument.dll
-C:\Users\dhp15_000\Desktop\QLyCaoOc\QLyCaoOc\bin\roslyn\System.Xml.XPath.dll
-C:\Users\dhp15_000\Desktop\QLyCaoOc\QLyCaoOc\bin\roslyn\System.Xml.XPath.XDocument.dll
-C:\Users\dhp15_000\Desktop\QLyCaoOc\QLyCaoOc\bin\roslyn\vbc.exe
-C:\Users\dhp15_000\Desktop\QLyCaoOc\QLyCaoOc\bin\roslyn\vbc.exe.config
-C:\Users\dhp15_000\Desktop\QLyCaoOc\QLyCaoOc\bin\roslyn\vbc.rsp
-C:\Users\dhp15_000\Desktop\QLyCaoOc\QLyCaoOc\bin\roslyn\VBCSCompiler.exe
-C:\Users\dhp15_000\Desktop\QLyCaoOc\QLyCaoOc\bin\roslyn\VBCSCompiler.exe.config
-C:\Users\dhp15_000\Desktop\QLyCaoOc\QLyCaoOc\bin\Antlr3.Runtime.dll
-C:\Users\dhp15_000\Desktop\QLyCaoOc\QLyCaoOc\bin\EntityFramework.dll
-C:\Users\dhp15_000\Desktop\QLyCaoOc\QLyCaoOc\bin\Microsoft.AI.Agent.Intercept.dll
-C:\Users\dhp15_000\Desktop\QLyCaoOc\QLyCaoOc\bin\Microsoft.AI.DependencyCollector.dll
-C:\Users\dhp15_000\Desktop\QLyCaoOc\QLyCaoOc\bin\Microsoft.AI.PerfCounterCollector.dll
-C:\Users\dhp15_000\Desktop\QLyCaoOc\QLyCaoOc\bin\Microsoft.AI.ServerTelemetryChannel.dll
-C:\Users\dhp15_000\Desktop\QLyCaoOc\QLyCaoOc\bin\Microsoft.AI.Web.dll
-C:\Users\dhp15_000\Desktop\QLyCaoOc\QLyCaoOc\bin\Microsoft.AI.WindowsServer.dll
-C:\Users\dhp15_000\Desktop\QLyCaoOc\QLyCaoOc\bin\Microsoft.ApplicationInsights.dll
-C:\Users\dhp15_000\Desktop\QLyCaoOc\QLyCaoOc\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
-C:\Users\dhp15_000\Desktop\QLyCaoOc\QLyCaoOc\bin\Microsoft.Web.Infrastructure.dll
-C:\Users\dhp15_000\Desktop\QLyCaoOc\QLyCaoOc\bin\Newtonsoft.Json.dll
-C:\Users\dhp15_000\Desktop\QLyCaoOc\QLyCaoOc\bin\System.Web.Helpers.dll
-C:\Users\dhp15_000\Desktop\QLyCaoOc\QLyCaoOc\bin\System.Web.Mvc.dll
-C:\Users\dhp15_000\Desktop\QLyCaoOc\QLyCaoOc\bin\System.Web.Optimization.dll
-C:\Users\dhp15_000\Desktop\QLyCaoOc\QLyCaoOc\bin\System.Web.Razor.dll
-C:\Users\dhp15_000\Desktop\QLyCaoOc\QLyCaoOc\bin\System.Web.WebPages.Deployment.dll
-C:\Users\dhp15_000\Desktop\QLyCaoOc\QLyCaoOc\bin\System.Web.WebPages.dll
-C:\Users\dhp15_000\Desktop\QLyCaoOc\QLyCaoOc\bin\System.Web.WebPages.Razor.dll
-C:\Users\dhp15_000\Desktop\QLyCaoOc\QLyCaoOc\bin\WebGrease.dll
-C:\Users\dhp15_000\Desktop\QLyCaoOc\QLyCaoOc\bin\EntityFramework.xml
-C:\Users\dhp15_000\Desktop\QLyCaoOc\QLyCaoOc\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\Users\dhp15_000\Desktop\QLyCaoOc\QLyCaoOc\bin\System.Web.Helpers.xml
-C:\Users\dhp15_000\Desktop\QLyCaoOc\QLyCaoOc\bin\System.Web.Mvc.xml
-C:\Users\dhp15_000\Desktop\QLyCaoOc\QLyCaoOc\bin\System.Web.Optimization.xml
-C:\Users\dhp15_000\Desktop\QLyCaoOc\QLyCaoOc\bin\System.Web.Razor.xml
-C:\Users\dhp15_000\Desktop\QLyCaoOc\QLyCaoOc\bin\System.Web.WebPages.xml
-C:\Users\dhp15_000\Desktop\QLyCaoOc\QLyCaoOc\bin\System.Web.WebPages.Deployment.xml
-C:\Users\dhp15_000\Desktop\QLyCaoOc\QLyCaoOc\bin\System.Web.WebPages.Razor.xml
-C:\Users\dhp15_000\Desktop\QLyCaoOc\QLyCaoOc\bin\Antlr3.Runtime.pdb
-C:\Users\dhp15_000\Desktop\QLyCaoOc\QLyCaoOc\bin\Newtonsoft.Json.xml
-C:\Users\dhp15_000\Desktop\QLyCaoOc\QLyCaoOc\bin\Microsoft.ApplicationInsights.xml
-C:\Users\dhp15_000\Desktop\QLyCaoOc\QLyCaoOc\bin\Microsoft.AI.DependencyCollector.xml
-C:\Users\dhp15_000\Desktop\QLyCaoOc\QLyCaoOc\bin\Microsoft.AI.ServerTelemetryChannel.xml
-C:\Users\dhp15_000\Desktop\QLyCaoOc\QLyCaoOc\bin\Microsoft.AI.WindowsServer.xml
-C:\Users\dhp15_000\Desktop\QLyCaoOc\QLyCaoOc\bin\Microsoft.AI.Web.xml
-C:\Users\dhp15_000\Desktop\QLyCaoOc\QLyCaoOc\obj\Debug\QLyCaoOc.csprojResolveAssemblyReference.cache
-C:\Users\dhp15_000\Desktop\QLyCaoOc\QLyCaoOc\obj\Debug\QLyCaoOc.csproj.CoreCompileInputs.cache
-C:\Users\dhp15_000\Desktop\QLyCaoOc\QLyCaoOc\obj\Debug\QLyCaoOc.csproj.CopyComplete
-C:\Users\dhp15_000\Desktop\QLyCaoOc\QLyCaoOc\obj\Debug\QLyCaoOc.dll
-C:\Users\dhp15_000\Desktop\QLyCaoOc\QLyCaoOc\obj\Debug\QLyCaoOc.pdb
-F:\Github-Respos\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\ApplicationInsights.config
-F:\Github-Respos\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\QLyCaoOc.dll.config
-F:\Github-Respos\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\QLyCaoOc.dll
-F:\Github-Respos\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\QLyCaoOc.pdb
-F:\Github-Respos\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\roslyn\csc.exe
-F:\Github-Respos\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\roslyn\csc.exe.config
-F:\Github-Respos\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\roslyn\csc.rsp
-F:\Github-Respos\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\roslyn\csi.exe
-F:\Github-Respos\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\roslyn\csi.exe.config
-F:\Github-Respos\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\roslyn\csi.rsp
-F:\Github-Respos\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
-F:\Github-Respos\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
-F:\Github-Respos\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
-F:\Github-Respos\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\roslyn\Microsoft.CodeAnalysis.dll
-F:\Github-Respos\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
-F:\Github-Respos\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
-F:\Github-Respos\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\roslyn\Microsoft.CSharp.Core.targets
-F:\Github-Respos\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
-F:\Github-Respos\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
-F:\Github-Respos\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\roslyn\Microsoft.VisualBasic.Core.targets
-F:\Github-Respos\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\roslyn\Microsoft.Win32.Primitives.dll
-F:\Github-Respos\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\roslyn\System.AppContext.dll
-F:\Github-Respos\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\roslyn\System.Collections.Immutable.dll
-F:\Github-Respos\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\roslyn\System.Console.dll
-F:\Github-Respos\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
-F:\Github-Respos\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\roslyn\System.Diagnostics.Process.dll
-F:\Github-Respos\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\roslyn\System.Diagnostics.StackTrace.dll
-F:\Github-Respos\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\roslyn\System.IO.Compression.dll
-F:\Github-Respos\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\roslyn\System.IO.FileSystem.dll
-F:\Github-Respos\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\roslyn\System.IO.FileSystem.DriveInfo.dll
-F:\Github-Respos\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\roslyn\System.IO.FileSystem.Primitives.dll
-F:\Github-Respos\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\roslyn\System.IO.Pipes.dll
-F:\Github-Respos\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\roslyn\System.Reflection.Metadata.dll
-F:\Github-Respos\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\roslyn\System.Security.AccessControl.dll
-F:\Github-Respos\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\roslyn\System.Security.Claims.dll
-F:\Github-Respos\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\roslyn\System.Security.Cryptography.Algorithms.dll
-F:\Github-Respos\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\roslyn\System.Security.Cryptography.Encoding.dll
-F:\Github-Respos\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\roslyn\System.Security.Cryptography.Primitives.dll
-F:\Github-Respos\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
-F:\Github-Respos\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\roslyn\System.Security.Principal.Windows.dll
-F:\Github-Respos\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\roslyn\System.Text.Encoding.CodePages.dll
-F:\Github-Respos\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\roslyn\System.Threading.Thread.dll
-F:\Github-Respos\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\roslyn\System.ValueTuple.dll
-F:\Github-Respos\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\roslyn\System.Xml.ReaderWriter.dll
-F:\Github-Respos\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\roslyn\System.Xml.XmlDocument.dll
-F:\Github-Respos\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\roslyn\System.Xml.XPath.dll
-F:\Github-Respos\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\roslyn\System.Xml.XPath.XDocument.dll
-F:\Github-Respos\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\roslyn\vbc.exe
-F:\Github-Respos\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\roslyn\vbc.exe.config
-F:\Github-Respos\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\roslyn\vbc.rsp
-F:\Github-Respos\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\roslyn\VBCSCompiler.exe
-F:\Github-Respos\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\roslyn\VBCSCompiler.exe.config
-F:\Github-Respos\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\Antlr3.Runtime.dll
-F:\Github-Respos\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\EntityFramework.dll
-F:\Github-Respos\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\Microsoft.AI.Agent.Intercept.dll
-F:\Github-Respos\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\Microsoft.AI.DependencyCollector.dll
-F:\Github-Respos\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\Microsoft.AI.PerfCounterCollector.dll
-F:\Github-Respos\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\Microsoft.AI.ServerTelemetryChannel.dll
-F:\Github-Respos\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\Microsoft.AI.Web.dll
-F:\Github-Respos\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\Microsoft.AI.WindowsServer.dll
-F:\Github-Respos\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\Microsoft.ApplicationInsights.dll
-F:\Github-Respos\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
-F:\Github-Respos\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\Microsoft.Web.Infrastructure.dll
-F:\Github-Respos\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\Newtonsoft.Json.dll
-F:\Github-Respos\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\System.Web.Helpers.dll
-F:\Github-Respos\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\System.Web.Mvc.dll
-F:\Github-Respos\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\System.Web.Optimization.dll
-F:\Github-Respos\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\System.Web.Razor.dll
-F:\Github-Respos\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\System.Web.WebPages.Deployment.dll
-F:\Github-Respos\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\System.Web.WebPages.dll
-F:\Github-Respos\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\System.Web.WebPages.Razor.dll
-F:\Github-Respos\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\WebGrease.dll
-F:\Github-Respos\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\EntityFramework.xml
-F:\Github-Respos\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-F:\Github-Respos\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\System.Web.Helpers.xml
-F:\Github-Respos\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\System.Web.Mvc.xml
-F:\Github-Respos\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\System.Web.Optimization.xml
-F:\Github-Respos\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\System.Web.Razor.xml
-F:\Github-Respos\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\System.Web.WebPages.xml
-F:\Github-Respos\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\System.Web.WebPages.Deployment.xml
-F:\Github-Respos\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\System.Web.WebPages.Razor.xml
-F:\Github-Respos\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\Antlr3.Runtime.pdb
-F:\Github-Respos\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\Newtonsoft.Json.xml
-F:\Github-Respos\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\Microsoft.ApplicationInsights.xml
-F:\Github-Respos\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\Microsoft.AI.DependencyCollector.xml
-F:\Github-Respos\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\Microsoft.AI.ServerTelemetryChannel.xml
-F:\Github-Respos\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\Microsoft.AI.WindowsServer.xml
-F:\Github-Respos\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\Microsoft.AI.Web.xml
-F:\Github-Respos\QLyCaoOc\QLyCaoOc\QLyCaoOc\obj\Debug\QLyCaoOc.csproj.CoreCompileInputs.cache
-F:\Github-Respos\QLyCaoOc\QLyCaoOc\QLyCaoOc\obj\Debug\QLyCaoOc.csproj.CopyComplete
-F:\Github-Respos\QLyCaoOc\QLyCaoOc\QLyCaoOc\obj\Debug\QLyCaoOc.dll
-F:\Github-Respos\QLyCaoOc\QLyCaoOc\QLyCaoOc\obj\Debug\QLyCaoOc.pdb
-F:\Github-Respos\QLyCaoOc\QLyCaoOc\QLyCaoOc\obj\Debug\QLyCaoOc.csprojResolveAssemblyReference.cache
-E:\GITHUB\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\ApplicationInsights.config
-E:\GITHUB\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\QLyCaoOc.dll.config
-E:\GITHUB\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\QLyCaoOc.dll
-E:\GITHUB\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\QLyCaoOc.pdb
-E:\GITHUB\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\roslyn\csc.exe
-E:\GITHUB\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\roslyn\csc.exe.config
-E:\GITHUB\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\roslyn\csc.rsp
-E:\GITHUB\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\roslyn\csi.exe
-E:\GITHUB\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\roslyn\csi.exe.config
-E:\GITHUB\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\roslyn\csi.rsp
-E:\GITHUB\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
-E:\GITHUB\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
-E:\GITHUB\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
-E:\GITHUB\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\roslyn\Microsoft.CodeAnalysis.dll
-E:\GITHUB\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
-E:\GITHUB\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
-E:\GITHUB\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\roslyn\Microsoft.CSharp.Core.targets
-E:\GITHUB\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
-E:\GITHUB\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
-E:\GITHUB\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\roslyn\Microsoft.VisualBasic.Core.targets
-E:\GITHUB\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\roslyn\Microsoft.Win32.Primitives.dll
-E:\GITHUB\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\roslyn\System.AppContext.dll
-E:\GITHUB\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\roslyn\System.Collections.Immutable.dll
-E:\GITHUB\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\roslyn\System.Console.dll
-E:\GITHUB\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
-E:\GITHUB\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\roslyn\System.Diagnostics.Process.dll
-E:\GITHUB\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\roslyn\System.Diagnostics.StackTrace.dll
-E:\GITHUB\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\roslyn\System.IO.Compression.dll
-E:\GITHUB\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\roslyn\System.IO.FileSystem.dll
-E:\GITHUB\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\roslyn\System.IO.FileSystem.DriveInfo.dll
-E:\GITHUB\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\roslyn\System.IO.FileSystem.Primitives.dll
-E:\GITHUB\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\roslyn\System.IO.Pipes.dll
-E:\GITHUB\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\roslyn\System.Reflection.Metadata.dll
-E:\GITHUB\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\roslyn\System.Security.AccessControl.dll
-E:\GITHUB\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\roslyn\System.Security.Claims.dll
-E:\GITHUB\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\roslyn\System.Security.Cryptography.Algorithms.dll
-E:\GITHUB\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\roslyn\System.Security.Cryptography.Encoding.dll
-E:\GITHUB\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\roslyn\System.Security.Cryptography.Primitives.dll
-E:\GITHUB\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
-E:\GITHUB\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\roslyn\System.Security.Principal.Windows.dll
-E:\GITHUB\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\roslyn\System.Text.Encoding.CodePages.dll
-E:\GITHUB\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\roslyn\System.Threading.Thread.dll
-E:\GITHUB\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\roslyn\System.ValueTuple.dll
-E:\GITHUB\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\roslyn\System.Xml.ReaderWriter.dll
-E:\GITHUB\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\roslyn\System.Xml.XmlDocument.dll
-E:\GITHUB\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\roslyn\System.Xml.XPath.dll
-E:\GITHUB\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\roslyn\System.Xml.XPath.XDocument.dll
-E:\GITHUB\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\roslyn\vbc.exe
-E:\GITHUB\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\roslyn\vbc.exe.config
-E:\GITHUB\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\roslyn\vbc.rsp
-E:\GITHUB\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\roslyn\VBCSCompiler.exe
-E:\GITHUB\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\roslyn\VBCSCompiler.exe.config
-E:\GITHUB\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\Antlr3.Runtime.dll
-E:\GITHUB\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\EntityFramework.dll
-E:\GITHUB\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\Microsoft.AI.Agent.Intercept.dll
-E:\GITHUB\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\Microsoft.AI.DependencyCollector.dll
-E:\GITHUB\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\Microsoft.AI.PerfCounterCollector.dll
-E:\GITHUB\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\Microsoft.AI.ServerTelemetryChannel.dll
-E:\GITHUB\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\Microsoft.AI.Web.dll
-E:\GITHUB\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\Microsoft.AI.WindowsServer.dll
-E:\GITHUB\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\Microsoft.ApplicationInsights.dll
-E:\GITHUB\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
-E:\GITHUB\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\Microsoft.Web.Infrastructure.dll
-E:\GITHUB\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\Newtonsoft.Json.dll
-E:\GITHUB\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\System.Web.Helpers.dll
-E:\GITHUB\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\System.Web.Mvc.dll
-E:\GITHUB\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\System.Web.Optimization.dll
-E:\GITHUB\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\System.Web.Razor.dll
-E:\GITHUB\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\System.Web.WebPages.Deployment.dll
-E:\GITHUB\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\System.Web.WebPages.dll
-E:\GITHUB\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\System.Web.WebPages.Razor.dll
-E:\GITHUB\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\WebGrease.dll
-E:\GITHUB\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\EntityFramework.xml
-E:\GITHUB\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-E:\GITHUB\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\System.Web.Helpers.xml
-E:\GITHUB\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\System.Web.Mvc.xml
-E:\GITHUB\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\System.Web.Optimization.xml
-E:\GITHUB\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\System.Web.Razor.xml
-E:\GITHUB\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\System.Web.WebPages.xml
-E:\GITHUB\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\System.Web.WebPages.Deployment.xml
-E:\GITHUB\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\System.Web.WebPages.Razor.xml
-E:\GITHUB\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\Antlr3.Runtime.pdb
-E:\GITHUB\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\Newtonsoft.Json.xml
-E:\GITHUB\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\Microsoft.ApplicationInsights.xml
-E:\GITHUB\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\Microsoft.AI.DependencyCollector.xml
-E:\GITHUB\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\Microsoft.AI.ServerTelemetryChannel.xml
-E:\GITHUB\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\Microsoft.AI.WindowsServer.xml
-E:\GITHUB\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\Microsoft.AI.Web.xml
-E:\GITHUB\QLyCaoOc\QLyCaoOc\QLyCaoOc\obj\Debug\QLyCaoOc.csprojResolveAssemblyReference.cache
-E:\GITHUB\QLyCaoOc\QLyCaoOc\QLyCaoOc\obj\Debug\QLyCaoOc.dll
-E:\GITHUB\QLyCaoOc\QLyCaoOc\QLyCaoOc\obj\Debug\QLyCaoOc.pdb
-F:\GITHUB\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\ApplicationInsights.config
-F:\GITHUB\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\QLyCaoOc.dll.config
-F:\GITHUB\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\QLyCaoOc.dll
-F:\GITHUB\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\QLyCaoOc.pdb
-F:\GITHUB\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\roslyn\csc.exe
-F:\GITHUB\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\roslyn\csc.exe.config
-F:\GITHUB\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\roslyn\csc.rsp
-F:\GITHUB\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\roslyn\csi.exe
-F:\GITHUB\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\roslyn\csi.exe.config
-F:\GITHUB\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\roslyn\csi.rsp
-F:\GITHUB\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
-F:\GITHUB\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
-F:\GITHUB\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
-F:\GITHUB\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\roslyn\Microsoft.CodeAnalysis.dll
-F:\GITHUB\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
-F:\GITHUB\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
-F:\GITHUB\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\roslyn\Microsoft.CSharp.Core.targets
-F:\GITHUB\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
-F:\GITHUB\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
-F:\GITHUB\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\roslyn\Microsoft.VisualBasic.Core.targets
-F:\GITHUB\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\roslyn\Microsoft.Win32.Primitives.dll
-F:\GITHUB\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\roslyn\System.AppContext.dll
-F:\GITHUB\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\roslyn\System.Collections.Immutable.dll
-F:\GITHUB\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\roslyn\System.Console.dll
-F:\GITHUB\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
-F:\GITHUB\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\roslyn\System.Diagnostics.Process.dll
-F:\GITHUB\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\roslyn\System.Diagnostics.StackTrace.dll
-F:\GITHUB\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\roslyn\System.IO.Compression.dll
-F:\GITHUB\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\roslyn\System.IO.FileSystem.dll
-F:\GITHUB\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\roslyn\System.IO.FileSystem.DriveInfo.dll
-F:\GITHUB\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\roslyn\System.IO.FileSystem.Primitives.dll
-F:\GITHUB\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\roslyn\System.IO.Pipes.dll
-F:\GITHUB\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\roslyn\System.Reflection.Metadata.dll
-F:\GITHUB\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\roslyn\System.Security.AccessControl.dll
-F:\GITHUB\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\roslyn\System.Security.Claims.dll
-F:\GITHUB\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\roslyn\System.Security.Cryptography.Algorithms.dll
-F:\GITHUB\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\roslyn\System.Security.Cryptography.Encoding.dll
-F:\GITHUB\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\roslyn\System.Security.Cryptography.Primitives.dll
-F:\GITHUB\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
-F:\GITHUB\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\roslyn\System.Security.Principal.Windows.dll
-F:\GITHUB\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\roslyn\System.Text.Encoding.CodePages.dll
-F:\GITHUB\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\roslyn\System.Threading.Thread.dll
-F:\GITHUB\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\roslyn\System.ValueTuple.dll
-F:\GITHUB\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\roslyn\System.Xml.ReaderWriter.dll
-F:\GITHUB\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\roslyn\System.Xml.XmlDocument.dll
-F:\GITHUB\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\roslyn\System.Xml.XPath.dll
-F:\GITHUB\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\roslyn\System.Xml.XPath.XDocument.dll
-F:\GITHUB\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\roslyn\vbc.exe
-F:\GITHUB\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\roslyn\vbc.exe.config
-F:\GITHUB\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\roslyn\vbc.rsp
-F:\GITHUB\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\roslyn\VBCSCompiler.exe
-F:\GITHUB\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\roslyn\VBCSCompiler.exe.config
-F:\GITHUB\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\Antlr3.Runtime.dll
-F:\GITHUB\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\EntityFramework.dll
-F:\GITHUB\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\Microsoft.AI.Agent.Intercept.dll
-F:\GITHUB\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\Microsoft.AI.DependencyCollector.dll
-F:\GITHUB\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\Microsoft.AI.PerfCounterCollector.dll
-F:\GITHUB\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\Microsoft.AI.ServerTelemetryChannel.dll
-F:\GITHUB\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\Microsoft.AI.Web.dll
-F:\GITHUB\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\Microsoft.AI.WindowsServer.dll
-F:\GITHUB\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\Microsoft.ApplicationInsights.dll
-F:\GITHUB\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
-F:\GITHUB\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\Microsoft.Web.Infrastructure.dll
-F:\GITHUB\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\Newtonsoft.Json.dll
-F:\GITHUB\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\System.Web.Helpers.dll
-F:\GITHUB\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\System.Web.Mvc.dll
-F:\GITHUB\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\System.Web.Optimization.dll
-F:\GITHUB\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\System.Web.Razor.dll
-F:\GITHUB\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\System.Web.WebPages.Deployment.dll
-F:\GITHUB\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\System.Web.WebPages.dll
-F:\GITHUB\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\System.Web.WebPages.Razor.dll
-F:\GITHUB\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\WebGrease.dll
-F:\GITHUB\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\EntityFramework.xml
-F:\GITHUB\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-F:\GITHUB\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\System.Web.Helpers.xml
-F:\GITHUB\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\System.Web.Mvc.xml
-F:\GITHUB\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\System.Web.Optimization.xml
-F:\GITHUB\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\System.Web.Razor.xml
-F:\GITHUB\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\System.Web.WebPages.xml
-F:\GITHUB\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\System.Web.WebPages.Deployment.xml
-F:\GITHUB\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\System.Web.WebPages.Razor.xml
-F:\GITHUB\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\Antlr3.Runtime.pdb
-F:\GITHUB\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\Newtonsoft.Json.xml
-F:\GITHUB\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\Microsoft.ApplicationInsights.xml
-F:\GITHUB\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\Microsoft.AI.DependencyCollector.xml
-F:\GITHUB\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\Microsoft.AI.ServerTelemetryChannel.xml
-F:\GITHUB\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\Microsoft.AI.WindowsServer.xml
-F:\GITHUB\QLyCaoOc\QLyCaoOc\QLyCaoOc\bin\Microsoft.AI.Web.xml
-F:\GITHUB\QLyCaoOc\QLyCaoOc\QLyCaoOc\obj\Debug\QLyCaoOc.csprojResolveAssemblyReference.cache
-F:\GITHUB\QLyCaoOc\QLyCaoOc\QLyCaoOc\obj\Debug\QLyCaoOc.csproj.CoreCompileInputs.cache
-F:\GITHUB\QLyCaoOc\QLyCaoOc\QLyCaoOc\obj\Debug\QLyCaoOc.csproj.CopyComplete
-F:\GITHUB\QLyCaoOc\QLyCaoOc\QLyCaoOc\obj\Debug\QLyCaoOc.dll
-F:\GITHUB\QLyCaoOc\QLyCaoOc\QLyCaoOc\obj\Debug\QLyCaoOc.pdb
+C:\Users\Tuyet Trinh\Desktop\CNPMNC\QLyCaoOc\QLyCaoOc\bin\QLyCaoOc.dll.config
+C:\Users\Tuyet Trinh\Desktop\CNPMNC\QLyCaoOc\QLyCaoOc\bin\QLyCaoOc.dll
+C:\Users\Tuyet Trinh\Desktop\CNPMNC\QLyCaoOc\QLyCaoOc\bin\QLyCaoOc.pdb
+C:\Users\Tuyet Trinh\Desktop\CNPMNC\QLyCaoOc\QLyCaoOc\bin\Antlr3.Runtime.dll
+C:\Users\Tuyet Trinh\Desktop\CNPMNC\QLyCaoOc\QLyCaoOc\bin\EntityFramework.dll
+C:\Users\Tuyet Trinh\Desktop\CNPMNC\QLyCaoOc\QLyCaoOc\bin\EntityFramework.SqlServer.dll
+C:\Users\Tuyet Trinh\Desktop\CNPMNC\QLyCaoOc\QLyCaoOc\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Tuyet Trinh\Desktop\CNPMNC\QLyCaoOc\QLyCaoOc\bin\Newtonsoft.Json.dll
+C:\Users\Tuyet Trinh\Desktop\CNPMNC\QLyCaoOc\QLyCaoOc\bin\System.Web.Helpers.dll
+C:\Users\Tuyet Trinh\Desktop\CNPMNC\QLyCaoOc\QLyCaoOc\bin\System.Web.Mvc.dll
+C:\Users\Tuyet Trinh\Desktop\CNPMNC\QLyCaoOc\QLyCaoOc\bin\System.Web.Optimization.dll
+C:\Users\Tuyet Trinh\Desktop\CNPMNC\QLyCaoOc\QLyCaoOc\bin\System.Web.Razor.dll
+C:\Users\Tuyet Trinh\Desktop\CNPMNC\QLyCaoOc\QLyCaoOc\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Tuyet Trinh\Desktop\CNPMNC\QLyCaoOc\QLyCaoOc\bin\System.Web.WebPages.dll
+C:\Users\Tuyet Trinh\Desktop\CNPMNC\QLyCaoOc\QLyCaoOc\bin\System.Web.WebPages.Razor.dll
+C:\Users\Tuyet Trinh\Desktop\CNPMNC\QLyCaoOc\QLyCaoOc\bin\WebGrease.dll
+C:\Users\Tuyet Trinh\Desktop\CNPMNC\QLyCaoOc\QLyCaoOc\bin\EntityFramework.xml
+C:\Users\Tuyet Trinh\Desktop\CNPMNC\QLyCaoOc\QLyCaoOc\bin\EntityFramework.SqlServer.xml
+C:\Users\Tuyet Trinh\Desktop\CNPMNC\QLyCaoOc\QLyCaoOc\bin\System.Web.Helpers.xml
+C:\Users\Tuyet Trinh\Desktop\CNPMNC\QLyCaoOc\QLyCaoOc\bin\System.Web.Mvc.xml
+C:\Users\Tuyet Trinh\Desktop\CNPMNC\QLyCaoOc\QLyCaoOc\bin\System.Web.Optimization.xml
+C:\Users\Tuyet Trinh\Desktop\CNPMNC\QLyCaoOc\QLyCaoOc\bin\System.Web.Razor.xml
+C:\Users\Tuyet Trinh\Desktop\CNPMNC\QLyCaoOc\QLyCaoOc\bin\System.Web.WebPages.xml
+C:\Users\Tuyet Trinh\Desktop\CNPMNC\QLyCaoOc\QLyCaoOc\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Tuyet Trinh\Desktop\CNPMNC\QLyCaoOc\QLyCaoOc\bin\System.Web.WebPages.Razor.xml
+C:\Users\Tuyet Trinh\Desktop\CNPMNC\QLyCaoOc\QLyCaoOc\bin\Antlr3.Runtime.pdb
+C:\Users\Tuyet Trinh\Desktop\CNPMNC\QLyCaoOc\QLyCaoOc\bin\Newtonsoft.Json.xml
+C:\Users\Tuyet Trinh\Desktop\CNPMNC\QLyCaoOc\QLyCaoOc\obj\Debug\QLyCaoOc.csprojResolveAssemblyReference.cache
+C:\Users\Tuyet Trinh\Desktop\CNPMNC\QLyCaoOc\QLyCaoOc\obj\Debug\QLyCaoOc.dll
+C:\Users\Tuyet Trinh\Desktop\CNPMNC\QLyCaoOc\QLyCaoOc\obj\Debug\QLyCaoOc.pdb
+C:\Users\Tuyet Trinh\Desktop\QLyCaoOc\QLyCaoOc\bin\QLyCaoOc.dll.config
+C:\Users\Tuyet Trinh\Desktop\QLyCaoOc\QLyCaoOc\bin\QLyCaoOc.dll
+C:\Users\Tuyet Trinh\Desktop\QLyCaoOc\QLyCaoOc\bin\QLyCaoOc.pdb
+C:\Users\Tuyet Trinh\Desktop\QLyCaoOc\QLyCaoOc\bin\Antlr3.Runtime.dll
+C:\Users\Tuyet Trinh\Desktop\QLyCaoOc\QLyCaoOc\bin\EntityFramework.dll
+C:\Users\Tuyet Trinh\Desktop\QLyCaoOc\QLyCaoOc\bin\EntityFramework.SqlServer.dll
+C:\Users\Tuyet Trinh\Desktop\QLyCaoOc\QLyCaoOc\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Tuyet Trinh\Desktop\QLyCaoOc\QLyCaoOc\bin\Newtonsoft.Json.dll
+C:\Users\Tuyet Trinh\Desktop\QLyCaoOc\QLyCaoOc\bin\System.Web.Helpers.dll
+C:\Users\Tuyet Trinh\Desktop\QLyCaoOc\QLyCaoOc\bin\System.Web.Mvc.dll
+C:\Users\Tuyet Trinh\Desktop\QLyCaoOc\QLyCaoOc\bin\System.Web.Optimization.dll
+C:\Users\Tuyet Trinh\Desktop\QLyCaoOc\QLyCaoOc\bin\System.Web.Razor.dll
+C:\Users\Tuyet Trinh\Desktop\QLyCaoOc\QLyCaoOc\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Tuyet Trinh\Desktop\QLyCaoOc\QLyCaoOc\bin\System.Web.WebPages.dll
+C:\Users\Tuyet Trinh\Desktop\QLyCaoOc\QLyCaoOc\bin\System.Web.WebPages.Razor.dll
+C:\Users\Tuyet Trinh\Desktop\QLyCaoOc\QLyCaoOc\bin\WebGrease.dll
+C:\Users\Tuyet Trinh\Desktop\QLyCaoOc\QLyCaoOc\bin\EntityFramework.xml
+C:\Users\Tuyet Trinh\Desktop\QLyCaoOc\QLyCaoOc\bin\EntityFramework.SqlServer.xml
+C:\Users\Tuyet Trinh\Desktop\QLyCaoOc\QLyCaoOc\bin\System.Web.Helpers.xml
+C:\Users\Tuyet Trinh\Desktop\QLyCaoOc\QLyCaoOc\bin\System.Web.Mvc.xml
+C:\Users\Tuyet Trinh\Desktop\QLyCaoOc\QLyCaoOc\bin\System.Web.Optimization.xml
+C:\Users\Tuyet Trinh\Desktop\QLyCaoOc\QLyCaoOc\bin\System.Web.Razor.xml
+C:\Users\Tuyet Trinh\Desktop\QLyCaoOc\QLyCaoOc\bin\System.Web.WebPages.xml
+C:\Users\Tuyet Trinh\Desktop\QLyCaoOc\QLyCaoOc\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Tuyet Trinh\Desktop\QLyCaoOc\QLyCaoOc\bin\System.Web.WebPages.Razor.xml
+C:\Users\Tuyet Trinh\Desktop\QLyCaoOc\QLyCaoOc\bin\Antlr3.Runtime.pdb
+C:\Users\Tuyet Trinh\Desktop\QLyCaoOc\QLyCaoOc\bin\Newtonsoft.Json.xml
+C:\Users\Tuyet Trinh\Desktop\QLyCaoOc\QLyCaoOc\obj\Debug\QLyCaoOc.dll
+C:\Users\Tuyet Trinh\Desktop\QLyCaoOc\QLyCaoOc\obj\Debug\QLyCaoOc.pdb
+C:\Users\Tuyet Trinh\Desktop\QLyCaoOc\QLyCaoOc\obj\Debug\QLyCaoOc.csprojResolveAssemblyReference.cache
