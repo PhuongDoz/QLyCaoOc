@@ -16,8 +16,7 @@ namespace QLyCaoOc.Models
         }
 
         [Key]
-        [StringLength(5)]
-        public string MaCongTy { get; set; }
+        public int MaCongTy { get; set; }
 
         [StringLength(50)]
         public string TenCT { get; set; }
@@ -28,9 +27,7 @@ namespace QLyCaoOc.Models
         [StringLength(12)]
         public string SDT { get; set; }
 
-        [Required]
-        [StringLength(5)]
-        public string MaHD { get; set; }
+        public int? MaHD { get; set; }
 
         public virtual HOPDONG HOPDONG { get; set; }
 

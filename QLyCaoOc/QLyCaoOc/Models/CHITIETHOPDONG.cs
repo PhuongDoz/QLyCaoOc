@@ -17,13 +17,12 @@ namespace QLyCaoOc.Models
 
         [Key]
         [Column(Order = 0)]
-        [StringLength(5)]
-        public string MaHD { get; set; }
+        public int MaHD { get; set; }
 
         [Key]
         [Column(Order = 1)]
-        [StringLength(5)]
-        public string MaPHG { get; set; }
+        [DatabaseGenerated(DatabaseGeneratedOption.None)]
+        public int MaPHG { get; set; }
 
         public int? ThoiGianThue { get; set; }
 

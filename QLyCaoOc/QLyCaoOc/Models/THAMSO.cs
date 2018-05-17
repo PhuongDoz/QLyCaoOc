@@ -10,8 +10,7 @@ namespace QLyCaoOc.Models
     public partial class THAMSO
     {
         [Key]
-        [StringLength(5)]
-        public string MaTS { get; set; }
+        public int MaTS { get; set; }
 
         [StringLength(50)]
         public string TenTS { get; set; }

@@ -26,7 +26,7 @@ namespace QLyCaoOc.Controllers
         {
             return View();
         }
-        public ActionResult Chitiethopdong(string id)
+        public ActionResult Chitiethopdong(int id)
         {
             HOPDONG hopdong = db.HOPDONGs.SingleOrDefault(n => n.MaHD == id);
             ViewBag.MaHD = hopdong.MaHD;

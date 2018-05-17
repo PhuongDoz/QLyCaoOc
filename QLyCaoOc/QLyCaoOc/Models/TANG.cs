@@ -25,9 +25,7 @@ namespace QLyCaoOc.Models
         [DatabaseGenerated(DatabaseGeneratedOption.None)]
         public int DienTich { get; set; }
 
-        [Required]
-        [StringLength(10)]
-        public string Gia { get; set; }
+        public int Gia { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<PHONG> PHONGs { get; set; }

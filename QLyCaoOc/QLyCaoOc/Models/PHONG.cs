@@ -17,8 +17,7 @@ namespace QLyCaoOc.Models
         }
 
         [Key]
-        [StringLength(5)]
-        public string MaPHG { get; set; }
+        public int MaPHG { get; set; }
 
         [StringLength(50)]
         public string TenPHG { get; set; }

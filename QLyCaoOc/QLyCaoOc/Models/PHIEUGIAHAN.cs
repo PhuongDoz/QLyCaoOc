@@ -10,18 +10,15 @@ namespace QLyCaoOc.Models
     public partial class PHIEUGIAHAN
     {
         [Key]
-        [StringLength(5)]
-        public string MaPhieuGiaHan { get; set; }
+        public int MaPhieuGiaHan { get; set; }
 
         public DateTime? NgayGiaHan { get; set; }
 
         public DateTime? NgayHetHan { get; set; }
 
-        [StringLength(5)]
-        public string MaHD { get; set; }
+        public int MaHD { get; set; }
 
-        [StringLength(5)]
-        public string MaPHG { get; set; }
+        public int MaPHG { get; set; }
 
         public virtual CHITIETHOPDONG CHITIETHOPDONG { get; set; }
     }

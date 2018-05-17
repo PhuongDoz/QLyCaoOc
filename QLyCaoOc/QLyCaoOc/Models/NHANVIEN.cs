@@ -10,8 +10,7 @@ namespace QLyCaoOc.Models
     public partial class NHANVIEN
     {
         [Key]
-        [StringLength(5)]
-        public string MaNV { get; set; }
+        public int MaNV { get; set; }
 
         [StringLength(50)]
         public string TenNV { get; set; }
@@ -22,19 +21,15 @@ namespace QLyCaoOc.Models
         [StringLength(10)]
         public string SDTNV { get; set; }
 
-        [Required]
         [StringLength(50)]
         public string HinhAnh { get; set; }
 
         [StringLength(30)]
         public string ChucVu { get; set; }
 
-        [StringLength(5)]
-        public string MaCongTy { get; set; }
+        public int? MaCongTy { get; set; }
 
-        [Required]
-        [StringLength(5)]
-        public string MaPHG { get; set; }
+        public int? MaPHG { get; set; }
 
         public virtual CONGTY CONGTY { get; set; }
 

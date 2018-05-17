@@ -25,104 +25,30 @@ namespace QLyCaoOc.Models
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             modelBuilder.Entity<CHITIETHOPDONG>()
-                .Property(e => e.MaHD)
-                .IsUnicode(false);
-
-            modelBuilder.Entity<CHITIETHOPDONG>()
-                .Property(e => e.MaPHG)
-                .IsUnicode(false);
-
-            modelBuilder.Entity<CHITIETHOPDONG>()
                 .HasMany(e => e.PHIEUGIAHANs)
-                .WithOptional(e => e.CHITIETHOPDONG)
-                .HasForeignKey(e => new { e.MaHD, e.MaPHG });
-
-            modelBuilder.Entity<CONGTY>()
-                .Property(e => e.MaCongTy)
-                .IsUnicode(false);
-
-            modelBuilder.Entity<CONGTY>()
-                .Property(e => e.MaHD)
-                .IsUnicode(false);
-
-            modelBuilder.Entity<CONGTY>()
-                .HasMany(e => e.NHANVIENs)
-                .WithRequired(e => e.CONGTY)
+                .WithRequired(e => e.CHITIETHOPDONG)
+                .HasForeignKey(e => new { e.MaHD, e.MaPHG })
                 .WillCascadeOnDelete(false);
-
-            modelBuilder.Entity<HOPDONG>()
-                .Property(e => e.MaHD)
-                .IsUnicode(false);
 
             modelBuilder.Entity<HOPDONG>()
                 .HasMany(e => e.CHITIETHOPDONGs)
                 .WithRequired(e => e.HOPDONG)
                 .WillCascadeOnDelete(false);
-
-            modelBuilder.Entity<HOPDONG>()
-                .HasMany(e => e.CONGTies)
-                .WithRequired(e => e.HOPDONG)
-                .WillCascadeOnDelete(false);
-
-            modelBuilder.Entity<NHANVIEN>()
-                .Property(e => e.MaNV)
-                .IsUnicode(false);
 
             modelBuilder.Entity<NHANVIEN>()
                 .Property(e => e.HinhAnh)
                 .IsUnicode(false);
 
-            modelBuilder.Entity<NHANVIEN>()
-                .Property(e => e.MaCongTy)
-                .IsUnicode(false);
-
-            modelBuilder.Entity<NHANVIEN>()
-                .Property(e => e.MaPHG)
-                .IsUnicode(false);
-
-            modelBuilder.Entity<PHIEUGIAHAN>()
-                .Property(e => e.MaPhieuGiaHan)
-                .IsUnicode(false);
-
-            modelBuilder.Entity<PHIEUGIAHAN>()
-                .Property(e => e.MaHD)
-                .IsUnicode(false);
-
-            modelBuilder.Entity<PHIEUGIAHAN>()
-                .Property(e => e.MaPHG)
-                .IsUnicode(false);
-
-            modelBuilder.Entity<PHONG>()
-                .Property(e => e.MaPHG)
-                .IsUnicode(false);
-
             modelBuilder.Entity<PHONG>()
                 .HasMany(e => e.CHITIETHOPDONGs)
                 .WithRequired(e => e.PHONG)
                 .WillCascadeOnDelete(false);
-
-            modelBuilder.Entity<PHONG>()
-                .HasMany(e => e.NHANVIENs)
-                .WithRequired(e => e.PHONG)
-                .WillCascadeOnDelete(false);
-
-            modelBuilder.Entity<TANG>()
-                .Property(e => e.Gia)
-                .IsFixedLength();
 
             modelBuilder.Entity<TANG>()
                 .HasMany(e => e.PHONGs)
                 .WithRequired(e => e.TANG1)
                 .HasForeignKey(e => new { e.Tang, e.DienTich })
                 .WillCascadeOnDelete(false);
-
-            modelBuilder.Entity<THAMSO>()
-                .Property(e => e.MaTS)
-                .IsUnicode(false);
-
-            modelBuilder.Entity<TAIKHOAN>()
-                .Property(e => e.MaTK)
-                .IsUnicode(false);
 
             modelBuilder.Entity<TAIKHOAN>()
                 .Property(e => e.TenDN)

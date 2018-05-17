@@ -58,3 +58,5 @@ C:\Users\Tuyet Trinh\Desktop\QLyCaoOc\QLyCaoOc\bin\Newtonsoft.Json.xml
 C:\Users\Tuyet Trinh\Desktop\QLyCaoOc\QLyCaoOc\obj\Debug\QLyCaoOc.dll
 C:\Users\Tuyet Trinh\Desktop\QLyCaoOc\QLyCaoOc\obj\Debug\QLyCaoOc.pdb
 C:\Users\Tuyet Trinh\Desktop\QLyCaoOc\QLyCaoOc\obj\Debug\QLyCaoOc.csprojResolveAssemblyReference.cache
+C:\Users\Tuyet Trinh\Desktop\QLyCaoOc\QLyCaoOc\obj\Debug\QLyCaoOc.Migrations.updatehinhanh.resources
+C:\Users\Tuyet Trinh\Desktop\QLyCaoOc\QLyCaoOc\obj\Debug\QLyCaoOc.csproj.GenerateResource.Cache

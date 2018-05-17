@@ -127,6 +127,10 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201805170824144_updatehinhanh.cs" />
+    <Compile Include="Migrations\201805170824144_updatehinhanh.Designer.cs">
+      <DependentUpon>201805170824144_updatehinhanh.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\CHITIETHOPDONG.cs" />
     <Compile Include="Models\CONGTY.cs" />
@@ -332,6 +336,11 @@
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="packages.config" />
     <None Include="Project_Readme.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201805170824144_updatehinhanh.resx">
+      <DependentUpon>201805170824144_updatehinhanh.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

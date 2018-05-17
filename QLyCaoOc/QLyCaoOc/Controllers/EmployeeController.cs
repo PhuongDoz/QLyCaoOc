@@ -28,17 +28,46 @@ namespace QLyCaoOc.Controllers
         [HttpGet]
         public ActionResult ThemNhanVien()
         {
-            ViewBag.MaNV = new SelectList(db.CONGTies.ToList().OrderBy(n => n.TenCT), "MaCongTy", "TenCT");
+            ViewBag.MaCongTy = new SelectList(db.CONGTies.ToList().OrderBy(n => n.TenCT), "MaCongTy", "TenCT");
             ViewBag.MaPHG = new SelectList(db.PHONGs.ToList().OrderBy(n => n.MaPHG), "MaPHG","MaPHG");
             return View();
         }
 
         [HttpPost]
         [ValidateInput(false)]
-        public ActionResult ThemNhanVien(NHANVIEN nv, HttpPostedFileBase fileupload)
+        public ActionResult ThemNhanVien(FormCollection collection, NHANVIEN nv, HttpPostedFileBase fileupload)
         {
+            var TenNV = collection["TenNV"];
+            var DiaChi = collection["DiaChiNV"];
+            var SDT = collection["SDTNV"];
+            var ChucVu = collection["ChucVu"];
+            var MaCongTy = collection["MaCongTy"];
+            var MaPHG = collection["MaPHG"];
+            if(String.IsNullOrEmpty(TenNV))
+            {
+                ViewData["Loi1"] = "Tên nhân viên không được bỏ trống!";
+            }
+            else if (String.IsNullOrEmpty(DiaChi))
+            {
+                ViewData["Loi2"] = "Địa chỉ nhân viên không đucợ bỏ trống!";
+            }
+            else if (String.IsNullOrEmpty(SDT))
+            {
+                ViewData["Loi3"] = "Số điện thoại nhân viên không được bỏ trống!";
+            }else if(String.IsNullOrEmpty(ChucVu))
+            {
+                ViewData["Loi4"] = "Chức vụ nhân viên không được bỏ trống!";
+            }
+            else if (String.IsNullOrEmpty(MaCongTy))
+            {
+                ViewData["Loi5"] = "Mã công ty không được bỏ trống!";
+            }
+            else if (String.IsNullOrEmpty(MaPHG))
+            {
+                ViewData["Loi6"] = "Mã phòng không được bỏ trống!";
+            }
             //đưa dữ liệu vài dropdowload
-            ViewBag.MaNV = new SelectList(db.CONGTies.ToList().OrderBy(n => n.TenCT), "MaCongTy", "TenCT");
+            ViewBag.MaCongTy = new SelectList(db.CONGTies.ToList().OrderBy(n => n.TenCT), "MaCongTy", "TenCT");
             ViewBag.MaPHG = new SelectList(db.PHONGs.ToList().OrderBy(n => n.MaPHG), "MaPHG","MaPHG");
 
             //Kiểm tra đường dẫn file
@@ -47,35 +76,33 @@ namespace QLyCaoOc.Controllers
                 ViewBag.Thongbao = "Vui lòng chọn ảnh nhân viên";
                 return View();
             }
-            //Thêm vào CSDL
-            else
+            if (ModelState.IsValid)
             {
-                if (ModelState.IsValid)
+                //Lưu tên file, lưu ý bổ sung thư viện system.IO
+                var fileName = Path.GetFileName(fileupload.FileName);
+                //lưu đường dẫn của fileName
+                var path = Path.Combine(Server.MapPath("~/images"), fileName);
+                //Kiểm tra hình ảnh tồn tại chưa
+                if (System.IO.File.Exists(path))
                 {
-                    //Lưu tên file, lưu ý bổ sung thư viện system.IO
-                    var fileName = Path.GetFileName(fileupload.FileName);
-                    //lưu đường dẫn của fileName
-                    var path = Path.Combine(Server.MapPath("~/images"), fileName);
-                    //Kiểm tra hình ảnh tồn tại chưa
-                    if (System.IO.File.Exists(path))
-                    {
-                        ViewBag.Thongbao = "Hình ảnh đã tồn tại";
-                    }
-                    else
-                    {
-                        //Lưu hình ảnh vào đường dẫn
-                        fileupload.SaveAs(path);
-                    }
-                    nv.HinhAnh = fileName;
-
-                    //Lưu vào CSDL
-                    db.NHANVIENs.Add(nv);
-                    db.SaveChanges();
+                    ViewBag.Thongbao = "Hình ảnh đã tồn tại";
                 }
-                return RedirectToAction("nv");
-            }
+                else
+                {
+                    //Lưu hình ảnh vào đường dẫn
+                    fileupload.SaveAs(path);
+                }
+                nv.HinhAnh = fileName;
+
+                //Lưu vào CSDL
+                db.NHANVIENs.Add(nv);
+                db.SaveChanges();
+                return RedirectToAction("Index");
+             }
+            return View();
         }
-        public ActionResult ChitietNV(string id)
+        
+        public ActionResult ChitietNV(int id)
         {
             //Lấy ra đối tượng sách theo mã
             NHANVIEN nv = db.NHANVIENs.SingleOrDefault(n => n.MaNV == id);
@@ -89,7 +116,7 @@ namespace QLyCaoOc.Controllers
         }
         //chỉnh sửa sản phẩm
         [HttpGet]
-        public ActionResult SuaNV(string id)
+        public ActionResult SuaNV(int id)
         {
             //Lấy ra đối tượng sách theo mã
             NHANVIEN nv = db.NHANVIENs.SingleOrDefault(n => n.MaNV == id);
@@ -97,7 +124,7 @@ namespace QLyCaoOc.Controllers
             //đưa dữ liệu vào dropdownList
             //Lấy daanh sách từ tabke chu de, sắp xếp tăng dần theo tên chủ đề, chọn mấy giá trị MaCD, hiển thị Tenchude
             ViewBag.MaNV = new SelectList(db.CONGTies.ToList().OrderBy(n => n.TenCT), "MaCongTy", "TenCT");
-            ViewBag.MaPHG = new SelectList(db.PHONGs.ToList().OrderBy(n => n.MaPHG), "MaPHG", "MaPHG");
+
             return View(nv);
         }
 
@@ -108,7 +135,7 @@ namespace QLyCaoOc.Controllers
         {
             //đưa dữ liệu vài dropdowload
             ViewBag.MaNV = new SelectList(db.CONGTies.ToList().OrderBy(n => n.TenCT), "MaCongTy", "TenCT");
-            ViewBag.MaPHG = new SelectList(db.PHONGs.ToList().OrderBy(n => n.MaPHG), "MaPHG", "MaPHG");
+
             //Kiểm tra đường dẫn file
             if (fileupload == null)
             {
@@ -143,7 +170,7 @@ namespace QLyCaoOc.Controllers
                     p.ChucVu = nv.ChucVu;
                     db.SaveChanges();
                 }
-                return RedirectToAction("nv");
+                return RedirectToAction("Index");
             }
         }
 
@@ -151,7 +178,7 @@ namespace QLyCaoOc.Controllers
 
 
         [HttpGet]
-        public ActionResult XoaNV(string id)
+        public ActionResult XoaNV(int id)
         {
             //Lấy ra đối tượng sách cần xóa theo mã
             NHANVIEN nv = db.NHANVIENs.SingleOrDefault(n => n.MaNV == id);
@@ -165,7 +192,7 @@ namespace QLyCaoOc.Controllers
         }
 
         [HttpPost, ActionName("Xoasach")]
-        public ActionResult Xacnhanxoa(string id)
+        public ActionResult Xacnhanxoa(int id)
         {
             //Lấy ra đối tượng sách cần xóa theo mã
             NHANVIEN nv = db.NHANVIENs.SingleOrDefault(n => n.MaNV == id);

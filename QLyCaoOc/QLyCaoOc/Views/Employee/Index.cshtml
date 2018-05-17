@@ -1,5 +1,5 @@
 ﻿@model IEnumerable<QLyCaoOc.Models.NHANVIEN>
-           @using QLyCaoOc.Models
+@using QLyCaoOc.Models
 
 @{
     ViewBag.Title = "Index";
@@ -14,11 +14,8 @@
     <thead>
         <tr>
             <th>
-                Mã công ty
-            </th>
-            <th>
-                Mã phòng
-            </th>
+                Mã nhân viên
+            </th> 
             <th>
                 Tên nhân viên
             </th>
@@ -29,6 +26,12 @@
             <th>
                 Chức vụ
             </th>
+            <th>
+                Mã công ty
+            </th>
+            <th>
+                Mã phòng
+            </th>
             <th></th>
         </tr>
         </thead>
@@ -37,10 +40,7 @@
         {
             <tr>
                 <td>
-                    @Html.DisplayFor(modelItem => item.CONGTY.MaCongTy)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.PHONG.MaPHG)
+                    @Html.DisplayFor(modelItem => item.MaNV)
                 </td>
                 <td>
                     @Html.DisplayFor(modelItem => item.TenNV)
@@ -53,9 +53,15 @@
                     @Html.DisplayFor(modelItem => item.ChucVu)
                 </td>
                 <td>
-                    @Html.ActionLink("Edit", "SuaNV", new { id = item.MaNV }) |
-                    @Html.ActionLink("Details", "ChiTietNV", new { id = item.MaNV }) |
-                    @Html.ActionLink("Delete", "XoaNV", new { id = item.MaNV })
+                    @Html.DisplayFor(modelItem => item.CONGTY.MaCongTy)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.PHONG.MaPHG)
+                </td>
+                <td>
+                    @Html.ActionLink("Sửa", "SuaNV", new { id = item.MaNV }) |
+                    @Html.ActionLink("Chi tiết", "ChiTietNV", new { id = item.MaNV }) |
+                    @Html.ActionLink("Xóa", "XoaNV", new { id = item.MaNV })
                 </td>
             </tr>
         }

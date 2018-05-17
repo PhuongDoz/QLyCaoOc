@@ -10,8 +10,7 @@ namespace QLyCaoOc.Models
     public partial class TAIKHOAN
     {
         [Key]
-        [StringLength(5)]
-        public string MaTK { get; set; }
+        public int MaTK { get; set; }
 
         [StringLength(50)]
         public string TenDN { get; set; }
