@@ -6,109 +6,97 @@
     Layout = "~/Views/Shared/_LayoutUser.cshtml";
 }
 
-<h1 style="text-align:center"> CHI TIẾT HỢP ĐỒNG</h1><div>
-   
-    <div>
+<h1 style="text-align:center"> CHI TIẾT HỢP ĐỒNG</h1>
 
-        <hr />
-        <dl class="dl-horizontal" style="font-size:20px">
-            <dd style="font-weight:bold">HỢP ĐỒNG</dd>
-            <dt>
-                Mã hợp đồng:
-            </dt>
+<div>
 
-            <dd>
-                @Html.DisplayFor(model => model.MaHD)
-            </dd>
-
-
-            <dt>
-                Ngày lập:
-            </dt>
-
-            <dd>
-                @Html.DisplayFor(model => model.NgayLap)
-            </dd>
-
-            <dt>
-                Tiền cọc:
-            </dt>
-
-            <dd>
-                @Html.DisplayFor(model => model.TienCoc) VNĐ
-            </dd>
-            <dd> </dd>
-
-            <dd style="font-weight:bold">PHÒNG</dd>
-            <dt>
-                Mã phòng:
-            </dt>
-
-            <dd>
-                @ViewBag.MaPHG
-            </dd>
-            <dt>
-                Tên phòng:
-            </dt>
-
-            <dd>
-                @ViewBag.TenPHG
-            </dd>
-            <dt>
-                Tầng:
-            </dt>
-
-            <dd>
-                @ViewBag.Tang
-            </dd>
-            <dt>
-                Diện tích:
-            </dt>
-
-            <dd>
-                @ViewBag.DienTich m2
-            </dd>
-            <dt>
-                Thời gian thuê:
-            </dt>
-
-            <dd>
-                @ViewBag.ThoiGianThue tháng
-            </dd>
-            <dd> </dd>
-            <dd style="font-weight:bold">CÔNG TY</dd>
-            <dt>
-                Mã công ty:
-            </dt>
-
-            <dd>
-                @ViewBag.MaCongTy
-         </dd>
+    <hr />
+    <dl class="dl-horizontal" style="font-size:20px">
+        <dd style="font-weight:bold">HỢP ĐỒNG</dd>
         <dt>
-            Công ty:
+            Mã hợp đồng:
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MaHD)
+        </dd>
+
+
+        <dt>
+            Ngày lập:
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NgayLap)
+        </dd>
+
+        <dt>
+            Tiền cọc:
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TienCoc) VNĐ
+        </dd>
+        <dd> </dd>
+
+        <dd style="font-weight:bold">PHÒNG</dd>
+        <dt>
+            Mã phòng:
+        </dt>
+
+        <dd>
+            @ViewBag.MaPHG
+        </dd>
+        <dt>
+            Tên phòng:
+        </dt>
+
+        <dd>
+            @ViewBag.TenPHG
+        </dd>
+        <dt>
+            Tầng:
+        </dt>
+
+        <dd>
+            @ViewBag.Tang
+        </dd>
+        <dt>
+            Diện tích:
+        </dt>
+
+        <dd>
+            @ViewBag.DienTich m2
+        </dd>
+        <dt>
+            Thời gian thuê:
+        </dt>
+
+        <dd>
+            @ViewBag.ThoiGianThue tháng
+        </dd>
+        <dd> </dd>
+        <dd style="font-weight:bold">CÔNG TY</dd>
+        <dt>
+            Mã công ty:
+        </dt>
+
+        <dd>
+            @ViewBag.MaCongTy
+        </dd>
+        <dt>
+            Tên công ty:
         </dt>
 
         <dd>
             @ViewBag.TenCT
         </dd>
-        <dt>
-            ĐT công ty:
-        </dt>
 
-        <dd>
-            @ViewBag.SDT
-        </dd>
-        <dt>
-            Địa chỉ công ty:
-        </dt>
 
-        <dd>
-            @ViewBag.DiaChiCT
-        </dd>
+    </dl>
+</div>
 
-        </dl>
-    </div>
-    <p>
-        @Html.ActionLink("sửa", "Edit", new { id = Model.MaHD }) |
-        @Html.ActionLink("Quay lại trang quản lý", "Index")
-    </p>
+<p>
+    @Html.ActionLink("Sửa", "Edit", new { id = Model.MaHD }) |
+    @Html.ActionLink("Quay lại trang quản lý", "Index")
+</p>

@@ -38,9 +38,9 @@ namespace QLyCaoOc.Controllers
         }
 
         //XÓa Tầng
-        public ActionResult Xoatang(int id1, int id2)
+        public ActionResult Xoatang(int id1 , int id2)
         {
-            TANG tang = db.TANGs.Find(id1, id2);
+            TANG tang = db.TANGs.Find(id1,id2);
             if (tang == null)
             {
                 Response.StatusCode = 404;
@@ -53,7 +53,7 @@ namespace QLyCaoOc.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult Xacnhanxoa(int id1, int id2)
         {
-            TANG tang = db.TANGs.Find(id1, id2);
+            TANG tang = db.TANGs.Find(id1,id2);
             ViewBag.Tang1 = tang.Tang1;
             if (tang == null)
             {
@@ -66,7 +66,7 @@ namespace QLyCaoOc.Controllers
         }
 
         [HttpGet]
-        public ActionResult Suatang(int id1, int id2)
+        public ActionResult Suatang(int id1 , int id2)
         {
             TANG tang = db.TANGs.Find(id1, id2);
             if (tang == null)

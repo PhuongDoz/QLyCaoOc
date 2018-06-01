@@ -1,0 +1,57 @@
+﻿@model QLyCaoOc.Models.CONGTY
+@using QLyCaoOc.Models
+
+@{
+    ViewBag.Title = "Chitietcongty";
+    Layout = "~/Views/Shared/_LayoutUser.cshtml";
+}
+
+<h1 style="text-align:center">CHI TIẾT HỢP ĐỒNG</h1>
+
+<div>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            Mã công ty :
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MaCongTy)
+        </dd>
+        <dt>
+            Tên công ty :
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TenCT)
+        </dd>
+
+        <dt>
+            Địa chỉ công ty :
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DiaChiCT)
+        </dd>
+
+        <dt>
+            SĐT :
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SDT)
+        </dd>
+        <dt>
+            Mã hợp đồng :
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MaHD)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    n0u    @Html.ActionLink("Chi tiết", "Chitietcongty", new { id = Model.MaCongTy }) |
+    @Html.ActionLink("Quay lại trang quản lý", "Index")
+</p>

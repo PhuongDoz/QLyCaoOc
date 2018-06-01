@@ -1,0 +1,33 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Login</title>
+    <link href="~/Content/style.css" rel="stylesheet" />
+    <link href="~/Content/style.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="main-wrap">
+        <h4 style="color:red; text-align:center">@ViewBag.Thongbao</h4>
+        <div class="login-main">
+            <h2 style="text-align:center">ĐĂNG NHẬP</h2>
+            @using (Html.BeginForm())
+            {
+                @Html.ValidationSummary(true)
+                <input type="text" placeholder="Enter User Name..." class="box1 border1" name="username"><br>
+                @ViewData["Loi1"]
+                <input type="password" placeholder="Enter Password..." class="box1 border2" name="password"><br>
+                @ViewData["Loi2"]
+                <input type="submit" class="send" value="Go">
+                <p>Bạn quên mật khẩu sao? <a href="#">Hãy nhấn vào đây...</a></p>
+            }
+        </div>
+
+    </div>
+</body>
+</html>

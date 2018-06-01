@@ -1,156 +1,180 @@
 ﻿@using QLyCaoOc.Models
-@model QLyCaoOc.Models.HOPDONG
+@model QLyCaoOc.Models.ContractViewModel
 
 @{
     ViewBag.Title = "Themhopdong";
     Layout = "~/Views/Shared/_LayoutUser.cshtml";
 }
 
-<h1 style="text-align:center"> THÊM HỢP ĐỒNG</h1><div>
+<h1 style="text-align:center"> THÊM HỢP ĐỒNG</h1>
 
 
-    @using (Html.BeginForm())
-    {
-        @Html.AntiForgeryToken()
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
 
-        <div class="form-horizontal" role="form">
-        
-            <hr />
-            @Html.ValidationSummary(true, "", new { @class = "text-danger" })
-            <fieldset>
-                <legend>HỢP ĐỒNG</legend>
-                <div class="form-group">
-                    <div class="control-label col-md-2">
-                        Mã hợp đồng:
-                    </div>
-                    <div class="col-sm-9">
-                        @Html.EditorFor(model => model.MaHD, new { htmlAttributes = new { @class = "form-control" } })
-                        @Html.ValidationMessageFor(model => model.MaHD, "", new { @class = "text-danger" })
-                    </div>
-                </div>
-                <div class="form-group">
-                    <div class="control-label col-md-2">
-                        Ngày lập
-                    </div>
-                    <div class="col-sm-9">
-                        <input type="date" name="NgayLap" />
-                        @Html.ValidationMessageFor(model => model.NgayLap)
-                    </div>
-                </div>
-                <div class="form-group">
-                    <div class="control-label col-md-2">
-                        Tiền cọc:
-                    </div>
-                    <div class="col-sm-9">
-                        @Html.EditorFor(model => model.TienCoc, new { htmlAttributes = new { @class = "form-control" } })
-                        @Html.ValidationMessageFor(model => model.TienCoc, "", new { @class = "text-danger" })
-                    </div>
-                </div>
+    <div class="form-horizontal" role="form">
 
-                <div class="form-group">
-                    <div class="control-label col-md-2">
-                        Thời gian thuê:
-                    </div>
-                    <div class="col-sm-9">
-                        @Html.DropDownList("ThoiGianThue")
-                    </div>
-                </div>
-            </fieldset>
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
 
-            <fieldset>
-                <legend>PHÒNG</legend>
-                <div class="form-group">
-                    <div class="control-label col-md-2">
-                        Mã phòng:
-                    </div>
-                    <div class="col-sm-9">
-                        @Html.DropDownList("MaPHG")
 
-                    </div>
-                </div>
-                <div class="form-group">
-                    <div class="control-label col-md-2">
-                        Tên phòng:
-                    </div>
-                    <div class="col-sm-9">
-                        @ViewBag.TenPHG
 
-                    </div>
-                </div>
-                <div class="form-group">
-                    <div class="control-label col-md-2">
-                        Tầng:
-                    </div>
-
-                    <div class="col-sm-9">
-                        @Html.DropDownList("Tang")
-                    </div>
-                </div>
-                <div class="form-group">
-                    <div class="control-label col-md-2">
-                        Diện tích:
-                    </div>
-                    <div class="col-sm-9">
-                        @Html.DropDownList("DienTich")
-                    </div>
-                </div>
-            </fieldset>
-
-            <fieldset>
-                <legend>CÔNG TY</legend>
-                <div class="form-group">
-                    <div class="control-label col-md-2">
-                        Mã công ty:
-                    </div>
-                    <div class="col-sm-9">
-                        @Html.TextBox("MaCongTy")
-
-                    </div>
-                </div>
-                <div class="form-group">
-                    <div class="control-label col-md-2">
-                        Tên công ty:
-                    </div>
-                    <div class="col-sm-9">
-                        @Html.TextBox("TenCT")
-
-                    </div>
-                </div>
-                <div class="form-group">
-                    <div class="control-label col-md-2">
-                        Địa chỉ công ty:
-                    </div>
-                    <div class="col-sm-9">
-                        @Html.TextBox("DiaChiCT")
-
-                    </div>
-                </div>
-                <div class="form-group">
-                    <div class="control-label col-md-2">
-                        Điện thoại công ty:
-                    </div>
-                    <div class="col-sm-9">
-                        @Html.TextBox("SDT")
-
-                    </div>
-                </div>
-            </fieldset>
-               
-          
-                <div class="form-group">
-                    <div class="col-md-offset-2 col-md-10">
-                        <input type="submit" value="Tạo" class="btn btn-default" />
-                    </div>
-                </div>
-
-        
-
-                
+        <div class="form-group">
+            <div class="control-label col-md-2">
+                Ngày lập
             </div>
-    }
+            <div class="col-sm-9">
+                <input type="date" name="NgayLap" />
+                @Html.ValidationMessageFor(model => model.NgayLap)
+                @ViewData["Loi1"]
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="control-label col-md-2">
+                Tiền cọc:
+            </div>
+            <div class="col-sm-9">
+                @Html.EditorFor(model => model.TienCoc, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.TienCoc, "", new { @class = "text-danger" })
+                @ViewData["Loi2"]
+            </div>
+        </div>
 
-    <div>
-        @Html.ActionLink("Quay lại trang quản lý hợp đồng", "Index")
+        <div class="form-group">
+            <div class="control-label col-md-2">
+                Thời gian thuê:
+            </div>
+            <div class="col-sm-9">
+                @Html.DropDownList("thoigianthue", new List<SelectListItem>
+                            {
+                            new SelectListItem{ Text="6 tháng ", Value = "6" },
+                            new SelectListItem{ Text="8 tháng", Value = "8" },
+                            new SelectListItem{ Text="10 tháng", Value = "10" },
+                            new SelectListItem{ Text="12 tháng", Value = "12" },
+                            new SelectListItem{ Text="14 tháng", Value = "14" },
+                            new SelectListItem{ Text="16 tháng", Value = "16" },
+                            new SelectListItem{ Text="18 tháng", Value = "18" },
+                            new SelectListItem{ Text="20 tháng", Value = "20" },
+                            new SelectListItem{ Text="22 tháng", Value = "22" },
+                            new SelectListItem{ Text="24 tháng", Value = "24" },
+                            })
+                @ViewData["Loi3"]
+
+            </div>
+        </div>
+
+
+
+
+
+        <div class="form-group">
+
+            <div class="control-label col-md-2">
+                Mã phòng:
+            </div>
+            <div class="col-sm-9">
+                @Html.DropDownListFor(model => model.MaPHG, ViewBag.MaPHG as SelectList, "-Chọn phòng-", new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.MaPHG, "", new { @class = "text-danger" })
+                @ViewData["Loi4"]
+
+                <button type="button" class="btn btn-success" onclick="location.href='@Url.Action("Index", "Room") '">Xem phong</button>
+            </div>
+        </div>
+
+
+
+
+
+
+
+        <div class="form-group">
+            <div class="control-label col-md-2">
+                Mã công ty:
+            </div>
+            <div class="col-sm-9">
+                @Html.DropDownListFor(model => model.MaCongTy, ViewBag.MaCongTy as SelectList, "-Chọn công ty-", new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.MaCongTy, "", new { @class = "text-danger" })
+                @ViewData["Loi5"]
+
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="control-label col-md-2">
+                Tên khách hàng:
+            </div>
+            <div class="col-sm-9">
+                @Html.EditorFor(model => model.TenNV, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.TenNV, "", new { @class = "text-danger" })
+                @ViewData["Loi6"]
+
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="control-label col-md-2">
+                Địa chỉ khách hàng:
+            </div>
+            <div class="col-sm-9">
+                @Html.EditorFor(model => model.DiaChiNV, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.DiaChiNV, "", new { @class = "text-danger" })
+                @ViewData["Loi7"]
+
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="control-label col-md-2">
+                Điện thoại khách hàng:
+            </div>
+            <div class="col-sm-9">
+                @Html.EditorFor(model => model.SDTNV, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.SDTNV, "", new { @class = "text-danger" })
+                @ViewData["Loi8"]
+
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="control-label col-md-2">
+                Chức vụ:
+            </div>
+            <div class="col-sm-9">
+                @Html.EditorFor(model => model.ChucVu, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.ChucVu, "", new { @class = "text-danger" })
+                @ViewData["Loi9"]
+
+            </div>
+        </div>
+
+
+
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Tao" class="btn btn-default" />
+            </div>
+        </div>
     </div>
+}
+
+<div>
+    @Html.ActionLink("Quay lại trang quản lý hợp đồng", "Index")
+</div>
 
 
+
+@*<script src="~/Scripts/jquery-1.10.2.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#MaPHG").change(function () {
+
+                var list = document.getElementById('MaPHG');
+                var item = list.options[list.selectedIndex].value;
+
+                //alert(item);
+
+                $get("/Contract/GetID", { MaPHG: $("#MaPHG").val }, function (data) {
+                    $("#MaPHG").append()
+                });
+            });
+        });
+
+    </script>*@

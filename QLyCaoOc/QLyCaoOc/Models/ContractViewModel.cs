@@ -7,21 +7,16 @@ namespace QLyCaoOc.Models
 {
     public class ContractViewModel
     {
-        public CHITIETHOPDONG cthd { get; set; }
-        public TANG tang { get; set; }
-        public HOPDONG hd { get; set; }
-        
-    }
-    public class HopDong
-    {
-        public string MaHD { get; set; }
+        public int MaHD { get; set; }
         public DateTime NgayLap { get; set; }
         public int TienCoc { get; set; }
-        public string MaPHG { get; set; }
-        public string TenPHG { get; set; }
-        public int Tang { get; set; }
-        public int DienTich { get; set; }
-        public int Gia { get; set; }
         public int ThoiGianThue { get; set; }
+        public int MaPHG { get; set; }
+        public int MaCongTy { get; set; }
+        public string TenNV { get; set; }
+        public string DiaChiNV { get; set; }
+        public string SDTNV { get; set; }
+        public string ChucVu { get; set; }
+        public string HinhAnh { get; set; }
     }
 }

@@ -1,0 +1,35 @@
+﻿
+    <!DOCTYPE html>
+    <html>
+    <head runat="server">
+        <meta name="viewport" content="width=device-width" />
+        <title>ReportViwer in MVC4 Application</title>
+        <script runat="server">
+            void Page_Load(object sender, EventArgs e)
+            {
+                if (!IsPostBack)
+                {
+                    List<MVCReportViwer.Customer> customers = null;
+                    using (MVCReportViwer.MyDatabaseEntities dc = new MVCReportViwer.MyDatabaseEntities())
+                    {
+                        customers = dc.Customers.OrderBy(a => a.CustomerID).ToList();
+                        ReportViewer1.LocalReport.ReportPath = Server.MapPath("~/RPTReports/rptCustomer.rdlc");
+                        ReportViewer1.LocalReport.DataSources.Clear();
+                        ReportDataSource rdc = new ReportDataSource("MyDataset", customers);
+                        ReportViewer1.LocalReport.DataSources.Add(rdc);
+                        ReportViewer1.LocalReport.Refresh();
+                    }
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <form id="form1" runat="server">
+            <div>
+                <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
+                <rsweb:ReportViewer ID="ReportViewer1" runat="server" AsyncRendering="false" SizeToReportContent="true">
+                </rsweb:ReportViewer>
+            </div>
+        </form>
+    </body>
+</html>

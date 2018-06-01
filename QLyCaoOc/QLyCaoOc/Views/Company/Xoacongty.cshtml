@@ -1,0 +1,62 @@
+﻿@model QLyCaoOc.Models.CONGTY
+
+@{
+    ViewBag.Title = "Xoacongty";
+    Layout = "~/Views/Shared/_LayoutUser.cshtml";
+}
+
+<h1 style="text-align:center">XÁC NHẬN XÓA CÔNG TY</h1>
+<div>
+    <hr />
+    <dl class="dl-horizontal">
+        <dd style="font-weight:bold">CÔNG TY</dd>
+        <dt>
+            Mã công ty :
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MaCongTy)
+        </dd>
+        <dt>
+            Tên công ty :
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TenCT)
+        </dd>
+
+        <dt>
+            Địa chỉ công ty :
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DiaChiCT)
+        </dd>
+
+        <dt>
+            SĐT :
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SDT)
+        </dd>
+        <dt>
+            Mã hợp đồng :
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MaHD)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Xóa" class="btn btn-default" /> |
+            @Html.ActionLink("Trở về", "Index")
+        </div>
+    }
+</div>

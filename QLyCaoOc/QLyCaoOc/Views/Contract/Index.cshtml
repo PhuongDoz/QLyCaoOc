@@ -6,45 +6,53 @@
 }
 
 
-   <h1 style="text-align:center"> QUẢN LÝ HỢP ĐỒNG</h1>
+<h1 style="text-align:center"> QUẢN LÝ HỢP ĐỒNG</h1>
 <p>
     <button type="button" class="btn btn-success" onclick="location.href='@Url.Action("Themhopdong","Contract")'">Thêm Mới</button>
+    <button type="button" class="btn btn-success" onclick="location.href='@Url.Action("Thongtinhopdong","Contract")'">Xem thêm thông tin hợp đồng</button>
+
 </p>
 <table id="dynamic-table" class="table table-striped table-bordered table-hover">
-    
+
     <thead>
         <tr>
             <th>
-              Mã hợp đồng
+                Mã hợp đồng
             </th>
             <th>
-              Ngày lập
+                Ngày lập
+            </th>     
+            <th>
+                Tiền cọc
             </th>
             <th>
-               Tiền cọc
+                Mã công ty
             </th>
             <th></th>
         </tr>
-        </thead>
+    </thead>
 
-        @foreach (var hopdong in Model)
-        {
-    <tr>
-        <td>
-            @Html.DisplayFor(modelItem => hopdong.MaHD)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => hopdong.NgayLap)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => hopdong.TienCoc)
-        </td>
-        <td>
-            @Html.ActionLink("Sửa", "Suahopdong", new { id = hopdong.MaHD }) |
-            @Html.ActionLink("Chi tiết", "Chitiethopdong", new { id = hopdong.MaHD }) |
-            @Html.ActionLink("Xóa", "Xoahopdong", new { id = hopdong.MaHD })
-        </td>
-    </tr>
-        }
+    @foreach (var hopdong in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => hopdong.MaHD)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => hopdong.NgayLap)
+            </td>
+            <td>
+                @String.Format("{0:0,0}", hopdong.TienCoc) VNĐ
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => hopdong.MaCongTy)
+            </td>
+            <td>
+                @Html.ActionLink("Sửa", "Suahopdong", new { id = hopdong.MaHD }) |
+                @Html.ActionLink("Chi tiết", "Chitiethopdong", new { id = hopdong.MaHD,id2= hopdong.MaCongTy}) |
+                @Html.ActionLink("Xóa", "Xoahopdong", new { id = hopdong.MaHD })
+            </td>
+        </tr>
+    }
 
 </table>
