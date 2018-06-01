@@ -27,8 +27,8 @@ GO
 IF OBJECT_ID(N'[dbo].[FK_CHITIETHOPDONG_PHONG]', 'F') IS NOT NULL
     ALTER TABLE [dbo].[CHITIETHOPDONG] DROP CONSTRAINT [FK_CHITIETHOPDONG_PHONG];
 GO
-IF OBJECT_ID(N'[dbo].[FK_CONGTY_HOPDONG]', 'F') IS NOT NULL
-    ALTER TABLE [dbo].[CONGTY] DROP CONSTRAINT [FK_CONGTY_HOPDONG];
+IF OBJECT_ID(N'[dbo].[FK_HOPDONG_CONGTY]', 'F') IS NOT NULL
+    ALTER TABLE [dbo].[HOPDONG] DROP CONSTRAINT [FK_HOPDONG_CONGTY];
 GO
 IF OBJECT_ID(N'[dbo].[FK_NHANVIEN_CONGTY]', 'F') IS NOT NULL
     ALTER TABLE [dbo].[NHANVIEN] DROP CONSTRAINT [FK_NHANVIEN_CONGTY];
@@ -79,57 +79,58 @@ GO
 
 -- Creating table 'CHITIETHOPDONGs'
 CREATE TABLE [dbo].[CHITIETHOPDONG] (
-    [MaHD] varchar(5)  NOT NULL,
-    [MaPHG] varchar(5)  NOT NULL,
+    [MaHD] int NOT NULL,
+    [MaPHG] int  NOT NULL,
     [ThoiGianThue] int  NULL
 );
 GO
 
 -- Creating table 'CONGTies'
 CREATE TABLE [dbo].[CONGTY] (
-    [MaCongTy] varchar(5)  NOT NULL,
+    [MaCongTy] int identity NOT NULL,
     [TenCT] nvarchar(50)  NULL,
     [DiaChiCT] nvarchar(50)  NULL,
-    [SDT] nvarchar(12)  NULL,
-    [MaHD] varchar(5)  NOT NULL
+    [SDT] nvarchar(12)  NULL
+  
 );
 GO
 
 -- Creating table 'HOPDONGs'
 CREATE TABLE [dbo].[HOPDONG] (
-    [MaHD] varchar(5)  NOT NULL,
-    [NgayLap] datetime  NULL,
-    [TienCoc] int  NULL
+    [MaHD] int identity NOT NULL,
+    [NgayLap] datetime NOT NULL,
+    [TienCoc] int NOT NULL,
+	[MaCongTy] int NOT NULL
 );
 GO
 
 -- Creating table 'NHANVIENs'
 CREATE TABLE [dbo].[NHANVIEN] (
-    [MaNV] varchar(5)  NOT NULL,
+    [MaNV] int identity NOT NULL,
     [TenNV] nvarchar(50)  NULL,
     [DiaChiNV] nvarchar(50)  NULL,
     [SDTNV] nvarchar(10)  NULL,
-	[HinhAnh] IMAGE NULL,
+	[HinhAnh] varchar(50) NULL,
 	[ChucVu] nvarchar(30) NULL,
-    [MaCongTy] varchar(5)  NOT NULL,
-    [MaPHG] varchar(5)  NOT NULL,
+    [MaCongTy] int  NULL,
+    [MaPHG] int  NULL,
 	
 );
 GO
 
 -- Creating table 'PHIEUGIAHANs'
 CREATE TABLE [dbo].[PHIEUGIAHAN] (
-    [MaPhieuGiaHan] varchar(5)  NOT NULL,
+    [MaPhieuGiaHan] int identity NOT NULL,
     [NgayGiaHan] datetime  NULL,
     [NgayHetHan] datetime  NULL,
-    [MaHD] varchar(5)  NULL,
-    [MaPHG] varchar(5)  NULL
+    [MaHD] int NOT NULL,
+    [MaPHG] int NOT NULL
 );
 GO
 
 -- Creating table 'PHONGs'
 CREATE TABLE [dbo].[PHONG] (
-    [MaPHG] varchar(5)  NOT NULL,
+    [MaPHG] int identity NOT NULL,
     [TenPHG] nvarchar(50)  NULL,
     [Tang] int  NOT NULL,
     [DienTich] int  NOT NULL
@@ -142,14 +143,14 @@ GO
 -- Creating table 'TANGs'
 CREATE TABLE [dbo].[TANG] (
     [Tang] int  NOT NULL,
-    [DienTich] int  NOT NULL,
-    [Gia] nchar(10)  NOT NULL
+    [DienTich] int NOT NULL,
+    [Gia] int  NOT NULL
 );
 GO
 
 -- Creating table 'THAMSOes'
 CREATE TABLE [dbo].[THAMSO] (
-    [MaTS] varchar(5)  NOT NULL,
+    [MaTS] int identity NOT NULL,
     [TenTS] nvarchar(50)  NULL,
     [GiaTriTS] int  NULL
 );
@@ -157,7 +158,7 @@ GO
 
 -- Creating table 'TAIKHOANs'
 CREATE TABLE [dbo].[TAIKHOAN] (
-    [MaTK] varchar(5)  NOT NULL,
+    [MaTK] int identity NOT NULL,
     [TenDN] varchar(50)  NULL,
     [MatKhau] varchar(30)  NULL
 );
@@ -262,18 +263,18 @@ ON [dbo].[PHIEUGIAHAN]
 GO
 
 -- Creating foreign key on [MaHD] in table 'CONGTies'
-ALTER TABLE [dbo].[CONGTY]
-ADD CONSTRAINT [FK_CONGTY_HOPDONG]
-    FOREIGN KEY ([MaHD])
-    REFERENCES [dbo].[HOPDONG]
-        ([MaHD])
+ALTER TABLE [dbo].[HOPDONG]
+ADD CONSTRAINT [FK_HOPDONG_CONGTY]
+    FOREIGN KEY ([MaCongTy])
+    REFERENCES [dbo].[CONGTY]
+        ([MaCongTy])
     ON DELETE NO ACTION ON UPDATE NO ACTION;
 GO
 
 -- Creating non-clustered index for FOREIGN KEY 'FK_CONGTY_HOPDONG'
-CREATE INDEX [IX_FK_CONGTY_HOPDONG]
-ON [dbo].[CONGTY]
-    ([MaHD]);
+CREATE INDEX [IX_FK_HOPDONG_CONGTY]
+ON [dbo].[HOPDONG]
+    ([MaCongTy]);
 GO
 
 -- Creating foreign key on [MaCongTy] in table 'NHANVIENs'
@@ -324,83 +325,107 @@ GO
 -- --------------------------------------------------
 -- Script has ended
 -- --------------------------------------------------
-
+--insert table CONGTY
+set identity_insert CONGTY on
+insert into CONGTY (MaCongTy, TenCT, DiaChiCT, SDT) values (1, 'McDONALD', '12 Charles Delea', '490-118-5583');
+insert into CONGTY (MaCongTy, TenCT, DiaChiCT, SDT) values (2, 'HIGHLANDS Coffee', '54 Darin Trainer', '757-942-3707');
+insert into CONGTY (MaCongTy, TenCT, DiaChiCT, SDT) values (3, 'STARBUCKS', '98 Shandee Gateshill', '284-871-6762');
+insert into CONGTY (MaCongTy, TenCT, DiaChiCT, SDT) values (4, 'PHÚC LONG Coffee', '123 Lou Worg', '223-881-6293');
+insert into CONGTY (MaCongTy, TenCT, DiaChiCT, SDT) values (5, 'THE COFFEE HOUSE', '86 Merry Costall', '678-453-1532');
+insert into CONGTY (MaCongTy, TenCT, DiaChiCT, SDT) values (6, 'ORIENT SOFTWARE', '45 Rusty Kiddell', '601-839-1862');
+insert into CONGTY (MaCongTy, TenCT, DiaChiCT, SDT) values (7, 'PIZZA COMPANY', '64 Charmian Arnholtz', '964-938-4039');
+insert into CONGTY (MaCongTy, TenCT, DiaChiCT, SDT) values (8, 'JOLIE PEE', '75 Matelda Corbin', '540-195-9778');
+insert into CONGTY (MaCongTy, TenCT, DiaChiCT, SDT) values (9, 'LOTTERIA', '24 Augustus Surr', '917-744-7575');
+insert into CONGTY (MaCongTy, TenCT, DiaChiCT, SDT) values (10, 'FPT SOFTWARE', '64 Juan Laidlaw', '259-333-0141');
+insert into CONGTY (MaCongTy, TenCT, DiaChiCT, SDT) values (11, 'GLOBAL CYBERSOFT', '68 Sherie Sidlow', '770-830-0203');
+insert into CONGTY (MaCongTy, TenCT, DiaChiCT, SDT) values (12, 'HARVEY NASH', '974 Hermia Yaldren', '223-311-9416');
+insert into CONGTY (MaCongTy, TenCT, DiaChiCT, SDT) values (13, 'FUJINET', '145 Davis Newvill', '462-266-3865');
+insert into CONGTY (MaCongTy, TenCT, DiaChiCT, SDT) values (14, 'DIGI-TEXX', '156 Sansone Durran', '231-999-0634');
+insert into CONGTY (MaCongTy, TenCT, DiaChiCT, SDT) values (15, 'KMS TECHNOLOGY', '124 Maddie Adamthwaite', '225-569-1962');
+insert into CONGTY (MaCongTy, TenCT, DiaChiCT, SDT) values (16, 'TMA SOLUTIONS', '675 Kerrill Puttick', '147-556-5658');
+insert into CONGTY (MaCongTy, TenCT, DiaChiCT, SDT) values (17, 'MK SMART', '564 Valencia Flynn', '534-659-2938');
+insert into CONGTY (MaCongTy, TenCT, DiaChiCT, SDT) values (18, 'INTERNATIONAL BUSINESS MACHINE', '325 Bernita Bamlet', '270-248-5522');
+insert into CONGTY (MaCongTy, TenCT, DiaChiCT, SDT) values (19, 'MICROSOFT COMPANY', '79 Ricky Karby', '454-742-7545');
+insert into CONGTY (MaCongTy, TenCT, DiaChiCT, SDT) values (20, 'ORACLE', '55 Henrik Dimmer', '331-622-8247');
+set identity_insert CONGTY off
 --Insert table HOPDONG
-insert into HOPDONG (MaHD, NgayLap, TienCoc) values (1, '9/26/2017', '7300000');
-insert into HOPDONG (MaHD, NgayLap, TienCoc) values (2, '1/22/2018', '5100000');
-insert into HOPDONG (MaHD, NgayLap, TienCoc) values (3, '6/10/2017', '9100000');
-insert into HOPDONG (MaHD, NgayLap, TienCoc) values (4, '10/2/2017', '8500000');
-insert into HOPDONG (MaHD, NgayLap, TienCoc) values (5, '7/29/2017', '6400000');
-insert into HOPDONG (MaHD, NgayLap, TienCoc) values (6, '3/11/2018', '9600000');
-insert into HOPDONG (MaHD, NgayLap, TienCoc) values (7, '1/5/2018', '7400000');
-insert into HOPDONG (MaHD, NgayLap, TienCoc) values (8, '2/27/2018', '7600000');
-insert into HOPDONG (MaHD, NgayLap, TienCoc) values (9, '8/30/2017', '7300000');
-insert into HOPDONG (MaHD, NgayLap, TienCoc) values (10, '4/28/2017', '8300000');
-insert into HOPDONG (MaHD, NgayLap, TienCoc) values (11, '3/15/2018', '5400000');
-insert into HOPDONG (MaHD, NgayLap, TienCoc) values (12, '7/15/2017', '6100000');
-insert into HOPDONG (MaHD, NgayLap, TienCoc) values (13, '11/11/2017', '7600000');
-insert into HOPDONG (MaHD, NgayLap, TienCoc) values (14, '12/18/2017', '7800000');
-insert into HOPDONG (MaHD, NgayLap, TienCoc) values (15, '10/2/2017', '8000000');
-insert into HOPDONG (MaHD, NgayLap, TienCoc) values (16, '5/30/2017', '9300000');
-insert into HOPDONG (MaHD, NgayLap, TienCoc) values (17, '12/4/2017', '8900000');
-insert into HOPDONG (MaHD, NgayLap, TienCoc) values (18, '2/6/2018', '6700000');
-insert into HOPDONG (MaHD, NgayLap, TienCoc) values (19, '6/24/2017', '5900000');
-insert into HOPDONG (MaHD, NgayLap, TienCoc) values (20, '2/28/2018', '8100000');
-
+set identity_insert HOPDONG on
+insert into HOPDONG (MaHD, NgayLap, TienCoc,MaCongTy) values (1, '9/26/2017', 7300000,1);
+insert into HOPDONG (MaHD, NgayLap, TienCoc,MaCongTy) values (2, '1/22/2018', 5100000,2);
+insert into HOPDONG (MaHD, NgayLap, TienCoc,MaCongTy) values (3, '6/10/2017', 9100000,3);
+insert into HOPDONG (MaHD, NgayLap, TienCoc,MaCongTy) values (4, '10/2/2017', 8500000,4);
+insert into HOPDONG (MaHD, NgayLap, TienCoc,MaCongTy) values (5, '7/29/2017', 6400000,5);
+insert into HOPDONG (MaHD, NgayLap, TienCoc,MaCongTy) values (6, '3/11/2018', 9600000,6);
+insert into HOPDONG (MaHD, NgayLap, TienCoc,MaCongTy) values (7, '1/5/2018', 7400000,7);
+insert into HOPDONG (MaHD, NgayLap, TienCoc,MaCongTy) values (8, '2/27/2018', 7600000,8);
+insert into HOPDONG (MaHD, NgayLap, TienCoc,MaCongTy) values (9, '8/30/2017', 7300000,9);
+insert into HOPDONG (MaHD, NgayLap, TienCoc,MaCongTy) values (10, '4/28/2017', 8300000,10);
+insert into HOPDONG (MaHD, NgayLap, TienCoc,MaCongTy) values (11, '3/15/2018', 5400000,11);
+insert into HOPDONG (MaHD, NgayLap, TienCoc,MaCongTy) values (12, '7/15/2017', 6100000,12);
+insert into HOPDONG (MaHD, NgayLap, TienCoc,MaCongTy) values (13, '11/11/2017', 7600000,13);
+insert into HOPDONG (MaHD, NgayLap, TienCoc,MaCongTy) values (14, '12/18/2017', 7800000,14);
+insert into HOPDONG (MaHD, NgayLap, TienCoc,MaCongTy) values (15, '10/2/2017', 8000000,15);
+insert into HOPDONG (MaHD, NgayLap, TienCoc,MaCongTy) values (16, '5/30/2017', 9300000,16);
+insert into HOPDONG (MaHD, NgayLap, TienCoc,MaCongTy) values (17, '12/4/2017', 8900000,17);
+insert into HOPDONG (MaHD, NgayLap, TienCoc,MaCongTy) values (18, '2/6/2018', 6700000,18);
+insert into HOPDONG (MaHD, NgayLap, TienCoc,MaCongTy) values (19, '6/24/2017', 5900000,19);
+insert into HOPDONG (MaHD, NgayLap, TienCoc,MaCongTy) values (20, '2/28/2018', 8100000,20);
+set identity_insert HOPDONG off
 --Insert table TANG
-insert into TANG (Tang, DienTich, Gia) values (1, 100, '18200000');
-insert into TANG (Tang, DienTich, Gia) values (2, 100, '15800000');
-insert into TANG (Tang, DienTich, Gia) values (3, 100, '11100000');
-insert into TANG (Tang, DienTich, Gia) values (4, 100, '10300000');
-insert into TANG (Tang, DienTich, Gia) values (5, 100, '19400000');
-insert into TANG (Tang, DienTich, Gia) values (6, 100, '13400000');
-insert into TANG (Tang, DienTich, Gia) values (7, 100, '12200000');
-insert into TANG (Tang, DienTich, Gia) values (8, 100, '19000000');
-insert into TANG (Tang, DienTich, Gia) values (9, 100, '16000000');
-insert into TANG (Tang, DienTich, Gia) values (10, 100, '16800000');
-insert into TANG (Tang, DienTich, Gia) values (11, 100, '10300000');
-insert into TANG (Tang, DienTich, Gia) values (12, 100, '16200000');
-insert into TANG (Tang, DienTich, Gia) values (13, 100, '15900000');
-insert into TANG (Tang, DienTich, Gia) values (14, 100, '13100000');
-insert into TANG (Tang, DienTich, Gia) values (15, 100, '12300000');
-insert into TANG (Tang, DienTich, Gia) values (16, 100, '15200000');
-insert into TANG (Tang, DienTich, Gia) values (17, 100, '13600000');
-insert into TANG (Tang, DienTich, Gia) values (18, 100, '11200000');
-insert into TANG (Tang, DienTich, Gia) values (19, 100, '11100000');
-insert into TANG (Tang, DienTich, Gia) values (20, 100, '15200000');
-insert into TANG (Tang, DienTich, Gia) values (21, 100, '11300000');
-insert into TANG (Tang, DienTich, Gia) values (22, 100, '12700000');
-insert into TANG (Tang, DienTich, Gia) values (23, 100, '18700000');
-insert into TANG (Tang, DienTich, Gia) values (24, 100, '10300000');
-insert into TANG (Tang, DienTich, Gia) values (25, 100, '12000000');
-insert into TANG (Tang, DienTich, Gia) values (1, 200, '28200000');
-insert into TANG (Tang, DienTich, Gia) values (2, 200, '25800000');
-insert into TANG (Tang, DienTich, Gia) values (3, 200, '21100000');
-insert into TANG (Tang, DienTich, Gia) values (4, 200, '20300000');
-insert into TANG (Tang, DienTich, Gia) values (5, 200, '29400000');
-insert into TANG (Tang, DienTich, Gia) values (6, 200, '23400000');
-insert into TANG (Tang, DienTich, Gia) values (7, 200, '22200000');
-insert into TANG (Tang, DienTich, Gia) values (8, 200, '29000000');
-insert into TANG (Tang, DienTich, Gia) values (9, 200, '26000000');
-insert into TANG (Tang, DienTich, Gia) values (10, 200, '26800000');
-insert into TANG (Tang, DienTich, Gia) values (11, 200, '20300000');
-insert into TANG (Tang, DienTich, Gia) values (12, 200, '26200000');
-insert into TANG (Tang, DienTich, Gia) values (13, 200, '25900000');
-insert into TANG (Tang, DienTich, Gia) values (14, 200, '23100000');
-insert into TANG (Tang, DienTich, Gia) values (15, 200, '22300000');
-insert into TANG (Tang, DienTich, Gia) values (16, 200, '25200000');
-insert into TANG (Tang, DienTich, Gia) values (17, 200, '23600000');
-insert into TANG (Tang, DienTich, Gia) values (18, 200, '21200000');
-insert into TANG (Tang, DienTich, Gia) values (19, 200, '21100000');
-insert into TANG (Tang, DienTich, Gia) values (20, 200, '25200000');
-insert into TANG (Tang, DienTich, Gia) values (21, 200, '21300000');
-insert into TANG (Tang, DienTich, Gia) values (22, 200, '22700000');
-insert into TANG (Tang, DienTich, Gia) values (23, 200, '28700000');
-insert into TANG (Tang, DienTich, Gia) values (24, 200, '20300000');
-insert into TANG (Tang, DienTich, Gia) values (25, 200, '22000000');
+insert into TANG (Tang, DienTich, Gia) values (1, 100, 18200000);
+insert into TANG (Tang, DienTich, Gia) values (2, 100, 15800000);
+insert into TANG (Tang, DienTich, Gia) values (3, 100, 11100000);
+insert into TANG (Tang, DienTich, Gia) values (4, 100, 10300000);
+insert into TANG (Tang, DienTich, Gia) values (5, 100, 19400000);
+insert into TANG (Tang, DienTich, Gia) values (6, 100, 13400000);
+insert into TANG (Tang, DienTich, Gia) values (7, 100, 12200000);
+insert into TANG (Tang, DienTich, Gia) values (8, 100, 19000000);
+insert into TANG (Tang, DienTich, Gia) values (9, 100, 16000000);
+insert into TANG (Tang, DienTich, Gia) values (10, 100, 16800000);
+insert into TANG (Tang, DienTich, Gia) values (11, 100, 10300000);
+insert into TANG (Tang, DienTich, Gia) values (12, 100, 16200000);
+insert into TANG (Tang, DienTich, Gia) values (13, 100, 15900000);
+insert into TANG (Tang, DienTich, Gia) values (14, 100, 13100000);
+insert into TANG (Tang, DienTich, Gia) values (15, 100, 12300000);
+insert into TANG (Tang, DienTich, Gia) values (16, 100, 15200000);
+insert into TANG (Tang, DienTich, Gia) values (17, 100, 13600000);
+insert into TANG (Tang, DienTich, Gia) values (18, 100, 11200000);
+insert into TANG (Tang, DienTich, Gia) values (19, 100, 11100000);
+insert into TANG (Tang, DienTich, Gia) values (20, 100, 15200000);
+insert into TANG (Tang, DienTich, Gia) values (21, 100, 11300000);
+insert into TANG (Tang, DienTich, Gia) values (22, 100, 12700000);
+insert into TANG (Tang, DienTich, Gia) values (23, 100, 18700000);
+insert into TANG (Tang, DienTich, Gia) values (24, 100, 10300000);
+insert into TANG (Tang, DienTich, Gia) values (25, 100,12000000);
+insert into TANG (Tang, DienTich, Gia) values (1, 200, 28200000);
+insert into TANG (Tang, DienTich, Gia) values (2, 200, 25800000);
+insert into TANG (Tang, DienTich, Gia) values (3, 200, 21100000);
+insert into TANG (Tang, DienTich, Gia) values (4, 200, 20300000);
+insert into TANG (Tang, DienTich, Gia) values (5, 200, 29400000);
+insert into TANG (Tang, DienTich, Gia) values (6, 200, 23400000);
+insert into TANG (Tang, DienTich, Gia) values (7, 200, 22200000);
+insert into TANG (Tang, DienTich, Gia) values (8, 200, 29000000);
+insert into TANG (Tang, DienTich, Gia) values (9, 200, 26000000);
+insert into TANG (Tang, DienTich, Gia) values (10, 200, 26800000);
+insert into TANG (Tang, DienTich, Gia) values (11, 200, 20300000);
+insert into TANG (Tang, DienTich, Gia) values (12, 200, 26200000);
+insert into TANG (Tang, DienTich, Gia) values (13, 200, 25900000);
+insert into TANG (Tang, DienTich, Gia) values (14, 200, 23100000);
+insert into TANG (Tang, DienTich, Gia) values (15, 200, 22300000);
+insert into TANG (Tang, DienTich, Gia) values (16, 200, 25200000);
+insert into TANG (Tang, DienTich, Gia) values (17, 200, 23600000);
+insert into TANG (Tang, DienTich, Gia) values (18, 200, 21200000);
+insert into TANG (Tang, DienTich, Gia) values (19, 200, 21100000);
+insert into TANG (Tang, DienTich, Gia) values (20, 200, 25200000);
+insert into TANG (Tang, DienTich, Gia) values (21, 200, 21300000);
+insert into TANG (Tang, DienTich, Gia) values (22, 200, 22700000);
+insert into TANG (Tang, DienTich, Gia) values (23, 200, 28700000);
+insert into TANG (Tang, DienTich, Gia) values (24, 200, 20300000);
+insert into TANG (Tang, DienTich, Gia) values (25, 200, 22000000);
 
 
 -- Insert table PHONG
+set identity_insert PHONG on
 insert into PHONG (MaPHG, TenPHG, Tang, DienTich) values (1, '101', 1, 100);
 insert into PHONG (MaPHG, TenPHG, Tang, DienTich) values (2, '102', 1, 100);
 insert into PHONG (MaPHG, TenPHG, Tang, DienTich) values (3, '103', 1, 200);
@@ -472,61 +497,12 @@ insert into PHONG (MaPHG, TenPHG, Tang, DienTich) values (68, '1704', 17, 200);
 insert into PHONG (MaPHG, TenPHG, Tang, DienTich) values (69, '1801', 18, 100);
 insert into PHONG (MaPHG, TenPHG, Tang, DienTich) values (70, '1802', 18, 100);
 insert into PHONG (MaPHG, TenPHG, Tang, DienTich) values (71, '1803', 18, 200);
-insert into PHONG (MaPHG, TenPHG, Tang, DienTich) values (72, '1804', 18, 200);
-insert into PHONG (MaPHG, TenPHG, Tang, DienTich) values (73, '1901',19, 100);
-insert into PHONG (MaPHG, TenPHG, Tang, DienTich) values (74, '1902', 19, 100);
-insert into PHONG (MaPHG, TenPHG, Tang, DienTich) values (75, '1903', 19, 200);
-insert into PHONG (MaPHG, TenPHG, Tang, DienTich) values (76, '1904', 19, 200);
-insert into PHONG (MaPHG, TenPHG, Tang, DienTich) values (77, '2001', 20, 100);
-insert into PHONG (MaPHG, TenPHG, Tang, DienTich) values (78, '2002', 20, 100);
-insert into PHONG (MaPHG, TenPHG, Tang, DienTich) values (79, '2003', 20, 200);
-insert into PHONG (MaPHG, TenPHG, Tang, DienTich) values (80, '2004', 20, 200);
-insert into PHONG (MaPHG, TenPHG, Tang, DienTich) values (81, '2101', 21, 100);
-insert into PHONG (MaPHG, TenPHG, Tang, DienTich) values (82, '2102', 21, 100);
-insert into PHONG (MaPHG, TenPHG, Tang, DienTich) values (83, '2103', 21, 200);
-insert into PHONG (MaPHG, TenPHG, Tang, DienTich) values (84, '2104', 21, 200);
-insert into PHONG (MaPHG, TenPHG, Tang, DienTich) values (85, '2201', 22, 100);
-insert into PHONG (MaPHG, TenPHG, Tang, DienTich) values (86, '2202', 22, 100);
-insert into PHONG (MaPHG, TenPHG, Tang, DienTich) values (87, '2203', 22, 200);
-insert into PHONG (MaPHG, TenPHG, Tang, DienTich) values (88, '2204', 22, 200);
-insert into PHONG (MaPHG, TenPHG, Tang, DienTich) values (89, '2301', 23, 100);
-insert into PHONG (MaPHG, TenPHG, Tang, DienTich) values (90, '2302', 23, 100);
-insert into PHONG (MaPHG, TenPHG, Tang, DienTich) values (91, '2303', 23, 200);
-insert into PHONG (MaPHG, TenPHG, Tang, DienTich) values (92, '2304', 23, 200);
-insert into PHONG (MaPHG, TenPHG, Tang, DienTich) values (93, '2401', 24, 100);
-insert into PHONG (MaPHG, TenPHG, Tang, DienTich) values (94, '2402', 24, 100);
-insert into PHONG (MaPHG, TenPHG, Tang, DienTich) values (95, '2403', 24, 200);
-insert into PHONG (MaPHG, TenPHG, Tang, DienTich) values (96, '2404', 24,200);
-insert into PHONG (MaPHG, TenPHG, Tang, DienTich) values (97, '2501', 25, 100);
-insert into PHONG (MaPHG, TenPHG, Tang, DienTich) values (98, '2502', 25, 100);
-insert into PHONG (MaPHG, TenPHG, Tang, DienTich) values (99, '2503', 25, 200);
-insert into PHONG (MaPHG, TenPHG, Tang, DienTich) values (100, '2504', 25, 200);
+set identity_insert PHONG off
 
 
---insert table CONGTY
-
-insert into CONGTY (MaCongTy, TenCT, DiaChiCT, SDT, MaHD) values (1, 'McDONALD', '12 Charles Delea', '490-118-5583', 1);
-insert into CONGTY (MaCongTy, TenCT, DiaChiCT, SDT, MaHD) values (2, 'HIGHLANDS Coffee', '54 Darin Trainer', '757-942-3707', 2);
-insert into CONGTY (MaCongTy, TenCT, DiaChiCT, SDT, MaHD) values (3, 'STARBUCKS', '98 Shandee Gateshill', '284-871-6762', 3);
-insert into CONGTY (MaCongTy, TenCT, DiaChiCT, SDT, MaHD) values (4, 'PHÚC LONG Coffee', '123 Lou Worg', '223-881-6293', 4);
-insert into CONGTY (MaCongTy, TenCT, DiaChiCT, SDT, MaHD) values (5, 'THE COFFEE HOUSE', '86 Merry Costall', '678-453-1532', 5);
-insert into CONGTY (MaCongTy, TenCT, DiaChiCT, SDT, MaHD) values (6, 'ORIENT SOFTWARE', '45 Rusty Kiddell', '601-839-1862', 6);
-insert into CONGTY (MaCongTy, TenCT, DiaChiCT, SDT, MaHD) values (7, 'PIZZA COMPANY', '64 Charmian Arnholtz', '964-938-4039', 7);
-insert into CONGTY (MaCongTy, TenCT, DiaChiCT, SDT, MaHD) values (8, 'JOLIE PEE', '75 Matelda Corbin', '540-195-9778', 8);
-insert into CONGTY (MaCongTy, TenCT, DiaChiCT, SDT, MaHD) values (9, 'LOTTERIA', '24 Augustus Surr', '917-744-7575', 9);
-insert into CONGTY (MaCongTy, TenCT, DiaChiCT, SDT, MaHD) values (10, 'FPT SOFTWARE', '64 Juan Laidlaw', '259-333-0141', 10);
-insert into CONGTY (MaCongTy, TenCT, DiaChiCT, SDT, MaHD) values (11, 'GLOBAL CYBERSOFT', '68 Sherie Sidlow', '770-830-0203', 11);
-insert into CONGTY (MaCongTy, TenCT, DiaChiCT, SDT, MaHD) values (12, 'HARVEY NASH', '974 Hermia Yaldren', '223-311-9416', 12);
-insert into CONGTY (MaCongTy, TenCT, DiaChiCT, SDT, MaHD) values (13, 'FUJINET', '145 Davis Newvill', '462-266-3865', 13);
-insert into CONGTY (MaCongTy, TenCT, DiaChiCT, SDT, MaHD) values (14, 'DIGI-TEXX', '156 Sansone Durran', '231-999-0634', 14);
-insert into CONGTY (MaCongTy, TenCT, DiaChiCT, SDT, MaHD) values (15, 'KMS TECHNOLOGY', '124 Maddie Adamthwaite', '225-569-1962', 15);
-insert into CONGTY (MaCongTy, TenCT, DiaChiCT, SDT, MaHD) values (16, 'TMA SOLUTIONS', '675 Kerrill Puttick', '147-556-5658', 16);
-insert into CONGTY (MaCongTy, TenCT, DiaChiCT, SDT, MaHD) values (17, 'MK SMART', '564 Valencia Flynn', '534-659-2938', 17);
-insert into CONGTY (MaCongTy, TenCT, DiaChiCT, SDT, MaHD) values (18, 'INTERNATIONAL BUSINESS MACHINE', '325 Bernita Bamlet', '270-248-5522', 18);
-insert into CONGTY (MaCongTy, TenCT, DiaChiCT, SDT, MaHD) values (19, 'MICROSOFT COMPANY', '79 Ricky Karby', '454-742-7545', 19);
-insert into CONGTY (MaCongTy, TenCT, DiaChiCT, SDT, MaHD) values (20, 'ORACLE', '55 Henrik Dimmer', '331-622-8247', 20);
 
 -- Insert table NHANVIEN
+set identity_insert NHANVIEN on
 insert into NHANVIEN (MaNV, TenNV, DiaChiNV, SDTNV,HinhAnh,ChucVu, MaCongTy, MaPHG) values (1, 'Gwyneth Le Sarr', 'Ricky De Mitris', '3801616618','1.jpg','Giam doc', 1, 1);
 insert into NHANVIEN (MaNV, TenNV, DiaChiNV, SDTNV,HinhAnh,ChucVu, MaCongTy, MaPHG) values (2, 'Perry Fox', 'Flossie Kirkby', '1359782730','','Nhan vien', 1, 1);
 insert into NHANVIEN (MaNV, TenNV, DiaChiNV, SDTNV,HinhAnh,ChucVu, MaCongTy, MaPHG) values (3, 'Tanya Bocke', 'Anne-marie McLleese', '7756831544','','Nhan vien', 1, 1);
@@ -727,7 +703,7 @@ insert into NHANVIEN (MaNV, TenNV, DiaChiNV, SDTNV,HinhAnh,ChucVu, MaCongTy, MaP
 insert into NHANVIEN (MaNV, TenNV, DiaChiNV, SDTNV,HinhAnh,ChucVu, MaCongTy, MaPHG) values (198, 'Priscilla Hollyer', 'Neall Dowears', '7767149925','','Nhan vien',  20,20);
 insert into NHANVIEN (MaNV, TenNV, DiaChiNV, SDTNV,HinhAnh,ChucVu, MaCongTy, MaPHG) values (199, 'Jamill Hanfrey', 'Reade Quinsee', '3283006746','','Nhan vien',  20,20);
 insert into NHANVIEN (MaNV, TenNV, DiaChiNV, SDTNV,HinhAnh,ChucVu, MaCongTy, MaPHG) values (200, 'Francisca Bamell', 'Buddy Betser', '7681088884','','Nhan vien', 20,20);
-
+set identity_insert NHANVIEN off
 
 --Insert table CHITIETHOPDONG
 
@@ -753,4 +729,7 @@ insert into CHITIETHOPDONG (MaHD, MaPHG, ThoiGianThue) values (19, 19, 21);
 insert into CHITIETHOPDONG (MaHD, MaPHG, ThoiGianThue) values (20, 20, 19);
 
 
-
+--Insert table TAIKHOAN
+set identity_insert TAIKHOAN on
+insert into TAIKHOAN (MaTK, TenDN, MatKhau) values (1, 'admin', '123456');
+set identity_insert TAIKHOAN off
