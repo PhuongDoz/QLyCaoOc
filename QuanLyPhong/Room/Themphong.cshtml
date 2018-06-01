@@ -1,0 +1,83 @@
+﻿@model QLyCaoOc.Models.PHONG
+
+@{
+    ViewBag.Title = "Themphong";
+    Layout = "~/Views/Shared/_LayoutUser.cshtml";
+}
+
+<h2>Thêm Phòng Mới</h2>
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    <div class="form-horizontal">
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        @*<div class="form-group">
+                @Html.LabelFor(model => model.MaPHG, htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.MaPHG, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.MaPHG, "", new { @class = "text-danger" })
+                </div>
+            </div>*@
+
+        <div class="form-group">
+            <p class="control-label col-md-2">TÊN PHÒNG :</p>
+            <div class="col-md-10" style="width:200px">
+                @Html.EditorFor(model => model.TenPHG, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.TenPHG, "", new { @class = "text-danger" })
+                @ViewData["Loi1"]
+            </div>
+        </div>
+
+        <div class="form-group">
+            <p class="control-label col-md-2">TẦNG :</p>
+            <div class="col-md-10" style="width:200px">
+                @Html.DropDownList("Tang")
+            </div>
+        </div>
+
+        <div class="form-group">
+            <p class="control-label col-md-2">DIỆN TÍCH :</p>
+            <div class="col-md-10" style="width:200px">
+                @Html.DropDownList("DienTich")
+            </div>
+        </div>
+        @*<script>
+                function GetTang() {
+                    var list = document.getElementById('Tang');
+                    var item = list.options[list.selectedIndex].value;
+
+                    $.ajax({
+                        type: "GET",
+                        url: "@Url.Action("HienThiGia", "Room")",
+                        data: { tang: item },
+                        dataType: "JSON"
+                    });
+                }
+                function GetDienTich() {
+                    var list = document.getElementById('DienTich');
+                    var item = list.options[list.selectedIndex].value;
+
+                    $.ajax({
+                        type: "GET",
+                        url: "@Url.Action("HienThiGia", "Room")",
+                        data: { dientich: item },
+                        dataType: "JSON"
+                });
+                }
+            </script>*@
+
+
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="LƯU" class="btn btn-default" />
+            </div>
+        </div>
+    </div>
+}
+
+<div>
+    @Html.ActionLink("Quay về trang trước", "Index")
+</div>

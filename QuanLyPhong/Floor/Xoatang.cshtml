@@ -1,0 +1,49 @@
+﻿@model QLyCaoOc.Models.TANG
+
+@{
+    ViewBag.Title = "Xoatang";
+    Layout = "~/Views/Shared/_LayoutUser.cshtml";
+}
+
+<h2>XÓA TẦNG</h2>
+
+<h3 style="text-align:center">BẠN CÓ MUỐN XÓA TẦNG VỚI DIỆN TÍCH NÀY ?</h3>
+
+<div>
+    <hr />
+    <dl class="dl-horizontal" style="font-size:large;">
+        <dt class="control-label col-md-2">
+            TẦNG :
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Tang1)
+        </dd>
+
+        <dt class="control-label col-md-2">
+            DIỆN TÍCH :
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DienTich)
+        </dd>
+
+        <dt class="control-label col-md-2">
+            GIÁ :
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Gia)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="XÓA" class="btn btn-default" /> |
+            @Html.ActionLink("Quay lại trang", "Index")
+        </div>
+    }
+</div>

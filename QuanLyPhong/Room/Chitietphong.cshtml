@@ -1,0 +1,51 @@
+﻿@model QLyCaoOc.Models.PHONG
+
+@{
+    ViewBag.Title = "Chitietphong";
+    Layout = "~/Views/Shared/_LayoutUser.cshtml";
+}
+
+<h2 style="text-align:center">THÔNG TIN CHI TIẾT PHÒNG</h2>
+
+<div>
+    <hr />
+    <dl class="dl-horizontal" style="font-size:large;">
+
+        <dt class="control-label col-md-2">
+            TÊN PHÒNG :
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TenPHG)
+        </dd>
+
+        <dt class="control-label col-md-2">
+          TẦNG :
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TANG1.Tang1)
+        </dd>
+
+        <dt class="control-label col-md-2">
+            DIỆN TÍCH :
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TANG1.DienTich)
+        </dd>
+
+        <dt class="control-label col-md-2">
+            GIÁ PHÒNG :
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TANG1.Gia)
+        </dd>
+       
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Quay lại trang trước", "Index")
+</p>

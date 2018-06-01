@@ -1,0 +1,60 @@
+﻿@model IEnumerable<QLyCaoOc.Models.PHONG>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_LayoutUser.cshtml";
+}
+
+<h1 style="text-align:center"> QUẢN LÝ PHÒNG</h1>
+<p>
+    <button type="button" class="btn btn-success" onclick="location.href='@Url.Action("Themphong","Room")'">Thêm Phòng</button>
+</p>
+<p>
+    <button type="button" class="btn btn-success" onclick="location.href='@Url.Action("Index","Floor")'">Bảng giá phòng</button>
+</p>
+<table id="dynamic-table" class="table table-striped table-bordered table-hover">
+
+    <thead>
+        <tr>
+            <th>
+                Mã phòng
+            </th>
+            <th>
+                Tên phòng
+            </th>
+            <th>
+                Tầng
+            </th>
+            <th>
+                Diện tích
+            </th>
+            <th>
+                Chức năng
+            </th>
+        </tr>
+    </thead>
+
+    @foreach (var phong in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => phong.MaPHG)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => phong.TenPHG)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => phong.Tang)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => phong.DienTich)
+            </td>
+            <td>
+                @Html.ActionLink("Sửa", "Suaphong", new { id = phong.MaPHG }) |
+                @Html.ActionLink("Chi tiết", "Chitietphong", new { id = phong.MaPHG }) |
+                @Html.ActionLink("Xóa", "Xoaphong", new { id = phong.MaPHG })
+            </td>
+        </tr>
+    }
+
+</table>
