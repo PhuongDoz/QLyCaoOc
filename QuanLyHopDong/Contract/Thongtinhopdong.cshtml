@@ -1,0 +1,48 @@
+﻿@model IEnumerable<QLyCaoOc.Models.CHITIETHOPDONG>
+
+@{
+    ViewBag.Title = "Thongtinhopdong";
+    Layout = "~/Views/Shared/_LayoutUser.cshtml";
+}
+
+<h1 style="text-align:center"> THÔNG TIN HỢP ĐỒNG</h1>
+
+<button type="button" class="btn btn-success" onclick="location.href='@Url.Action("Index","Contract")'">Quay lại</button>
+<table id="dynamic-table" class="table table-striped table-bordered table-hover">
+
+    <thead>
+        <tr>
+            <th>
+                Mã hợp đồng
+            </th>
+            <th>
+                Mã phòng
+            </th>
+            <th>
+                Thời gian thuê
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.MaHD)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MaPHG)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ThoiGianThue)
+            </td>
+            <td>
+                @Html.ActionLink("Sửa", "Suathongtinhopdong", new { /* id=item.PrimaryKey */ }) 
+
+
+            </td>
+        </tr>
+    }
+
+</table>

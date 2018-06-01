@@ -1,0 +1,70 @@
+﻿@model QLyCaoOc.Models.HOPDONG
+
+@{
+    ViewBag.Title = "Xoahopdong";
+    Layout = "~/Views/Shared/_LayoutUser.cshtml";
+}
+
+<h1 style="text-align:center"> XÁC NHÂN XÓA HỢP ĐỒNG</h1><div>
+
+    <div>
+
+        <hr />
+        <dl class="dl-horizontal" style="font-size:20px">
+            <dd style="font-weight:bold">HỢP ĐỒNG</dd>
+            <dt>
+                Mã hợp đồng:
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.MaHD)
+            </dd>
+
+
+            <dt>
+                Ngày lập:
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.NgayLap)
+            </dd>
+
+            <dt>
+                Tiền cọc:
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.TienCoc) VNĐ
+            </dd>
+            <dd> </dd>
+
+            <dd style="font-weight:bold">PHÒNG</dd>
+            <dt>
+                Mã phòng:
+            </dt>
+
+            <dd>
+                @ViewBag.MaPHG
+            </dd>
+
+            <dt>
+                Thời gian thuê:
+            </dt>
+
+            <dd>
+                @ViewBag.ThoiGianThue tháng
+            </dd>
+            <dd> </dd>
+        </dl>
+    </div>
+    <div>
+        @using (Html.BeginForm())
+        {
+            @Html.AntiForgeryToken()
+
+            <div class="form-actions no-color">
+                <input type="submit" value="Xóa" class="btn btn-default" /> |
+                @Html.ActionLink("TRỞ VỀ", "Index")
+            </div>
+        }
+    </div>
